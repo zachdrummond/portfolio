@@ -4,7 +4,7 @@ const Name = () => {
       <a
         id="name"
         className="navbar-brand font-weight-bold font m-0"
-        to="/about"
+        href="/"
       >
         {/* < Arrow */}
         <svg

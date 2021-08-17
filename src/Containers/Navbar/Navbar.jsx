@@ -1,5 +1,5 @@
-import "./NavBar.css"
-import Name from "./Name";
+//import "./NavBar.css"
+import Name from "../../Components/Name/Name.jsx";
 //import Links from "./Links";
 
 const NavBar = () => {
