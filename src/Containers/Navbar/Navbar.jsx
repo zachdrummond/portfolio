@@ -1,4 +1,4 @@
-//import "./NavBar.css"
+import "./NavBar.css"
 import Name from "./Name";
 //import Links from "./Links";
 
