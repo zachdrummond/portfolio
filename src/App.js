@@ -1,8 +1,8 @@
+import Navbar from "./Containers/Navbar/Navbar.jsx";
 
 function App() {
   return (
-    <div>
-    </div>
+    <Navbar/>
   );
 }
 
