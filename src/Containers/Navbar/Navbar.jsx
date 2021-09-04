@@ -1,4 +1,4 @@
-//import "./NavBar.css"
+import "./Navbar.css"
 import Name from "../../Components/Name/Name.jsx";
 //import Links from "./Links";
 
