@@ -1,0 +1,5 @@
+/* Adds the background image to each page */
+html,
+body {
+  background-image: url(./images/Background.jpg);
+}
