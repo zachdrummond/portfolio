@@ -1,5 +1,5 @@
 // Name = Brand - <Zach Drummond>
-// The left section of the Navbar
+// The Left Section of the Navbar
 const Name = () => {
   return (
     <>

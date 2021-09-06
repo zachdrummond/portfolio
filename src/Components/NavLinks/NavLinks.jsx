@@ -1,7 +1,7 @@
 import GitHub from "../Icons/GitHub";
 import LinkedIn from "../Icons/LinkedIn";
 
-// The right section of the Navbar
+// The Right Section of the Navbar
 const Links = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarMenu">
