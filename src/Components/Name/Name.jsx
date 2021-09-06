@@ -1,3 +1,5 @@
+// Name = Brand - <Zach Drummond>
+// The left section of the Navbar
 const Name = () => {
   return (
     <>
@@ -36,7 +38,7 @@ const Name = () => {
           />
         </svg>
       </a>
-      {/* Navbar Collapsible Button */}
+      {/* Navbar Collapsible Button for Nav-Items on the right side */}
       <button
         className="navbar-toggler button"
         type="button"

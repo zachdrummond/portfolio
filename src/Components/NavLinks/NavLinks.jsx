@@ -1,6 +1,7 @@
 import GitHub from "../Icons/GitHub";
 import LinkedIn from "../Icons/LinkedIn";
 
+// The right section of the Navbar
 const Links = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarMenu">
@@ -23,7 +24,7 @@ const Links = () => {
           Resume
         </a>
         {/* Contact */}
-        <a className="navbar-brand" href="/contact">
+        <a className="navbar-brand" href="/">
           Contact
         </a>
         {/* LinkedIn Icon */}
