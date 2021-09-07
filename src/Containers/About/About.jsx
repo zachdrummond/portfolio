@@ -27,7 +27,7 @@ const About = () => {
                 <div className="col-sm-12" id="Picture">
                   <img
                     className="img img-thumbnail"
-                    src={IMAGES.HeadShot}
+                    src={IMAGES.Headshot}
                     alt="Head Shot of Zach Drummond"
                     id="aboutMeImg"
                   />
