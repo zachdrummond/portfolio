@@ -1,4 +1,10 @@
 /* Adds the background image to each page */
-html {
+body {
   background-image: url(./images/Background.jpg);
+}
+
+/* Changes the font to serif */
+.font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  text-align: center;
 }

@@ -5,7 +5,7 @@ const Name = () => {
     <>
       <a
         id="name"
-        className="navbar-brand font-weight-bold font m-0"
+        className="navbar-brand fw-bold font"
         href="/"
       >
         {/* < Arrow */}

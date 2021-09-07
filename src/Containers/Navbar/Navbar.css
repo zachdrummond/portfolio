@@ -1,7 +1,9 @@
+/* Makes the Navbar more opaque */
 nav {
     opacity: 0.85!important;
   }
   
+/* For the Name in the Navbar*/
   #name {
     font-size: 25px;
   }
