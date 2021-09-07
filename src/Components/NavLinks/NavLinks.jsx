@@ -5,7 +5,7 @@ import LinkedIn from "../Icons/LinkedIn";
 const Links = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarMenu">
-      <div className="ms-auto">
+      <div className="navbar-nav ms-auto">
         {/* About */}
         <a className="navbar-brand" href="/">
           About
