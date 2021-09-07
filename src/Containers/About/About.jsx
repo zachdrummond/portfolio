@@ -1,4 +1,5 @@
 import IMAGES from "../../images/images";
+import "./About.css";
 
 const About = () => {
   return (
