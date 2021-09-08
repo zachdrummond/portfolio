@@ -9,7 +9,7 @@ const Card = (props) => {
                 <h5 className="card-title">{props.title}</h5>
               </div>
   
-              <div className="col-sm-3 pl-5 pr-0">
+              <div className="col-sm-3 ps-5">
                 {props.children}
               </div>
             </div>

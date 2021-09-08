@@ -1,6 +1,6 @@
 import About from "./Containers/About/About.jsx"
 import Navbar from "./Containers/Navbar/Navbar.jsx";
-import Portfolio from "./Containers/Portfolio/Portfolio.jsx";
+import Projects from "./Containers/Portfolio/Projects.jsx";
 import Footer from "./Containers/Footer/Footer.jsx";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <>
       <Navbar />
       <About />
-      <Portfolio/>
+      <Projects/>
       <Footer />
     </>
   );

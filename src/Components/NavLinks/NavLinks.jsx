@@ -12,7 +12,7 @@ const Links = () => {
         </a>
         {/* Portfolio */}
         <a className="navbar-brand" href="/">
-          Portfolio
+          Projects
         </a>
         {/* Resume */}
         <a
