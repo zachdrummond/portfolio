@@ -1,7 +1,7 @@
 import "./Portfolio.css";
-import Card from "./Card";
-import GitHub from "../Icon-Components/GitHub";
-import Link from "../Icon-Components/Link";
+import Card from "../../Components/Card/Card"
+import GitHub from "../../Components/Icons/GitHub"
+import Link from "../../Components/Icons/Link"
 import IMAGES from "../../images/images";
 
 const Portfolio = () => {
