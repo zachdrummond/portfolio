@@ -3,11 +3,12 @@
     float: left !important;
     margin-right: 20px !important;
     margin-bottom: 5px !important;
-    max-width: 50% !important;
+    max-width: 18% !important;
   }
-  
+
+/* Changes the text below About Me */
   #brand {
     color: gray;
-    font-size: 12.5px;
+    font-size: 14px;
     text-align: center;
   }
