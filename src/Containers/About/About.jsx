@@ -10,7 +10,7 @@ const About = () => {
             {/* Header - About Me */}
             <div className="row" id="row1">
               <div className="col-sm-12" id="Header">
-                <h2 className="fw-bold font">About Me</h2>
+                <h2 id="About" className="fw-bold font">About Me</h2>
                 <p id="brand">
                   I am a full stack web developer with a passion for developing
                   mobile-first, user-friendly apps that solve real world needs.
