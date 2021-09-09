@@ -1,4 +1,5 @@
 import About from "./Containers/About/About.jsx"
+import Contact from "./Containers/Contact/Contact.jsx"
 import Navbar from "./Containers/Navbar/Navbar.jsx";
 import Projects from "./Containers/Projects/Projects.jsx";
 import Footer from "./Containers/Footer/Footer.jsx";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <About />
       <Projects/>
+      <Contact />
       <Footer />
     </>
   );
