@@ -6,15 +6,13 @@ import Footer from "./Containers/Footer/Footer.jsx";
 
 function App() {
   return (
-    <div id="page-container">
+    <>
       <Navbar />
-      <div id="content-wrap">
-        <About />
-        <Projects />
-        <Contact />
-      </div>
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
-    </div>
+    </>
   );
 }
 
