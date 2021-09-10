@@ -9,9 +9,9 @@ nav {
   }
 
 /* Anchor Links - Prevents Navbar from blocking the Header */
-  :target:before {
+  :target:before { /* :target - Targets URLs with a # and anchor name ... :before -  */
     content: "";
     display: block;
-    height: 100px;
-    margin: -100px 0 0;
+    height: 100px; /* Sets the height of the target to 100px */
+    margin: -100px 0 0; /* Removes the added height */
   }
