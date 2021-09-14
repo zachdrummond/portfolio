@@ -1,8 +1,8 @@
 import "./Projects.css";
 import Card from "../../Components/Card/Card";
 import GitHub from "../../Components/Icons/GitHub";
-import Link from "../../Components/Icons/Link";
 import IMAGES from "../../images/images";
+import Link from "../../Components/Icons/Link";
 
 const Projects = () => {
   return (

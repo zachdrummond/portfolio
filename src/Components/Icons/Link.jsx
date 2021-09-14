@@ -1,6 +1,6 @@
-const Link = (props) => {
+const Link = ({href}) => {
   return (
-    <a href={props.href} target="_blank" rel="noreferrer" className="me-1">
+    <a href={href} target="_blank" rel="noreferrer" className="me-1">
       <svg
         width="2em"
         height="2em"

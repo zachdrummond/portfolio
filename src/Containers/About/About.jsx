@@ -1,5 +1,5 @@
-import IMAGES from "../../images/images";
 import "./About.css";
+import IMAGES from "../../images/images";
 
 const About = () => {
   return (

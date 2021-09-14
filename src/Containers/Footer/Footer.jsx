@@ -1,5 +1,5 @@
-import Copyright from "../../Components/Copyright/Copyright.jsx"
 import "./Footer.css"
+import Copyright from "../../Components/Copyright/Copyright.jsx"
 
 // The Container for the Footer
 const Footer = () => {

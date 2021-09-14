@@ -1,4 +1,4 @@
-const Card = (props) => {
+const Card = ({title, children, text, image, alt}) => {
     return (
       <div className="col mb-4">
         <div className="card">
@@ -6,11 +6,11 @@ const Card = (props) => {
             {/* Card Title */}
             <div className="row">
               <div className="col-sm-9">
-                <h5 className="card-title">{props.title}</h5>
+                <h5 className="card-title">{title}</h5>
               </div>
   
               <div className="col-sm-3 ps-5">
-                {props.children}
+                {children}
               </div>
             </div>
   
@@ -18,7 +18,7 @@ const Card = (props) => {
             <div className="row">
               <div className="col-sm-12">
                 <p className="card-text">
-                  {props.text}
+                  {text}
                 </p>
               </div>
             </div>
@@ -27,8 +27,8 @@ const Card = (props) => {
           {/* Card Image */}
           <img
             className="card-img-bottom"
-            src={props.image}
-            alt={props.alt}
+            src={image}
+            alt={alt}
           />
         </div>
       </div>
