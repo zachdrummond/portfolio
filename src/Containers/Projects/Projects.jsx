@@ -9,7 +9,7 @@ const Projects = () => {
     <main className="container">
       <div className="row row-cols-2 p-3 mt-5 bg-light">
         <div className="col-sm-12" id="Header">
-          <h2 id="Projects" className="fw-bold font">Projects</h2>
+          <h2 className="header fw-bold font">Projects</h2>
           <hr />
         </div>
 

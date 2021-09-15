@@ -10,6 +10,6 @@ body {
 }
 
 /* Changes the color of the header in the card */
-#Header {
+.header {
   color: #3c6e4b !important;
 }

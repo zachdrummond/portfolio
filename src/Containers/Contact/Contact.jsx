@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="row" id="row1">
               {/* Header - Contact */}
               <div className="col-sm-12" id="Header">
-                <h2 id="Contact" className="card-title fw-bold font">Contact</h2>
+                <h2 className="header fw-bold font">Contact</h2>
               </div>
             </div>
             <hr />
