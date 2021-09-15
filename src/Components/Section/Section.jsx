@@ -1,13 +1,13 @@
-import React from "react";
-
-const Section = () => {
+const Section = ({ title, brand, children }) => {
   return (
     <main className="container">
-      <div className="row row-cols-1">
-        <div className="col-sm-12 mt-5">
-          <div className="card col-md-12 bg-light">
-            <h2 className="header fw-bold font">About Me</h2>
+      <div className="row">
+        <div className="card col-md-12 mt-5 bg-light">
+          <div className="card-body">
+            <h2 className="header fw-bold font">{title}</h2>
+            {brand ? <p id="brand">{brand}</p> : ""}
             <hr />
+            {children}
           </div>
         </div>
       </div>
