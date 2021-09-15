@@ -1,17 +1,21 @@
 import About from "./Containers/About/About.jsx";
 import Contact from "./Containers/Contact/Contact.jsx";
+import Footer from "./Containers/Footer/Footer.jsx";
 import Navbar from "./Containers/Navbar/Navbar.jsx";
 import Projects from "./Containers/Projects/Projects.jsx";
-import Footer from "./Containers/Footer/Footer.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
-      <About />
-      <Projects/>
-      <Contact />
-      <Footer />
+      <main className="container">
+        <div className="row">
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+      </main>
+      <Footer/>
     </>
   );
 }
