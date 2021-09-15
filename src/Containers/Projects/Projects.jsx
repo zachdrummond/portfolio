@@ -3,16 +3,12 @@ import Card from "../../Components/Card/Card";
 import GitHub from "../../Components/Icons/GitHub";
 import IMAGES from "../../images/images";
 import Link from "../../Components/Icons/Link";
+import Section from "../../Components/Section/Section.jsx";
 
 const Projects = () => {
   return (
-    <main className="container">
-      <div className="row row-cols-2 p-3 mt-5 bg-light">
-        <div className="col-sm-12" id="Header">
-          <h2 className="header fw-bold font">Projects</h2>
-          <hr />
-        </div>
-
+    <Section title="Projects">
+      <div className="row row-cols-2">
         {/* Card 1 */}
         <Card
           title="Ciphr"
@@ -101,7 +97,7 @@ const Projects = () => {
           <GitHub href="https://github.com/zachdrummond/eat-da-burger" />
         </Card>
       </div>
-    </main>
+    </Section>
   );
 };
 
