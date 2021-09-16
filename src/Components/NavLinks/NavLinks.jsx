@@ -14,18 +14,19 @@ const Links = () => {
         <a className="navbar-brand" href="#Projects">
           Projects
         </a>
+        {/* Contact */}
+        <a className="navbar-brand" href="#Contact">
+          Contact
+        </a>
         {/* Resume */}
         <a
-          className="navbar-brand"
+          className="navbar-brand btn btn-sm btn-outline-dark"
+          role="button" // For Assistive Technologies
           href="https://docs.google.com/document/d/1Lg_N5xJ_PITKCcIUaj6RQqQ6mVqgH2fbwWRqjNZHfrM/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
           Resume
-        </a>
-        {/* Contact */}
-        <a className="navbar-brand" href="#Contact">
-          Contact
         </a>
         {/* LinkedIn Icon */}
         <LinkedIn />
