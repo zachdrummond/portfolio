@@ -6,7 +6,7 @@ import Link from "../../Components/Icons/Link";
 const Projects = () => {
   return (
     <main className="container mt-5">
-      <h1 className="mt-5">Projects</h1>
+      <h1 className="text-center">Projects</h1>
       <hr />
       <div className="row row-cols-2">
         {/* Card 1 */}
