@@ -1,38 +1,34 @@
-import "./About.css";
 import IMAGES from "../../images/images";
-import Section from "../../Components/Section/Section.jsx";
 
 const About = () => {
   return (
-    <Section
-      id="About"
-      title="About Me"
-      brand="I am a full stack web developer with a passion for developing
-        mobile-first, user-friendly apps that solve real world needs."
-    >
-      <img
+    <main className="container mt-5 text-center">
+      <h1 className="text-center">Hey, I'm Zach!</h1>
+      <br />
+      {/* <img
         className="img-fluid img-thumbnail"
         src={IMAGES.Headshot}
         alt="Head Shot of Zach Drummond"
         id="aboutMeImg"
         height="90"
-      />
-      <p>
-        After 6 rewarding years of working in vocational ministry, I decided to
-        pursue my passion for coding in order to solve problems with technology.
-        <br /> <br />
-        I earned a certificate in full stack web development from the Georgia
-        Institute of Technology. During the course, I gained a reputation for
-        being a team leader on group projects. My strengths include strategizing
-        for efficiency, communicating and organizing all of the details, and
-        synergizing my team. I have hands-on experience in building full stack
-        applications, including custom user authentication and authorization.
-        <br /> <br />
-        Does your company or organization need help developing or maintaining a
-        website? I'll apply my skills in leadership, interpersonal
-        relationships, and web development to meet all of your needs.
-      </p>
-    </Section>
+      /> */}
+      <h2>
+        I'm a full stack web developer with a passion for developing {<br />}
+        mobile-first, user-friendly apps that solve real world needs.
+      </h2>
+      <h1 className="mt-5">Technical Skills</h1>
+      <hr />
+      {Object.keys(IMAGES.Skills).map((key) => {
+        return (
+          <img
+            key={key}
+            src={IMAGES.Skills[key]}
+            alt="Head Shot of Zach Drummond"
+            height="100"
+          />
+        );
+      })}
+    </main>
   );
 };
 

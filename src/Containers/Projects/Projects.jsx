@@ -1,13 +1,13 @@
-import "./Projects.css";
 import Card from "../../Components/Card/Card";
 import GitHub from "../../Components/Icons/GitHub";
 import IMAGES from "../../images/images";
 import Link from "../../Components/Icons/Link";
-import Section from "../../Components/Section/Section.jsx";
 
 const Projects = () => {
   return (
-    <Section id="Projects" title="Projects">
+    <main className="container mt-5">
+      <h1 className="mt-5">Projects</h1>
+      <hr />
       <div className="row row-cols-2">
         {/* Card 1 */}
         <Card
@@ -97,7 +97,7 @@ const Projects = () => {
           <GitHub href="https://github.com/zachdrummond/eat-da-burger" />
         </Card>
       </div>
-    </Section>
+    </main>
   );
 };
 
