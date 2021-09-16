@@ -18,51 +18,16 @@ const About2 = () => {
       </h2>
       <h1 className="mt-5">Technical Skills</h1>
       <hr />
-      <img
-        src={IMAGES.Skills.HTML}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.CSS}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.React}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.Javascript}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.Nodejs}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.Git}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.MySQL}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.MongoDB}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
-      <img
-        src={IMAGES.Skills.Expressjs}
-        alt="Head Shot of Zach Drummond"
-        height="100"
-      />
+      {Object.keys(IMAGES.Skills).map((key) => {
+        return (
+          <img
+            key={key}
+            src={IMAGES.Skills[key]}
+            alt="Head Shot of Zach Drummond"
+            height="100"
+          />
+        );
+      })}
     </main>
   );
 };
