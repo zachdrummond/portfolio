@@ -8,11 +8,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="container">
-        <About />
-        <Projects />
-        <Contact />
-      </main>
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
     </>
   );

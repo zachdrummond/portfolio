@@ -1,3 +1,4 @@
+import "./Projects.css"
 import Card from "../../Components/Card/Card";
 import GitHub from "../../Components/Icons/GitHub";
 import IMAGES from "../../images/images";
@@ -5,7 +6,7 @@ import Link from "../../Components/Icons/Link";
 
 const Projects = () => {
   return (
-    <main className="container mt-5">
+    <main id="Projects" className="container mt-5">
       <h1 className="text-center">Projects</h1>
       <hr />
       <div className="row row-cols-2">

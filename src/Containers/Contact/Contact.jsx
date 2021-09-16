@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <main className="container mt-5">
+    <main id="Contact" className="container mt-5">
       <h1 className="text-center">Contact</h1>
       <hr />
       {/* Form */}

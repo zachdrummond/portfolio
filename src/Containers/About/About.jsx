@@ -2,7 +2,7 @@ import TechSkills from "../../Components/TechSkills/TechSkills"
 
 const About = () => {
   return (
-    <main className="container mt-5 text-center">
+    <main id="About" className="container mt-5 text-center">
       <h1>Hey, I'm Zach!</h1>
       <br />
       {/* <img

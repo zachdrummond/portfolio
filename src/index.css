@@ -8,8 +8,3 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   text-align: center;
 }
-
-/* Changes the color of the header in the card */
-.header {
-  color: #3c6e4b !important;
-}
