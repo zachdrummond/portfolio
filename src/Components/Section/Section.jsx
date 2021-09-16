@@ -1,6 +1,6 @@
-const Section = ({ title, brand, children }) => {
+const Section = ({ id, title, brand, children }) => {
   return (
-    <main className="container">
+    <main id={id} className="container">
       <div className="row">
         <div className="card col-md-12 mt-5 bg-light">
           <div className="card-body">

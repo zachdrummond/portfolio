@@ -7,7 +7,7 @@ import Section from "../../Components/Section/Section.jsx";
 
 const Projects = () => {
   return (
-    <Section title="Projects">
+    <Section id="Projects" title="Projects">
       <div className="row row-cols-2">
         {/* Card 1 */}
         <Card
