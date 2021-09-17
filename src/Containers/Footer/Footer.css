@@ -1,3 +1,9 @@
 footer {
     opacity: 0.85!important;
-  }  
+  }
+
+  #scrollToTop {
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+  }
