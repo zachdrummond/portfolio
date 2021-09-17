@@ -7,11 +7,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-dark p-2 mt-5 text-center">
+    <footer className="d-flex bg-dark p-3 mt-5 justify-content-center position-relative">
       <button
         id="scrollToTop"
         type="button"
-        className="btn"
+        className="btn position-absolute"
         onClick={scrollToTop}
       >
         ☝️

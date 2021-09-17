@@ -3,7 +3,5 @@ footer {
   }
 
   #scrollToTop {
-    position: relative;
-    bottom: 50px;
-    left: 100px;
+    bottom: 3.25rem;
   }
