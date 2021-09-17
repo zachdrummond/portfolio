@@ -5,7 +5,6 @@ const Projects = () => {
   return (
     <main id="Projects" className="container mt-5">
       <h1 className="text-center">Projects</h1>
-      <hr />
       <div className="row row-cols-3">
         {Object.keys(IMAGES.Projects).map((key) => {
           return (

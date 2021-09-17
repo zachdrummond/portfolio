@@ -1,8 +1,8 @@
 const IMAGES = {
     Headshot: require("./Headshot.jpg").default,
     Projects: {
-        Ciphr: require("./Portfolio/Ciphr.png").default,
-        Gifted: require("./Portfolio/Gifted.png").default,
+        Ciphr: require("./Portfolio/Ciphr.jpg").default,
+        Gifted: require("./Portfolio/Gifted.jpg").default,
         GoogleBooksSearch: require("./Portfolio/GoogleBooksSearch.png").default,
         BudgetTracker: require("./Portfolio/BudgetTracker.png").default,
         EatDaBurger: require("./Portfolio/Eat-da-Burger.png").default,
