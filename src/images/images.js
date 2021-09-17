@@ -1,12 +1,12 @@
 const IMAGES = {
     Headshot: require("./Headshot.jpg").default,
     Projects: {
-        BudgetTracker: require("./Portfolio/BudgetTracker.png").default,
         Ciphr: require("./Portfolio/Ciphr.png").default,
-        EatDaBurger: require("./Portfolio/Eat-da-Burger.png").default,
-        FindYourAdventure: require("./Portfolio/FindYourAdventure.png").default,
         Gifted: require("./Portfolio/Gifted.png").default,
         GoogleBooksSearch: require("./Portfolio/GoogleBooksSearch.png").default,
+        BudgetTracker: require("./Portfolio/BudgetTracker.png").default,
+        EatDaBurger: require("./Portfolio/Eat-da-Burger.png").default,
+        FindYourAdventure: require("./Portfolio/FindYourAdventure.png").default,
     },
     Skills: {
         Javascript: require("./Skills/Javascript.svg").default,
