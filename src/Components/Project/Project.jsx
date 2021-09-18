@@ -15,7 +15,7 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
       >
         Learn More
       </button>
-      <Modal link={link} gitHub={gitHub}/>
+      <Modal link={link} gitHub={gitHub} />
     </figure>
   );
 };
