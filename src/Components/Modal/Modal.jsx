@@ -1,20 +1,20 @@
 import GitHub from "../../Components/Icons/GitHub";
 import Link from "../../Components/Icons/Link";
 
-const Modal = ({ link, gitHub }) => {
+const Modal = ({ id, name, description, link, gitHub }) => {
   return (
     <div
       className="modal fade"
-      id="exampleModal"
+      id={id}
       tabIndex="-1"
-      aria-labelledby="exampleModalLabel"
+      aria-labelledby={id}
       aria-hidden="true"
     >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="exampleModalLabel">
-              Modal title
+            <h5 className="modal-title" id={id}>
+              {name}
             </h5>
             <button
               type="button"
@@ -23,7 +23,7 @@ const Modal = ({ link, gitHub }) => {
               aria-label="Close"
             ></button>
           </div>
-          <div className="modal-body">...</div>
+          <div className="modal-body">{description}</div>
           <div className="modal-footer">
             {/* Link to Website */}
             <Link href={link} />

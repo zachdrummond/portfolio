@@ -10,6 +10,7 @@ const Projects = () => {
           <h1 className="text-center">Projects</h1>
         </div>
         <Project
+          id="Ciphr"
           name="Ciphr"
           description="A platform to share and solve coding algorithms."
           image={IMAGES.Projects.Ciphr}
@@ -18,6 +19,7 @@ const Projects = () => {
           gitHub="https://github.com/zachdrummond/ciphr"
         />
         <Project
+          id="Gifted"
           name="Gifted"
           description="Track all of your gifts in one
           organized place."
@@ -27,6 +29,7 @@ const Projects = () => {
           gitHub="https://github.com/zachdrummond/gifted"
         />
         <Project
+          id="GoogleBooksSearch"
           name="Google Books Search"
           description="Find and save any book via Google Books API."
           image={IMAGES.Projects.GoogleBooksSearch}
@@ -35,6 +38,7 @@ const Projects = () => {
           gitHub="https://github.com/zachdrummond/google-books-search"
         />
         <Project
+          id="BudgetTracker"
           name="Budget Tracker"
           description="A progressive web app that helps you manage your financial budget."
           image={IMAGES.Projects.BudgetTracker}

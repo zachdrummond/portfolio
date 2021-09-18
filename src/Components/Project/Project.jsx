@@ -1,6 +1,8 @@
 import Modal from "../../Components/Modal/Modal";
 
 const Project = ({ name, description, image, alt, link, gitHub }) => {
+  const id = name.replace(/\s+/g, "");
+
   return (
     <figure className="position-relative border border-5 border-danger">
       <img className="figure-img img-fluid" src={image} alt={alt} />
@@ -11,11 +13,11 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
         type="button"
         className="learnMoreBtn btn btn-danger position-absolute"
         data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
+        data-bs-target={`#${id}`}
       >
         Learn More
       </button>
-      <Modal link={link} gitHub={gitHub} />
+      <Modal id={id} name={name} description={description} link={link} gitHub={gitHub} />
     </figure>
   );
 };
