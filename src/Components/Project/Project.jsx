@@ -1,6 +1,6 @@
 import Modal from "../../Components/Modal/Modal";
 
-const Project = ({ name, description, image, alt }) => {
+const Project = ({ name, description, image, alt, link, gitHub }) => {
   return (
     <figure className="position-relative border border-5 border-danger">
       <img className="figure-img img-fluid" src={image} alt={alt} />
@@ -15,7 +15,7 @@ const Project = ({ name, description, image, alt }) => {
       >
         Learn More
       </button>
-      <Modal />
+      <Modal link={link} gitHub={gitHub}/>
     </figure>
   );
 };

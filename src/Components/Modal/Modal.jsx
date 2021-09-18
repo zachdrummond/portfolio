@@ -1,4 +1,7 @@
-const Modal = () => {
+import GitHub from "../../Components/Icons/GitHub";
+import Link from "../../Components/Icons/Link";
+
+const Modal = ({ link, gitHub }) => {
   return (
     <div
       className="modal fade"
@@ -22,16 +25,10 @@ const Modal = () => {
           </div>
           <div className="modal-body">...</div>
           <div className="modal-footer">
-            <button
-              type="button"
-              className="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" className="btn btn-primary">
-              Save changes
-            </button>
+            {/* Link to Website */}
+            <Link href={link} />
+            {/* Link to Website on GitHub */}
+            <GitHub href={gitHub} />
           </div>
         </div>
       </div>
