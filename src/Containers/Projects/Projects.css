@@ -1,10 +1,14 @@
+/* Moves the top left margin edge by half its size */
 figcaption {
-  top: 10%;
+  top: 20%;
   left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
-figure button {
+/* Moves the top left margin edge by half its size */
+.learnMoreBtn {
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
