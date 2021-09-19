@@ -1,3 +1,7 @@
+div img {
+  object-fit:fill;
+}
+
 /* Moves the top left margin edge by half its size */
 figcaption {
   top: 20%;
