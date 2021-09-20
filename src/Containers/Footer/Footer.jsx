@@ -1,5 +1,3 @@
-import "./Footer.css";
-
 // The Container for the Footer
 const Footer = () => {
   const scrollToTop = () => {
@@ -7,11 +5,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="d-flex bg-dark p-3 mt-5 justify-content-center position-relative">
+    <footer className="d-flex bg-dark position-relative justify-content-center p-3 mt-5">
       <button
-        id="scrollToTop"
         type="button"
-        className="btn position-absolute"
+        className="btn position-absolute bottom-100"
         onClick={scrollToTop}
       >
         ☝️

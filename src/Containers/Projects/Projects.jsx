@@ -9,6 +9,21 @@ const Projects = () => {
         <div className="col-sm-12">
           <h1 className="text-center">Projects</h1>
         </div>
+        {/* <div className="banana position-relative">
+          <figcaption className="position-absolute text-center">
+            Ciphr <br /> <span> Banana </span>
+          </figcaption>
+          <button
+            type="button"
+            className="learnMoreBtn btn btn-danger position-absolute"
+            data-bs-toggle="modal"
+            data-bs-target={`#id`}
+          >
+            Learn More
+          </button>
+        </div>
+        <div className="bob"></div>
+        <div className="a"></div> */}
         <Project
           id="Ciphr"
           name="Ciphr"
