@@ -1,3 +1,4 @@
+import Carousel from "../Carousel/Carousel";
 import GitHub from "../../Components/Icons/GitHub";
 import Link from "../../Components/Icons/Link";
 
@@ -12,6 +13,7 @@ const Modal = ({ id, name, description, link, gitHub }) => {
     >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
+          <Carousel/>
           <div className="modal-header">
             <h5 className="modal-title" id={id}>
               {name}
