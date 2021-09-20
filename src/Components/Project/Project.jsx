@@ -4,14 +4,15 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
   const id = name.replace(/\s+/g, "");
 
   return (
-    <div className="position-relative p-0">
-      <img className="figure-img img-fluid m-0" src={image} alt={alt} />
-      <figcaption className="position-absolute text-center">
+    <figure className="position-relative p-0 m-0">
+      <img className="gallery figure-img img-fluid m-0" src={image} alt={alt} />
+      <figcaption className="w-100 position-absolute text-center">
         {name} <br /> <span> {description} </span>
       </figcaption>
+      {/* Moves the top left margin edge by half its size */}
       <button
         type="button"
-        className="learnMoreBtn btn btn-danger position-absolute"
+        className="btn btn-danger position-absolute top-50 start-50 translate-middle"
         data-bs-toggle="modal"
         data-bs-target={`#${id}`}
       >
@@ -24,7 +25,7 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
         link={link}
         gitHub={gitHub}
       />
-    </div>
+    </figure>
   );
 };
 
