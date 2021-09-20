@@ -4,7 +4,7 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
   const id = name.replace(/\s+/g, "");
 
   return (
-    <div className="b position-relative p-0 border border-5 border-danger">
+    <div className="position-relative p-0">
       <img className="figure-img img-fluid m-0" src={image} alt={alt} />
       <figcaption className="position-absolute text-center">
         {name} <br /> <span> {description} </span>
@@ -17,7 +17,13 @@ const Project = ({ name, description, image, alt, link, gitHub }) => {
       >
         Learn More
       </button>
-      <Modal id={id} name={name} description={description} link={link} gitHub={gitHub} />
+      <Modal
+        id={id}
+        name={name}
+        description={description}
+        link={link}
+        gitHub={gitHub}
+      />
     </div>
   );
 };

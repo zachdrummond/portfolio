@@ -4,26 +4,11 @@ import Project from "../../Components/Project/Project";
 
 const Projects = () => {
   return (
-    <main id="Projects" className="container mt-5">
+    <section id="Projects" className="container mt-5">
       <div className="row row-cols-3">
         <div className="col-sm-12">
           <h1 className="text-center">Projects</h1>
         </div>
-        {/* <div className="banana position-relative">
-          <figcaption className="position-absolute text-center">
-            Ciphr <br /> <span> Banana </span>
-          </figcaption>
-          <button
-            type="button"
-            className="learnMoreBtn btn btn-danger position-absolute"
-            data-bs-toggle="modal"
-            data-bs-target={`#id`}
-          >
-            Learn More
-          </button>
-        </div>
-        <div className="bob"></div>
-        <div className="a"></div> */}
         <Project
           id="Ciphr"
           name="Ciphr"
@@ -78,7 +63,7 @@ const Projects = () => {
           gitHub="https://github.com/zachdrummond/Find-Your-Adventure"
         />
       </div>
-    </main>
+    </section>
   );
 };
 

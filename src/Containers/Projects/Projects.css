@@ -1,23 +1,6 @@
-.banana {
-  background: url("../../images/Portfolio/Ciphr.jpg") center center/cover;
-  height: 240px;
-  max-width: 100%;
-}
-.bob {
-  background: url("../../images/Portfolio/Gifted.jpg") center center/cover;
-}
-.a {
-  background: url("../../images/Portfolio/GoogleBooksSearch.png") center center/cover;
-}
-
-.b {
-  height: 240px;
-  max-width: 100%;
-}
-
-
-div img {
-  object-fit:fill;
+img {
+  object-fit: cover !important;
+  height: 350px !important;
 }
 
 /* Moves the top left margin edge by half its size */
