@@ -1,6 +1,6 @@
 import IMAGES from "../../images/images";
 
-const Carousel = () => {
+const Carousel = ({images}) => {
   return (
     <div
       id="carouselExampleControls"
@@ -9,13 +9,13 @@ const Carousel = () => {
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={IMAGES.Projects.Ciphr.image} className="d-block w-100" alt="..." />
+          <img src={images.one} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src={IMAGES.Projects.Gifted.image} className="d-block w-100" alt="..." />
+          <img src={images.two} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-item">
-          <img src={IMAGES.Projects.GoogleBooksSearch.image} className="d-block w-100" alt="..." />
+          <img src={images.three} className="d-block w-100" alt="..." />
         </div>
       </div>
       <button
