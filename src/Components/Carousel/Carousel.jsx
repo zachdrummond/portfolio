@@ -1,6 +1,4 @@
-import IMAGES from "../../images/images";
-
-const Carousel = ({images}) => {
+const Carousel = ({ images }) => {
   return (
     <div
       id="carouselExampleControls"

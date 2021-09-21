@@ -4,7 +4,7 @@ import Project from "../../Components/Project/Project";
 
 const ProjectGallery = () => {
   return (
-    <section id="ProjectGallery" className="container mt-5">
+    <section id="Projects" className="container mt-5">
       <div className="row row-cols-3">
         <div className="col-sm-12">
           <h1 className="text-center">Projects</h1>
