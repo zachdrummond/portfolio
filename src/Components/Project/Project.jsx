@@ -1,8 +1,6 @@
 import Modal from "../../Components/Modal/Modal";
 
-const Project = ({ name, description, image, alt, link, gitHub }) => {
-  const id = name.replace(/\s+/g, "");
-
+const Project = ({ id, name, description, image, alt, link, gitHub }) => {
   return (
     <figure className="position-relative p-0 m-0">
       <img className="gallery figure-img img-fluid m-0" src={image} alt={alt} />
