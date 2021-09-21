@@ -1,6 +1,6 @@
 const Link = ({ href }) => {
   return (
-    <button className="btn btn-sm btn-danger" href={href} target="_blank" rel="noreferrer">
+    <a className="btn btn-sm btn-danger" href={href} target="_blank" rel="noreferrer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"
@@ -13,7 +13,7 @@ const Link = ({ href }) => {
         <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
       </svg>
       <span className="mx-2">Go to Site</span>
-    </button>
+    </a>
   );
 };
 
