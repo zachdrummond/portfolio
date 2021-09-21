@@ -7,11 +7,11 @@ const IMAGES = {
       pitch: "A platform to share and solve coding algorithms.",
       description:
         "Ciphr is a platform to share and solve coding algorithms. It enables developers to connect with each other in order to strengthen their critical thinking abilities and problem solving skills.",
-      image: require("./Portfolio/Ciphr.jpg").default,
+      image: require("./Projects/Ciphr.jpg").default,
       alt: "Ciphr Project",
       link: "https://ciphr.dev/",
       gitHub: "https://github.com/zachdrummond/ciphr",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      tech: "React, Node.js, MongoDB, Express",
     },
     Gifted: {
       id: "Gifted",
@@ -19,11 +19,16 @@ const IMAGES = {
       pitch: "Track all of your gifts in one organized place.",
       description:
         "Gifted is an app that tracks all of your gifts in one organized place. There is a table that organizes all of the gifts you receive from others and a table that organizes all of the gifts that you send to others.",
-      image: require("./Portfolio/Gifted.jpg").default,
+      images: {
+        logo: require("./Projects/Gifted/Gifted.jpg").default,
+        1: require("./Projects/Gifted/giftsReceivedPage.png").default,
+        2: require("./Projects/Gifted/addReceivedPage.png").default,
+        3: require("./Projects/Gifted/sentGiftsPage.png").default,
+      },
       alt: "Gifted Project",
       link: "http://gifted-project2.herokuapp.com/",
       gitHub: "https://github.com/zachdrummond/gifted",
-      tech: ["JavaScript", "Node.js", "MySQL", "Express"],
+      tech: "JavaScript, Node.js, MySQL, Express",
     },
     BudgetTracker: {
       id: "BudgetTracker",
@@ -31,11 +36,11 @@ const IMAGES = {
       pitch: "Manage your financial budget.",
       description:
         "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
-      image: require("./Portfolio/BudgetTracker.png").default,
+      image: require("./Projects/BudgetTracker.png").default,
       alt: "Budget Tracker Project",
       link: "https://pwa-budget-tracker-zd.herokuapp.com/",
       gitHub: "https://github.com/zachdrummond/pwa-budget-tracker",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      tech: "React, Node.js, MongoDB, Express",
     },
     GoogleBooksSearch: {
       id: "GoogleBooksSearch",
@@ -43,11 +48,11 @@ const IMAGES = {
       pitch: "Create your own library via Google Books API.",
       description:
         "Google Books Search is an app that uses Google Books API to find and save any book.",
-      image: require("./Portfolio/GoogleBooksSearch.png").default,
+      image: require("./Projects/GoogleBooksSearch.png").default,
       alt: "Google Books Search Project",
       link: "https://google-books-search-zd.herokuapp.com/search",
       gitHub: "https://github.com/zachdrummond/google-books-search",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      tech: "React, Node.js, MongoDB, Express",
     },
     EatDaBurger: {
       id: "Eat-da-Burger",
@@ -55,11 +60,11 @@ const IMAGES = {
       pitch: "Create and eat a fictional burger.",
       description:
         "Do you dream about tasty burgers? Eat-da-Burger is an app where you can create any fictional burger you desire and eat it online!",
-      image: require("./Portfolio/Eat-da-Burger.png").default,
+      image: require("./Projects/Eat-da-Burger.png").default,
       alt: "Eat-da-Burger Project",
       link: "https://eat-da-burger-zachdrummond.herokuapp.com/",
       gitHub: "https://github.com/zachdrummond/eat-da-burger",
-      tech: ["JavaScript", "Node.js", "MySQL", "Express"],
+      tech: "JavaScript, Node.js, MySQL, Express",
     },
     FindYourAdventure: {
       id: "FindYourAdventure",
@@ -67,11 +72,11 @@ const IMAGES = {
       pitch: "Plan your next visit to a US National Park.",
       description:
         "Find Your Adventure is a website that gives you everything you need to know about a national park site in one place, based on your preferences. We want to help users like you spend your precious time at one of America’s national park site, not online trying to get there.",
-      image: require("./Portfolio/FindYourAdventure.png").default,
+      image: require("./Projects/FindYourAdventure.png").default,
       alt: "Find Your Adventure Project",
       link: "https://zachdrummond.github.io/Find-Your-Adventure/",
       gitHub: "https://github.com/zachdrummond/Find-Your-Adventure",
-      tech: ["JavaScript", "HTML", "CSS", "Bootstrap"],
+      tech: "JavaScript, HTML, CSS, Bootstrap",
     },
   },
   Skills: {

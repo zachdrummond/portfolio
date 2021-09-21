@@ -2,7 +2,7 @@ import Carousel from "../Carousel/Carousel";
 import GitHub from "../../Components/Icons/GitHub";
 import Link from "../../Components/Icons/Link";
 
-const Modal = ({ id, name, description, link, gitHub }) => {
+const Modal = ({ id, name, description, link, gitHub, tech }) => {
   return (
     <div
       className="modal fade"
@@ -13,7 +13,7 @@ const Modal = ({ id, name, description, link, gitHub }) => {
     >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content">
-          <Carousel/>
+          <Carousel />
           <div className="modal-header">
             <h5 className="modal-title" id={id}>
               {name}
@@ -25,7 +25,11 @@ const Modal = ({ id, name, description, link, gitHub }) => {
               aria-label="Close"
             ></button>
           </div>
-          <div className="modal-body">{description}</div>
+          <div className="modal-body">
+            <span>{tech}</span>
+            <hr />
+            {description}
+          </div>
           <div className="modal-footer">
             {/* Link to Website */}
             <Link href={link} />

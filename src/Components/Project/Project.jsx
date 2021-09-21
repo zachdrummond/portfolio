@@ -1,6 +1,6 @@
 import Modal from "../../Components/Modal/Modal";
 
-const Project = ({ id, name, pitch, description, image, alt, link, gitHub }) => {
+const Project = ({ id, name, pitch, description, image, alt, link, gitHub, tech }) => {
   return (
     <figure className="position-relative p-0 m-0">
       <img className="gallery figure-img img-fluid m-0" src={image} alt={alt} />
@@ -22,6 +22,7 @@ const Project = ({ id, name, pitch, description, image, alt, link, gitHub }) => 
         description={description}
         link={link}
         gitHub={gitHub}
+        tech={tech}
       />
     </figure>
   );
