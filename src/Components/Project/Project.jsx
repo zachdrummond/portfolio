@@ -1,11 +1,11 @@
 import Modal from "../../Components/Modal/Modal";
 
-const Project = ({ id, name, description, image, alt, link, gitHub }) => {
+const Project = ({ id, name, pitch, description, image, alt, link, gitHub }) => {
   return (
     <figure className="position-relative p-0 m-0">
       <img className="gallery figure-img img-fluid m-0" src={image} alt={alt} />
       <figcaption className="w-100 position-absolute text-center">
-        {name} <br /> <span> {description} </span>
+        {name} <br /> <span> {pitch} </span>
       </figcaption>
       {/* Moves the top left margin edge by half its size */}
       <button
