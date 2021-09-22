@@ -67,7 +67,8 @@ const IMAGES = {
       description:
         "Do you dream about tasty burgers? Eat-da-Burger is an app where you can create any fictional burger you desire and eat it online!",
       images: {
-        logo: require("./Projects//EatDaBurger/Eat-da-Burger.png").default,
+        logo: require("./Projects//EatDaBurger/BothBurgers.png").default,
+        one: require("./Projects//EatDaBurger/BurgersToEat.png").default,
       },
       alt: "Eat-da-Burger Project",
       link: "https://eat-da-burger-zachdrummond.herokuapp.com/",

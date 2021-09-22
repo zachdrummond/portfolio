@@ -1,4 +1,4 @@
-const Carousel = ({ id, images }) => {
+const Carousel = ({ id, images, alt }) => {
   console.log(id);
   return (
     <div
@@ -8,14 +8,22 @@ const Carousel = ({ id, images }) => {
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={images.one} className="d-block w-100" alt="..." />
+          <img src={images.one} className="d-block w-100" alt={alt} />
         </div>
-        <div className="carousel-item">
-          <img src={images.two} className="d-block w-100" alt="..." />
-        </div>
-        <div className="carousel-item">
-          <img src={images.three} className="d-block w-100" alt="..." />
-        </div>
+        {images.two ? (
+          <div className="carousel-item">
+            <img src={images.two} className="d-block w-100" alt={alt} />
+          </div>
+        ) : (
+          ""
+        )}
+        {images.three ? (
+          <div className="carousel-item">
+            <img src={images.three} className="d-block w-100" alt={alt} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <button
         className="carousel-control-prev"

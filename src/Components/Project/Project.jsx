@@ -21,6 +21,7 @@ const Project = ({ id, name, pitch, description, images, alt, link, gitHub, tech
         name={name}
         description={description}
         images={images}
+        alt={alt}
         link={link}
         gitHub={gitHub}
         tech={tech}
