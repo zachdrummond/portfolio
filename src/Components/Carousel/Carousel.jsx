@@ -1,7 +1,7 @@
 const Carousel = ({ images }) => {
   return (
     <div
-      id="carouselExampleControls"
+      id="carousel"
       className="carousel slide"
       data-bs-ride="carousel"
     >
@@ -19,7 +19,7 @@ const Carousel = ({ images }) => {
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleControls"
+        data-bs-target="#carousel"
         data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -28,7 +28,7 @@ const Carousel = ({ images }) => {
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleControls"
+        data-bs-target="#carousel"
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
