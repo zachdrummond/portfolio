@@ -39,7 +39,10 @@ const IMAGES = {
       description:
         "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
       images: {
-        logo: require("./Projects/BudgetTracker/BudgetTracker.png").default,
+        logo: require("./Projects/BudgetTracker/Example.png").default,
+        one: require("./Projects/BudgetTracker/HomePage.png").default,
+        two: require("./Projects/BudgetTracker/Online.png").default,
+        three: require("./Projects/BudgetTracker/Offline.png").default,
       },
       alt: "Budget Tracker Project",
       link: "https://pwa-budget-tracker-zd.herokuapp.com/",
@@ -53,7 +56,9 @@ const IMAGES = {
       description:
         "Google Books Search is an app that uses Google Books API to find and save any book.",
       images: {
-        logo: require("./Projects/GoogleBooksSearch/GoogleBooksSearch.png").default,
+        logo: require("./Projects/GoogleBooksSearch/HomePage.png").default,
+        one: require("./Projects/GoogleBooksSearch/SavedBooksPage.png").default,
+        two: require("./Projects/GoogleBooksSearch/SearchResultsPage.png").default,
       },
       alt: "Google Books Search Project",
       link: "https://google-books-search-zd.herokuapp.com/search",
