@@ -8,7 +8,10 @@ const IMAGES = {
       description:
         "Ciphr is a platform to share and solve coding algorithms. It enables developers to connect with each other in order to strengthen their critical thinking abilities and problem solving skills.",
       images: {
-        logo: require("./Projects/Ciphr/Ciphr.jpg").default,
+        logo: require("./Projects/Ciphr/Ciphr.png").default,
+        one: require("./Projects/Ciphr/HomePage.png").default,
+        two: require("./Projects/Ciphr/ChallengePage.png").default,
+        three: require("./Projects/Ciphr/SolutionPage.png").default,
       },
       alt: "Ciphr Project",
       link: "https://ciphr.dev/",
