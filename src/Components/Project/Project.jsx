@@ -12,7 +12,7 @@ const Project = ({ id, name, pitch, description, images, alt, link, gitHub, tech
         type="button"
         className="btn btn-danger position-absolute top-50 start-50 translate-middle"
         data-bs-toggle="modal"
-        data-bs-target={`#${id}`}
+        data-bs-target={`#modal-${id}`}
       >
         Learn More
       </button>

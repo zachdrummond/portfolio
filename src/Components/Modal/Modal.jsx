@@ -6,14 +6,14 @@ const Modal = ({ id, name, description, images, link, gitHub, tech }) => {
   return (
     <div
       className="modal fade"
-      id={id}
+      id={`modal-${id}`}
       tabIndex="-1"
-      aria-labelledby={id}
+      aria-labelledby={`modal-${id}`}
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered">
+      <div className="modal-dialog modal-dialog-centered modal-lg">
         <div className="modal-content">
-          <Carousel images={images}/>
+          <Carousel id={id} images={images}/>
           <div className="modal-header">
             <h5 className="modal-title" id={id}>
               {name}

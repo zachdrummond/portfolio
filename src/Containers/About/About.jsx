@@ -1,6 +1,4 @@
 import TechSkills from "../../Components/TechSkills/TechSkills"
-import Carousel from "../../Components/Carousel/Carousel";
-import IMAGES from "../../images/images";
 
 const About = () => {
   return (
@@ -14,8 +12,7 @@ const About = () => {
         id="aboutMeImg"
         height="90"
       /> */}
-      <TechSkills images={IMAGES.Projects.FindYourAdventure.images}/>
-      <Carousel/>
+      <TechSkills/>
     </main>
   );
 };
