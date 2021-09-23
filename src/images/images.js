@@ -18,55 +18,6 @@ const IMAGES = {
       gitHub: "https://github.com/zachdrummond/ciphr",
       tech: "React, Node.js, MongoDB, Express",
     },
-    Gifted: {
-      id: "Gifted",
-      name: "Gifted",
-      pitch: "Track all of your gifts in one organized place.",
-      description:
-        "Gifted is an app that tracks all of your gifts in one organized place. There is a table that organizes all of the gifts you receive from others and a table that organizes all of the gifts that you send to others.",
-      images: {
-        logo: require("./Projects/Gifted/HomePage.png").default,
-        one: require("./Projects/Gifted/giftsReceivedPage.png").default,
-        two: require("./Projects/Gifted/addReceivedPage.png").default,
-        three: require("./Projects/Gifted/sentGiftsPage.png").default,
-      },
-      alt: "Gifted Project",
-      link: "http://gifted-project2.herokuapp.com/",
-      gitHub: "https://github.com/zachdrummond/gifted",
-      tech: "JavaScript, Node.js, MySQL, Express",
-    },
-    BudgetTracker: {
-      id: "BudgetTracker",
-      name: "Budget Tracker",
-      pitch: "Manage your financial budget.",
-      description:
-        "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
-      images: {
-        logo: require("./Projects/BudgetTracker/Example.png").default,
-        one: require("./Projects/BudgetTracker/HomePage.png").default,
-      },
-      alt: "Budget Tracker Project",
-      link: "https://pwa-budget-tracker-zd.herokuapp.com/",
-      gitHub: "https://github.com/zachdrummond/pwa-budget-tracker",
-      tech: "React, Node.js, MongoDB, Express",
-    },
-    GoogleBooksSearch: {
-      id: "GoogleBooksSearch",
-      name: "Google Books Search",
-      pitch: "Create your own library via Google Books API.",
-      description:
-        "Google Books Search is an app that uses Google Books API to find and save any book.",
-      images: {
-        logo: require("./Projects/GoogleBooksSearch/HomePage.png").default,
-        one: require("./Projects/GoogleBooksSearch/SavedBooksPage.png").default,
-        two: require("./Projects/GoogleBooksSearch/SearchResultsPage.png")
-          .default,
-      },
-      alt: "Google Books Search Project",
-      link: "https://google-books-search-zd.herokuapp.com/search",
-      gitHub: "https://github.com/zachdrummond/google-books-search",
-      tech: "React, Node.js, MongoDB, Express",
-    },
     EatDaBurger: {
       id: "Eat-da-Burger",
       name: "Eat-da-Burger",
@@ -99,6 +50,55 @@ const IMAGES = {
       link: "https://zachdrummond.github.io/Find-Your-Adventure/",
       gitHub: "https://github.com/zachdrummond/Find-Your-Adventure",
       tech: "JavaScript, HTML, CSS, Bootstrap",
+    },
+    GoogleBooksSearch: {
+      id: "GoogleBooksSearch",
+      name: "Google Books Search",
+      pitch: "Create your own library via Google Books API.",
+      description:
+        "Google Books Search is an app that uses Google Books API to find and save any book.",
+      images: {
+        logo: require("./Projects/GoogleBooksSearch/HomePage.png").default,
+        one: require("./Projects/GoogleBooksSearch/SavedBooksPage.png").default,
+        two: require("./Projects/GoogleBooksSearch/SearchResultsPage.png")
+          .default,
+      },
+      alt: "Google Books Search Project",
+      link: "https://google-books-search-zd.herokuapp.com/search",
+      gitHub: "https://github.com/zachdrummond/google-books-search",
+      tech: "React, Node.js, MongoDB, Express",
+    },
+    Gifted: {
+      id: "Gifted",
+      name: "Gifted",
+      pitch: "Track all of your gifts in one organized place.",
+      description:
+        "Gifted is an app that tracks all of your gifts in one organized place. There is a table that organizes all of the gifts you receive from others and a table that organizes all of the gifts that you send to others.",
+      images: {
+        logo: require("./Projects/Gifted/HomePage.png").default,
+        one: require("./Projects/Gifted/giftsReceivedPage.png").default,
+        two: require("./Projects/Gifted/addReceivedPage.png").default,
+        three: require("./Projects/Gifted/sentGiftsPage.png").default,
+      },
+      alt: "Gifted Project",
+      link: "http://gifted-project2.herokuapp.com/",
+      gitHub: "https://github.com/zachdrummond/gifted",
+      tech: "JavaScript, Node.js, MySQL, Express",
+    },
+    BudgetTracker: {
+      id: "BudgetTracker",
+      name: "Budget Tracker",
+      pitch: "Manage your financial budget.",
+      description:
+        "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
+      images: {
+        logo: require("./Projects/BudgetTracker/Example.png").default,
+        one: require("./Projects/BudgetTracker/HomePage.png").default,
+      },
+      alt: "Budget Tracker Project",
+      link: "https://pwa-budget-tracker-zd.herokuapp.com/",
+      gitHub: "https://github.com/zachdrummond/pwa-budget-tracker",
+      tech: "React, Node.js, MongoDB, Express",
     },
   },
   Skills: {

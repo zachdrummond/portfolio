@@ -1,4 +1,5 @@
 import "./About.css";
+// import IMAGES from "../../images/images";
 import TechSkills from "../../Components/TechSkills/TechSkills"
 
 const About = () => {

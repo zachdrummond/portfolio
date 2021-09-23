@@ -10,7 +10,7 @@ const Project = ({ id, name, pitch, description, images, alt, link, gitHub, tech
       {/* Moves the top left margin edge by half its size */}
       <button
         type="button"
-        className="btn btn-danger position-absolute top-50 start-50 translate-middle"
+        className="btn btn-lg btn-danger position-absolute top-50 start-50 translate-middle"
         data-bs-toggle="modal"
         data-bs-target={`#modal-${id}`}
       >

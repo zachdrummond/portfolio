@@ -9,10 +9,6 @@ const TechSkills = () => {
       </h2>
       <h1 className="mt-5">Technical Skills</h1>
       <div className="d-flex justify-content-evenly">
-        <div className="">
-            <img className="skill-img img-fluid"src={IMAGES.Skills.Javascript.image} alt={IMAGES.Skills.Javascript.alt} />
-            <h5>{IMAGES.Skills.Javascript.name}</h5>
-          </div>
           <div className="">
             <img className="skill-img img-fluid"src={IMAGES.Skills.React.image} alt={IMAGES.Skills.React.alt} />
             <h5>{IMAGES.Skills.React.name}</h5>
@@ -38,6 +34,10 @@ const TechSkills = () => {
           <div className="">
             <img className="skill-img img-fluid"src={IMAGES.Skills.CSS.image} alt={IMAGES.Skills.CSS.alt} />
             <h5>{IMAGES.Skills.CSS.name}</h5>
+          </div>
+          <div className="">
+            <img className="skill-img img-fluid"src={IMAGES.Skills.Javascript.image} alt={IMAGES.Skills.Javascript.alt} />
+            <h5>{IMAGES.Skills.Javascript.name}</h5>
           </div>
           <div className="">
             <img className="skill-img img-fluid"src={IMAGES.Skills.Git.image} alt={IMAGES.Skills.Git.alt} />
