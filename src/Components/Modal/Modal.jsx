@@ -14,7 +14,7 @@ const Modal = ({ id, name, description, images, alt, link, gitHub, tech }) => {
       <div className="modal-dialog modal-dialog-centered modal-lg">
         <div className="modal-content">
           {images.one ? <Carousel id={id} images={images} alt={alt} /> : ""}
-          <div className="modal-header">
+          <div className="modal-header mt-3">
             <h5 className="modal-title" id={id}>
               {name}
             </h5>

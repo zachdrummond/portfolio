@@ -44,8 +44,6 @@ const IMAGES = {
       images: {
         logo: require("./Projects/BudgetTracker/Example.png").default,
         one: require("./Projects/BudgetTracker/HomePage.png").default,
-        two: require("./Projects/BudgetTracker/Online.png").default,
-        three: require("./Projects/BudgetTracker/Offline.png").default,
       },
       alt: "Budget Tracker Project",
       link: "https://pwa-budget-tracker-zd.herokuapp.com/",
