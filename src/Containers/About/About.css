@@ -1,8 +1,12 @@
 /* An id that allows the text to wrap around the image on the About Me Page */
 #aboutMeImg {
-    float: left !important;
-    margin-right: 20px !important;
-    margin-bottom: 5px !important;
-    max-width: 18% !important;
-    border-radius: 50%;
-  }
+  float: left !important;
+  margin-right: 20px !important;
+  margin-bottom: 5px !important;
+  max-width: 18% !important;
+  border-radius: 50%;
+}
+
+.skill-img {
+  height: 65px !important;
+}

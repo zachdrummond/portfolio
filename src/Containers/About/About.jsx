@@ -1,3 +1,4 @@
+import "./About.css";
 import TechSkills from "../../Components/TechSkills/TechSkills"
 
 const About = () => {

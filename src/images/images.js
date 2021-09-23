@@ -122,6 +122,11 @@ const IMAGES = {
       image: require("./Skills/Expressjs.svg").default,
       alt: "Expressjs Logo",
     },
+    MongoDB: {
+      name: "MONGO DB",
+      image: require("./Skills/MongoDB.svg").default,
+      alt: "MongoDB Logo",
+    },
     HTML: {
       name: "HTML",
       image: require("./Skills/HTML.svg").default,
@@ -132,20 +137,15 @@ const IMAGES = {
       image: require("./Skills/CSS.svg").default,
       alt: "CSS Logo",
     },
-    Git: {
-      name: "GIT",
-      image: require("./Skills/Git.svg").default,
-      alt: "Git Logo",
-    },
-    MongoDB: {
-      name: "MONGODB",
-      image: require("./Skills/MongoDB.svg").default,
-      alt: "MongoDB Logo",
-    },
     MySQL: {
       name: "MYSQL",
       image: require("./Skills/MySQL.svg").default,
       alt: "MySQL Logo",
+    },
+    Git: {
+      name: "GIT",
+      image: require("./Skills/Git.svg").default,
+      alt: "Git Logo",
     },
   },
 };
