@@ -7,18 +7,18 @@ const Carousel = ({ id, images, alt }) => {
     >
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src={images.one} className="d-block w-100" alt={alt} />
+          <img src={images.one} className="d-block w-100 img-fluid" alt={alt} />
         </div>
         {images.two ? (
           <div className="carousel-item">
-            <img src={images.two} className="d-block w-100" alt={alt} />
+            <img src={images.two} className="d-block w-100 img-fluid" alt={alt} />
           </div>
         ) : (
           ""
         )}
         {images.three ? (
           <div className="carousel-item">
-            <img src={images.three} className="d-block w-100" alt={alt} />
+            <img src={images.three} className="d-block w-100 img-fluid" alt={alt} />
           </div>
         ) : (
           ""

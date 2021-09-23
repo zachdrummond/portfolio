@@ -59,7 +59,8 @@ const IMAGES = {
       images: {
         logo: require("./Projects/GoogleBooksSearch/HomePage.png").default,
         one: require("./Projects/GoogleBooksSearch/SavedBooksPage.png").default,
-        two: require("./Projects/GoogleBooksSearch/SearchResultsPage.png").default,
+        two: require("./Projects/GoogleBooksSearch/SearchResultsPage.png")
+          .default,
       },
       alt: "Google Books Search Project",
       link: "https://google-books-search-zd.herokuapp.com/search",
@@ -90,7 +91,8 @@ const IMAGES = {
       images: {
         logo: require("./Projects/FindYourAdventure/HomePage.png").default,
         one: require("./Projects/FindYourAdventure/ActivitiesPage.png").default,
-        two: require("./Projects/FindYourAdventure/ListOfParksPage.png").default,
+        two: require("./Projects/FindYourAdventure/ListOfParksPage.png")
+          .default,
         three: require("./Projects/FindYourAdventure/ParkPage.png").default,
       },
       alt: "Find Your Adventure Project",
@@ -100,15 +102,51 @@ const IMAGES = {
     },
   },
   Skills: {
-    Javascript: require("./Skills/Javascript.svg").default,
-    React: require("./Skills/React.svg").default,
-    Nodejs: require("./Skills/Nodejs.svg").default,
-    Expressjs: require("./Skills/Expressjs.svg").default,
-    HTML: require("./Skills/HTML.svg").default,
-    CSS: require("./Skills/CSS.svg").default,
-    Git: require("./Skills/Git.svg").default,
-    MongoDB: require("./Skills/MongoDB.svg").default,
-    MySQL: require("./Skills/MySQL.svg").default,
+    Javascript: {
+      name: "JAVASCRIPT",
+      image: require("./Skills/Javascript.svg").default,
+      alt: "JavaScript Logo",
+    },
+    React: {
+      name: "REACT.JS",
+      image: require("./Skills/React.svg").default,
+      alt: "React Logo",
+    },
+    Nodejs: {
+      name: "NODE.JS",
+      image: require("./Skills/Nodejs.svg").default,
+      alt: "Nodejs Logo",
+    },
+    Expressjs: {
+      name: "EXPRESS.JS",
+      image: require("./Skills/Expressjs.svg").default,
+      alt: "Expressjs Logo",
+    },
+    HTML: {
+      name: "HTML",
+      image: require("./Skills/HTML.svg").default,
+      alt: "HTML Logo",
+    },
+    CSS: {
+      name: "CSS",
+      image: require("./Skills/CSS.svg").default,
+      alt: "CSS Logo",
+    },
+    Git: {
+      name: "GIT",
+      image: require("./Skills/Git.svg").default,
+      alt: "Git Logo",
+    },
+    MongoDB: {
+      name: "MONGODB",
+      image: require("./Skills/MongoDB.svg").default,
+      alt: "MongoDB Logo",
+    },
+    MySQL: {
+      name: "MYSQL",
+      image: require("./Skills/MySQL.svg").default,
+      alt: "MySQL Logo",
+    },
   },
 };
 export default IMAGES;
