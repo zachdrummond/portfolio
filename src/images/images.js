@@ -102,50 +102,54 @@ const IMAGES = {
     },
   },
   Skills: {
-    Javascript: {
-      name: "JAVASCRIPT",
-      image: require("./Skills/Javascript.svg").default,
-      alt: "JavaScript Logo",
+    TopRow: {
+      React: {
+        name: "REACT.JS",
+        image: require("./Skills/React.svg").default,
+        alt: "React Logo",
+      },
+      Nodejs: {
+        name: "NODE.JS",
+        image: require("./Skills/Nodejs.svg").default,
+        alt: "Nodejs Logo",
+      },
+      Expressjs: {
+        name: "EXPRESS.JS",
+        image: require("./Skills/Expressjs.svg").default,
+        alt: "Expressjs Logo",
+      },
+      MongoDB: {
+        name: "MONGO DB",
+        image: require("./Skills/MongoDB.svg").default,
+        alt: "MongoDB Logo",
+      },
     },
-    React: {
-      name: "REACT.JS",
-      image: require("./Skills/React.svg").default,
-      alt: "React Logo",
-    },
-    Nodejs: {
-      name: "NODE.JS",
-      image: require("./Skills/Nodejs.svg").default,
-      alt: "Nodejs Logo",
-    },
-    Expressjs: {
-      name: "EXPRESS.JS",
-      image: require("./Skills/Expressjs.svg").default,
-      alt: "Expressjs Logo",
-    },
-    MongoDB: {
-      name: "MONGO DB",
-      image: require("./Skills/MongoDB.svg").default,
-      alt: "MongoDB Logo",
-    },
-    HTML: {
-      name: "HTML",
-      image: require("./Skills/HTML.svg").default,
-      alt: "HTML Logo",
-    },
-    CSS: {
-      name: "CSS",
-      image: require("./Skills/CSS.svg").default,
-      alt: "CSS Logo",
-    },
-    MySQL: {
-      name: "MYSQL",
-      image: require("./Skills/MySQL.svg").default,
-      alt: "MySQL Logo",
-    },
-    Git: {
-      name: "GIT",
-      image: require("./Skills/Git.svg").default,
-      alt: "Git Logo",
+    BottomRow: {
+      HTML: {
+        name: "HTML",
+        image: require("./Skills/HTML.svg").default,
+        alt: "HTML Logo",
+      },
+      CSS: {
+        name: "CSS",
+        image: require("./Skills/CSS.svg").default,
+        alt: "CSS Logo",
+      },
+      Javascript: {
+        name: "JAVASCRIPT",
+        image: require("./Skills/Javascript.svg").default,
+        alt: "JavaScript Logo",
+      },
+      Git: {
+        name: "GIT",
+        image: require("./Skills/Git.svg").default,
+        alt: "Git Logo",
+      },
+      MySQL: {
+        name: "MYSQL",
+        image: require("./Skills/MySQL.svg").default,
+        alt: "MySQL Logo",
+      },
     },
   },
 };
