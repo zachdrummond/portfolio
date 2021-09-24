@@ -1,4 +1,5 @@
 import IMAGES from "../../images/images";
+import Section from "../../Components/Section/Section";
 
 const TechSkills = () => {
   const objectMap = (object) => {
@@ -18,15 +19,10 @@ const TechSkills = () => {
   };
 
   return (
-    <>
-      <h2>
-        I'm a full stack web developer with a passion for developing {<br />}
-        mobile-first, user-friendly apps that solve real world needs.
-      </h2>
-      <h1 className="mt-5">Technical Skills</h1>
+    <Section name="Technical Skills">
       {objectMap(IMAGES.Skills.TopRow)}
       {objectMap(IMAGES.Skills.BottomRow)}
-    </>
+    </Section>
   );
 };
 

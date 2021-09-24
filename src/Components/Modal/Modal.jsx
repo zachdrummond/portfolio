@@ -14,8 +14,11 @@ const Modal = ({ id, name, description, images, alt, link, gitHub, tech }) => {
       <div className="modal-dialog modal-dialog-centered modal-lg">
         <div className="modal-content">
           {images.one ? <Carousel id={id} images={images} alt={alt} /> : ""}
-          <div className="modal-header mt-3">
-            <h5 className="modal-title" id={id}>
+          <div className="modal-header mt-3 position-relative">
+            <h5
+              className="modal-title position-absolute top-50 start-50 translate-middle"
+              id={id}
+            >
               {name}
             </h5>
             <button
@@ -30,7 +33,7 @@ const Modal = ({ id, name, description, images, alt, link, gitHub, tech }) => {
             <hr />
             {description}
           </div>
-          <div className="modal-footer">
+          <div className="modal-footer justify-content-center">
             {/* Link to Website */}
             <Link href={link} />
             {/* Link to Website on GitHub */}

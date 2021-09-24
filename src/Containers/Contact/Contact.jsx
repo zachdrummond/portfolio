@@ -1,6 +1,7 @@
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
+import Section from "../../Components/Section/Section";
 
 const Contact = () => {
   const {
@@ -30,9 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <main id="Contact" className="container mt-5">
-      <h1 className="text-center">Contact</h1>
-      <hr />
+    <Section id="Contact" name="Contact">
       {/* Form */}
       <form className="row" id="row2" onSubmit={handleSubmit(onSubmit)}>
         {/* Form - Name */}
@@ -116,7 +115,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
-    </main>
+    </Section>
   );
 };
 
