@@ -21,12 +21,12 @@ const Project = ({
         src={images.logo}
         alt={alt}
       />
-      <figcaption className="position-absolute text-center">
+      <figcaption className="text-center w-100">
         {name} <br /> <span> {pitch} </span>
       </figcaption>
       <button
         type="button"
-        className="btn btn-lg btn-danger position-absolute top-50 start-50 translate-middle" // Moves the top left margin edge by half its size
+        className="gallery-btn btn btn-lg btn-danger"
         data-bs-toggle="modal"
         data-bs-target={`#modal-${id}`} // Needs a specific id to target the right modal to open
       >
