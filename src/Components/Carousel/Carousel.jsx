@@ -1,6 +1,6 @@
 // SECTION - Projects
 // SUMMARY - Displays reusable Bootstrap Carousel of project images in a Bootstrap Modal
-// PROPS - Specific project id, images, alt
+// PROPS - All come from a specific project
 const Carousel = ({ id, images, alt }) => {
   return (
     <div
