@@ -2,12 +2,12 @@
 .gallery {
   object-fit: cover !important; /* Fill the given space but keep the image aspect ratio (image clipped)*/
   height: 300px;
+  transition: opacity 0.8s ease-in-out;
 }
 
 /* Styles the Project Image Container */
 figure:hover .gallery{
   opacity: 0;
-  transition: opacity 0.8s;
 }
 
 /* Styles the Project Image Caption */
@@ -18,11 +18,11 @@ figcaption {
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
+  transition: all 0.8s ease-in-out;
 }
 figure:hover figcaption {
   opacity: 1;
   top: 20%;
-  transition: all 0.8s;
 }
 
 /* Styles the Project Image Button */
@@ -33,11 +33,11 @@ figure:hover figcaption {
   left: 50%;
   transform: translate(-50%);
   opacity: 0;
+  transition: all 0.8s ease-in-out;
 }
 figure:hover .gallery-btn {
   opacity: 1;
   bottom: 40%;
-  transition: all 0.8s;
 }
 
 /* Styles the Carousel Images in the Modal */
