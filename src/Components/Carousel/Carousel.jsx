@@ -1,7 +1,10 @@
+// SECTION - Projects
+// SUMMARY - Displays reusable Bootstrap Carousel of project images in a Bootstrap Modal
+// PROPS - Specific project id, images, alt
 const Carousel = ({ id, images, alt }) => {
   return (
     <div
-      id={`carousel-${id}`}
+      id={`carousel-${id}`} // Needs a specific id to differentiate it from the other carousels
       className="carousel slide"
       data-bs-ride="carousel"
     >
@@ -11,22 +14,30 @@ const Carousel = ({ id, images, alt }) => {
         </div>
         {images.two ? (
           <div className="carousel-item">
-            <img src={images.two} className="d-block w-100 img-fluid" alt={alt} />
+            <img
+              src={images.two}
+              className="d-block w-100 img-fluid"
+              alt={alt}
+            />
           </div>
         ) : (
           ""
         )}
         {images.three ? (
           <div className="carousel-item">
-            <img src={images.three} className="d-block w-100 img-fluid" alt={alt} />
+            <img
+              src={images.three}
+              className="d-block w-100 img-fluid"
+              alt={alt}
+            />
           </div>
         ) : (
           ""
         )}
       </div>
       {images.two ? (
+        // Carousel Buttons to change pictures
         <>
-          {" "}
           <button
             className="carousel-control-prev"
             type="button"

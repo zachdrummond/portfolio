@@ -6,7 +6,7 @@ const Modal = ({ id, name, description, images, alt, link, gitHub, tech }) => {
   return (
     <div
       className="modal fade"
-      id={`modal-${id}`}
+      id={`modal-${id}`} // Needs a specific id to differentiate it from the other modals
       tabIndex="-1"
       aria-labelledby={`modal-${id}`}
       aria-hidden="true"
