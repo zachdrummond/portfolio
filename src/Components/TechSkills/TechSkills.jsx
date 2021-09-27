@@ -8,7 +8,7 @@ const TechSkills = () => {
         {Object.keys(object).map((key) => {
           let { name, image, alt } = object[key];
           return (
-            <div className="col-2" key={key}>
+            <div className="col-2 border border-3 border-dark rounded-pill m-3 p-1" key={key}>
               <img className="skill-img img-fluid" src={image} alt={alt} />
               <h5>{name}</h5>
             </div>
