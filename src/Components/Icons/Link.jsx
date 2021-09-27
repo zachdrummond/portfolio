@@ -1,3 +1,5 @@
+// SUMMARY - Displays a link icon as a link to a specific URL
+// PROPS - href = The URL to the source
 const Link = ({ href }) => {
   return (
     <a className="btn btn-sm btn-danger" href={href} target="_blank" rel="noreferrer">

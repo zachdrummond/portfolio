@@ -1,3 +1,4 @@
+// SUMMARY - Displays the LinkedIn logo as a link to a LinkedIn Profile
 const LinkedIn = () => {
   return (
     <a

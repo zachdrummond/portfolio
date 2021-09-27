@@ -1,3 +1,5 @@
+// SUMMARY - Displays the GitHub logo as a link to a GitHub URL
+// PROPS - href = The GitHub URL
 const GitHub = ({href}) => {
     return (
       <a className="navbar-brand" href={href} target="_blank" rel="noreferrer">
