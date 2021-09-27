@@ -1,11 +1,32 @@
+import { useState, useEffect } from "react";
+
 // SECTION - Navbar
-// SUMMARY - Displays brand name
+// SUMMARY - Displays brand name and changes it based on scroll position
 const Name = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // SUMMARY - Checks the vertical scroll position and sets the state of isScrolled
+  // RETURNS - Nothing
+  const checkScrollPosition = () =>
+    window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
+
+  // SUMMARY - Adds event listener to scroll, calls function, removes event listener
+  // RETURNS - Nothing
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollPosition);
+    return () => {
+      window.removeEventListener("scroll", checkScrollPosition);
+    };
+  }, []);
+
   return (
     <>
       <a id="name" className="navbar-brand fw-bold font ms-3" href="/">
-        <span>&lt;&nbsp;</span>Z<span>ach&nbsp;</span>D
-        <span>rummond&nbsp;/&gt;</span>
+        {isScrolled ? (
+          <span>&lt;&nbsp;ZD&nbsp;/&gt;</span>
+        ) : (
+          <span>&lt;&nbsp;Zach Drummond&nbsp;/&gt;</span>
+        )}
       </a>
       {/* Navbar Collapsible Button for Nav-Items on the right side */}
       <button
