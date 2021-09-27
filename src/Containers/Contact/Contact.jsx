@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Section from "../../Components/Section/Section";
 
+// SECTION - Contact
+// SUMMARY - Displays the Contact Section with a header and 3 forms for Name, Email, and Message
 const Contact = () => {
   const {
     register,
@@ -32,7 +34,6 @@ const Contact = () => {
 
   return (
     <Section id="Contact" name="Contact">
-      {/* Form */}
       <form className="row" id="row2" onSubmit={handleSubmit(onSubmit)}>
         {/* Form - Name */}
         <div className="col-sm-12 pb-2" id="Name">
