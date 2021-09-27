@@ -19,7 +19,7 @@ const Modal = ({ id, name, description, images, alt, link, gitHub, tech }) => {
           {images.one ? <Carousel id={id} images={images} alt={alt} /> : ""}
           <div className="modal-header mt-3 position-relative">
             <h5
-              className="modal-title position-absolute top-50 start-50 translate-middle" // Centers this header
+              className="modal-title position-absolute top-50 start-50 translate-middle" // Moves the top left margin edge by half its size
               id={id}
             >
               {name}
