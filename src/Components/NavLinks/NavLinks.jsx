@@ -1,7 +1,8 @@
 import GitHub from "../Icons/GitHub";
 import LinkedIn from "../Icons/LinkedIn";
 
-// The Right Section of the Navbar
+// SECTION - Navbar
+// SUMMARY - Displays the nav-items and links to other resources
 const Links = () => {
   return (
     <div className="collapse navbar-collapse" id="navbarMenu">
