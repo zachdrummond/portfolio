@@ -1,9 +1,9 @@
-/* Makes the Navbar more opaque */
+/* Styles the Navbar */
 nav {
     opacity: 0.85!important;
   }
   
-/* For the Name in the Navbar*/
+/* Styles the Brand Name */
   #name {
     font-size: 25px;
   }
