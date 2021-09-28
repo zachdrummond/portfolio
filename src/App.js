@@ -1,16 +1,21 @@
-import About from "./Containers/About/About.jsx";
-import Contact from "./Containers/Contact/Contact.jsx";
-import Footer from "./Containers/Footer/Footer.jsx";
-import Navbar from "./Containers/Navbar/Navbar.jsx";
-import ProjectGallery from "./Containers/ProjectGallery/ProjectGallery.jsx";
+import { Suspense, lazy } from "react";
+import Footer from "./Containers/Footer/Footer";
+import Navbar from "./Containers/Navbar/Navbar";
+const About = lazy(() => import("./Containers/About/About"));
+const Contact = lazy(() => import("./Containers/Contact/Contact"));
+const ProjectGallery = lazy(() =>
+  import("./Containers/ProjectGallery/ProjectGallery")
+);
 
 function App() {
   return (
     <>
       <Navbar />
-      <About />
-      <ProjectGallery />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+        <About />
+        <ProjectGallery />
+        <Contact />
+      </Suspense>
       <Footer />
     </>
   );
