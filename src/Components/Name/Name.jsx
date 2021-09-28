@@ -30,10 +30,10 @@ const Name = () => {
       </a>
       {/* Navbar Collapsible Button for Nav-Items on the right side */}
       <button
-        className="navbar-toggler button"
+        className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarMenu"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
         aria-controls="navbarMenu"
         aria-expanded="false"
         aria-label="Toggle navigation"

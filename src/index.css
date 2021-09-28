@@ -3,3 +3,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   text-align: center;
 }
+
+#About, #Projects {
+  height: 100vh;
+}
