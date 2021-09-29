@@ -1,5 +1,10 @@
 const IMAGES = {
-  Headshot: require("./Headshot.jpg").default,
+  Profiles: {
+    Headshot: require("./Profiles/Headshot.jpg").default,
+    HeadshotCircle: require("./Profiles/HeadshotCircle.jfif").default,
+    GlassesHeadshot: require("./Profiles/GlassesHeadshot.jpg").default,
+    GlassesHeadshotCircle: require("./Profiles/GlassesHeadshotCircle.jfif").default,
+  },
   Projects: {
     Ciphr: {
       id: "Ciphr",

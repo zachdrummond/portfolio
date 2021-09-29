@@ -11,8 +11,8 @@ const About = () => {
       <div className="d-flex align-items-center">
         <div className="col-3 p-0">
           <img
-            className="img-fluid img-thumbnail rounded-circle w-75"
-            src={IMAGES.GlassesHeadshot}
+            className="img-fluid img-thumbnail rounded-circle"
+            src={IMAGES.Profiles.GlassesHeadshotCircle}
             alt="Head Shot of Zach Drummond"
           />
         </div>
