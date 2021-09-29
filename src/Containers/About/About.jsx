@@ -12,7 +12,7 @@ const About = () => {
         <div className="col-3 p-0">
           <img
             className="img-fluid img-thumbnail rounded-circle w-75"
-            src={IMAGES.Headshot}
+            src={IMAGES.GlassesHeadshot}
             alt="Head Shot of Zach Drummond"
           />
         </div>
