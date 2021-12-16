@@ -38,7 +38,7 @@ const Name = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon text-end"></span>
       </button>
     </>
   );
