@@ -3,9 +3,11 @@ import IMAGES from "../../images/images";
 import TechSkills from "../../Components/TechSkills/TechSkills";
 import Section from "../../Components/Section/Section";
 
+
 // SECTION - About
 // SUMMARY - Displays the About Section with a header, image, tagline, and technical skills
 const About = () => {
+  console.log(IMAGES.Profiles.Headshot);
   return (
     <Section id="About" name="Hey, I'm Zach!">
       <div className="d-flex align-items-center">
