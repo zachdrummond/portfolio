@@ -1,17 +1,28 @@
 /* Styles the Navbar */
 nav {
-    opacity: 0.85!important;
-  }
-  
+  opacity: 0.85 !important;
+}
+
 /* Styles the Brand Name */
-  #name {
-    font-size: 25px;
-  }
+#name {
+  font-size: 25px;
+}
 
 /* Anchor Links - Prevents Navbar from blocking the Header */
-  :target:before { /* :target - Targets URLs with a # and anchor name ... :before -  */
-    content: "";
-    display: block;
-    height: 100px; /* Sets the height of the target to 100px */
-    margin: -100px 0 0; /* Removes the added height */
-  }
+:target:before {
+  /* :target - Targets URLs with a # and anchor name ... :before -  */
+  content: "";
+  display: block;
+  height: 100px; /* Sets the height of the target to 100px */
+  margin: -100px 0 0; /* Removes the added height */
+}
+
+.HoverBlue:hover {
+  background-color: #1672b3;
+  border-radius: 10px;
+}
+
+#LinkedIn:hover {
+  background-color: white !important;
+  border-radius: 10px;
+}
