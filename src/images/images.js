@@ -110,49 +110,49 @@ const IMAGES = {
     TopRow: {
       React: {
         name: "REACT.JS",
-        image: require("./Skills/React.svg"),
+        image: require("./Skills/React.svg").default,
         alt: "React Logo",
       },
       Nodejs: {
         name: "NODE.JS",
-        image: require("./Skills/Nodejs.svg"),
+        image: require("./Skills/Nodejs.svg").default,
         alt: "Nodejs Logo",
       },
       Expressjs: {
         name: "EXPRESS.JS",
-        image: require("./Skills/Expressjs.svg"),
+        image: require("./Skills/Expressjs.svg").default,
         alt: "Expressjs Logo",
       },
       MongoDB: {
         name: "MONGO DB",
-        image: require("./Skills/MongoDB.svg"),
+        image: require("./Skills/MongoDB.svg").default,
         alt: "MongoDB Logo",
       },
     },
     BottomRow: {
       HTML: {
         name: "HTML",
-        image: require("./Skills/HTML.svg"),
+        image: require("./Skills/HTML.svg").default,
         alt: "HTML Logo",
       },
       CSS: {
         name: "CSS",
-        image: require("./Skills/CSS.svg"),
+        image: require("./Skills/CSS.svg").default,
         alt: "CSS Logo",
       },
       Javascript: {
         name: "JAVASCRIPT",
-        image: require("./Skills/Javascript.svg"),
+        image: require("./Skills/Javascript.svg").default,
         alt: "JavaScript Logo",
       },
       Git: {
         name: "GIT",
-        image: require("./Skills/Git.svg"),
+        image: require("./Skills/Git.svg").default,
         alt: "Git Logo",
       },
       MySQL: {
         name: "MYSQL",
-        image: require("./Skills/MySQL.svg"),
+        image: require("./Skills/MySQL.svg").default,
         alt: "MySQL Logo",
       },
     },
