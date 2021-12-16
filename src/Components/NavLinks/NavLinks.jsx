@@ -5,11 +5,11 @@ import LinkedIn from "../Icons/LinkedIn";
 // SUMMARY - Displays the nav-items and links to other resources
 const Links = () => {
   return (
-    <div id="navbarMenu" className="collapse navbar-collapse">
-      <div className="navbar-nav ms-auto">
+    <div id="navbarMenu" className="collapse navbar-collapse text-end">
+      <div className="navbar-nav ms-auto fw-bold">
         {/* About */}
         <a className="navbar-brand" href="#About">
-          About
+          <span className="HoverBlue p-2">About</span>
         </a>
         {/* Portfolio */}
         <a className="navbar-brand" href="#Projects">
