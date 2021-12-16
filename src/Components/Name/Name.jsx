@@ -22,7 +22,7 @@ const Name = () => {
   return (
     <>
       <a id="name" className="navbar-brand fw-bold font ms-3" href="/">
-        {isScrolled ? (
+        {isScrolled || window.innerWidth < 500 ? (
           <span>&lt;&nbsp;ZD&nbsp;/&gt;</span>
         ) : (
           <span>&lt;&nbsp;Zach Drummond&nbsp;/&gt;</span>
