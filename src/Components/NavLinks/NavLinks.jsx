@@ -13,21 +13,21 @@ const Links = () => {
         </a>
         {/* Portfolio */}
         <a className="navbar-brand" href="#Projects">
-          Projects
+          <span className="HoverBlue p-2">Projects</span>
         </a>
         {/* Contact */}
         <a className="navbar-brand" href="#Contact">
-          Contact
+          <span className="HoverBlue p-2">Contact</span>
         </a>
         {/* Resume */}
         <a
-          className="navbar-brand btn btn-sm btn-outline-dark"
+          className="navbar-brand"
           role="button" // For Assistive Technologies
           href="https://docs.google.com/document/d/1Lg_N5xJ_PITKCcIUaj6RQqQ6mVqgH2fbwWRqjNZHfrM/edit?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
-          Resume
+          <span className="HoverBlue p-2">Resume</span>
         </a>
         {/* LinkedIn Icon */}
         <LinkedIn />
