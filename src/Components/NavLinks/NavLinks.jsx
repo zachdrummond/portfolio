@@ -1,3 +1,4 @@
+import IMAGES from "../../images/images";
 import GitHub from "../Icons/GitHub";
 import LinkedIn from "../Icons/LinkedIn";
 
@@ -32,7 +33,7 @@ const Links = () => {
         {/* LinkedIn Icon */}
         <LinkedIn />
         {/* GitHub Icon */}
-        <GitHub href="https://github.com/zachdrummond" />
+        <GitHub href="https://github.com/zachdrummond" image={IMAGES.General.GitHub} alt="GitHub Logo"/>
       </div>
     </div>
   );

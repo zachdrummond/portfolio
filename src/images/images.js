@@ -1,4 +1,7 @@
 const IMAGES = {
+  General: {
+    GitHub: require("./General/GitHub-Mark-Light-120px-plus.png"),
+  },
   Profiles: {
     Headshot: require("./Profiles/Headshot.jpg"),
     HeadshotCircle: require("./Profiles/HeadshotCircle.jfif"),
