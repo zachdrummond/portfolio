@@ -34,6 +34,7 @@ const Contact = () => {
         process.env.REACT_APP_USER_ID
       );
       reset();
+      notify();
     } catch (e) {
       console.log(e);
     }
@@ -123,6 +124,7 @@ const Contact = () => {
           </button>
         </div>
       </form>
+      <ToastContainer position="bottom-center" autoClose={5000} pauseOnHover />
     </Section>
   );
 };
