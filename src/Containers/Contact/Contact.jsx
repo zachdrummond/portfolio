@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <Section id="Contact" name="Contact">
-      <form className="row" id="row2" onSubmit={handleSubmit(onSubmit)}>
+      <form className="row" onSubmit={handleSubmit(onSubmit)}>
         {/* Form - Name */}
         <div className="col-sm-12 pb-2" id="Name">
           <div className="form-floating">

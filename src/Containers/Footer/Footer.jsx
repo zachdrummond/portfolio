@@ -16,7 +16,7 @@ const Footer = () => {
       >
         ☝️
       </button>
-      <span className="text-secondary">
+      <span className="text-white">
         &copy; Zach Drummond {new Date().getFullYear()}
       </span>
     </footer>

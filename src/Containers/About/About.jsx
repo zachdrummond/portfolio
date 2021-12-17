@@ -3,7 +3,6 @@ import IMAGES from "../../images/images";
 import TechSkills from "../../Components/TechSkills/TechSkills";
 import Section from "../../Components/Section/Section";
 
-
 // SECTION - About
 // SUMMARY - Displays the About Section with a header, image, tagline, and technical skills
 const About = () => {
@@ -19,8 +18,8 @@ const About = () => {
         </div>
         <div className="col-9 p-0">
           <h2>
-            I'm a full stack web developer with a passion for developing
-            mobile-first, user-friendly apps that solve real world needs.
+            I'm a software engineer with a passion for consistently achieving
+            results through innovative software solutions that users love.
           </h2>
         </div>
       </div>
