@@ -1,4 +1,4 @@
-import "./Navbar.css"
+import "./Navbar.css";
 import Name from "../../Components/Name/Name.jsx";
 import NavLinks from "../../Components/NavLinks/NavLinks.jsx";
 
@@ -7,8 +7,10 @@ import NavLinks from "../../Components/NavLinks/NavLinks.jsx";
 const Navbar = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <Name/>
-      <NavLinks/>
+      <div className="container-fluid">
+        <Name />
+        <NavLinks />
+      </div>
     </nav>
   );
 };
