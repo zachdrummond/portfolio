@@ -1,17 +1,3 @@
-/* ------------------------------------------ RESET ---------------------------------------------------------*/
-/* Targets the body and its children */
-body,
-body * {
-  margin: unset;
-  box-sizing: unset;
-  padding: unset;
-  font-size: unset;
-  color: unset;
-  text-decoration: unset;
-}
-
-/* ------------------------------------------ RESET ---------------------------------------------------------*/
-
 /* Changes the font to serif */
 .font {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
