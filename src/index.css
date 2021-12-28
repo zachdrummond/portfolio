@@ -1,19 +1,16 @@
-/* ------------------------------------------ DEBUGGING ---------------------------------------------------------*/
-/* Debugging - Targets the children of body*/
+/* ------------------------------------------ RESET ---------------------------------------------------------*/
+/* Targets the body and its children */
+body,
 body * {
-  /* hsla = Hue - Color | Saturation | Lightness - 100% = White, 50% = Normal, 0% = Black | Alpha - Transparent */
-  color: hsla(210, 100%, 100%, 0.88) !important;
-  background: hsla(210, 100%, 50%, 0.33) !important;
-  outline: 0.25rem solid hsla(210, 100%, 100%, 0.50) !important;
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
 }
 
-/* Uses flexbox to horizontally and vertically center elements*/
-.debug-center {
-  display: flex; /* Flexbox - Fast way to position elements inside of a box */
-  justify-content: center;
-  align-items: center;
-}
-/* ------------------------------------------ DEBUGGING ---------------------------------------------------------*/
+/* ------------------------------------------ RESET ---------------------------------------------------------*/
 
 /* Changes the font to serif */
 .font {
