@@ -1,19 +1,13 @@
+/* Targets the children of body for debugging */
+body * {
+  /* hsla = Hue - Color | Saturation | Lightness - 100% = White, 50% = Normal, 0% = Black | Alpha - Transparent */
+  color: hsla(210, 100%, 100%, 0.88) !important;
+  background: hsla(210, 100%, 50%, 0.33) !important;
+  outline: 0.25rem solid hsla(210, 100%, 100%, 0.50) !important;
+}
+
 /* Changes the font to serif */
 .font {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   text-align: center;
 }
-
-/* #About {
-  height: 100vh;
-  background-color: #0b3C5D;
-}
-
-#Projects {
-  height: 100vh;
-  background-color: #328CC1;
-}
-
-#Contact {
-  background-color: #D9B310;
-} */

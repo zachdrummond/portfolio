@@ -2,8 +2,8 @@
 // PROPS - All come from a specific section
 const Section = ({ id, name, children }) => {
   return (
-    <section id={id} className="my-5 border border-5 border-dark">
-      <div className="container text-center border border-5 border-primary">
+    <section className="my-5">
+      <div id={id} className="container text-center">
         {/* Adds < /> to each header */}
         <h1 className="mb-5">&lt;&nbsp;{name}&nbsp;/&gt;</h1>
         {children}
