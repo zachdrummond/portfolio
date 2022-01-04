@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <Section id="Contact" name="Contact">
+    <Section id="Contact" name="Contact" grid="col-lg-6">
       <form className="row" onSubmit={handleSubmit(onSubmit)}>
         {/* Form - Name */}
         <div className="col-sm-12 pb-2" id="Name">
