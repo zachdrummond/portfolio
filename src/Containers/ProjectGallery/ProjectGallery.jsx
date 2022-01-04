@@ -14,7 +14,7 @@ import Section from "../../Components/Section/Section";
 const ProjectGallery = () => {
   return (
     <Section id="Projects" name="Projects">
-      <div className="row row-cols-3">
+      <div className="row row-cols-md-2 row-cols-lg-3">
         {Object.keys(IMAGES.Projects).map((key) => {
           return <Project key={key} {...IMAGES.Projects[key]} />;
         })}
