@@ -21,7 +21,7 @@ const Name = () => {
 
   return (
     <>
-      <a id="name" className="navbar-brand fw-bold font ms-3" href="/">
+      <a className="navbar-brand fw-bold ms-3" href="/">
         {isScrolled || window.innerWidth < 500 ? (
           <span>&lt;&nbsp;ZD&nbsp;/&gt;</span>
         ) : (
