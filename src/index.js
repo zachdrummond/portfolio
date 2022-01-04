@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-//import "./CSS/debug.css";
+//import "./debug.css";
 import "./index.css";
 import App from './App';
 import React from 'react';
