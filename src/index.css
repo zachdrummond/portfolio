@@ -1,5 +1,6 @@
-/* Changes the font to serif */
-.font {
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-  text-align: center;
+/* Targets html element */
+:root {
+  /* Font Size / Line Height */
+  font: 20px/1.2 Verdana, Geneva, Tahoma, sans-serif; /* No need for * - Font inherits properties from parent */
 }
+
