@@ -4,8 +4,11 @@
 }
 
 @media (max-width: 576px) {
-  /* If screen is < 576px, change font-size */
+  /* If screen is < 576px */
   #About > div {
     display: block !important;
+  }
+  #headshot {
+    width: 50%;
   }
 }
