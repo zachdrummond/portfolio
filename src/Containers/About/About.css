@@ -4,6 +4,7 @@
 }
 
 @media (max-width: 576px) {
+  /* If screen is < 576px, change font-size */
   #About > div {
     display: block !important;
   }
