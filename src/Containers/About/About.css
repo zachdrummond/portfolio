@@ -3,7 +3,8 @@
   height: 75px !important;
 }
 
-@media (max-width: 576px) {
+/* MEDIA QUERIES */
+@media (max-width: 530px) {
   /* If screen is < 576px */
   #About > div {
     display: block !important;

@@ -18,10 +18,10 @@ const About = () => {
           />
         </div>
         <div className="col-md-9 col-lg-10">
-          <h2 className="m-0">
+          <h3 className="m-0">
             I'm a software engineer with a passion for consistently achieving
             results through innovative software solutions that users love.
-          </h2>
+          </h3>
         </div>
       </div>
       <TechSkills />
