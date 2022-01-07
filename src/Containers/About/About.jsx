@@ -18,7 +18,7 @@ const About = () => {
           />
         </div>
         <div className="col-md-9 col-lg-10">
-          <h2 id="banana" className="m-0">
+          <h2 className="m-0">
             I'm a software engineer with a passion for consistently achieving
             results through innovative software solutions that users love.
           </h2>

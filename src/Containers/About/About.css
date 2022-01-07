@@ -2,3 +2,9 @@
 .skill-img {
   height: 75px !important;
 }
+
+@media (max-width: 576px) {
+  #About > div {
+    display: block !important;
+  }
+}
