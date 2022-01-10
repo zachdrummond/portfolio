@@ -24,7 +24,7 @@ const About = () => {
           </h3>
         </div>
       </div>
-      <TechSkills />
+      {/* <TechSkills /> */}
     </Section>
   );
 };
