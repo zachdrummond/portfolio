@@ -1,5 +1,5 @@
 /* Debugging - Targets the children of body*/
-.a {
+body * {
   /* hsla = Hue - Color | Saturation | Lightness - 100% = White, 50% = Normal, 0% = Black | Alpha - Transparent */
   color: hsla(210, 100%, 100%, 0.88) !important; /* Sets font color */
   background: hsla(210, 100%, 50%, 0.33) !important;

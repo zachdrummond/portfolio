@@ -8,7 +8,7 @@ import Section from "../../Components/Section/Section";
 const About = () => {
   return (
     <Section id="About" name="Hey, I'm Zach!">
-      <div className="d-flex align-items-center justify-content-center">
+      <div className="d-flex align-items-center justify-content-center ">
         <div className="col-md-3 col-lg-2">
           <img
             id="headshot"
