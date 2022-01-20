@@ -1,3 +1,5 @@
+
+
 /* Styles the Project Images */
 .gallery {
   object-fit: cover !important; /* Fill the given space but keep the image aspect ratio (image clipped)*/

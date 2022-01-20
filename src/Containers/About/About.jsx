@@ -1,7 +1,7 @@
 import "./About.css";
 import IMAGES from "../../images/images";
-import TechSkills from "../../Components/TechSkills/TechSkills";
 import Section from "../../Components/Section/Section";
+import TechSkills from "../../Components/TechSkills/TechSkills";
 
 // SECTION - About
 // SUMMARY - Displays the About Section with a header, image, tagline, and technical skills

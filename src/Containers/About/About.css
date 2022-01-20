@@ -3,7 +3,7 @@
   height: 75px !important;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES - Headshot & Text */
 @media (max-width: 530px) {
   /* If screen is < 576px */
   #About > div {
