@@ -7,10 +7,10 @@
   --dark-sky-blue: #226084;
   --gold-leaf: #d9b310;
   --light-gold-leaf: #F1D144;
+  --white: #D8D8D8;
 }
 
 body {
   background-color: var(--ivory-black);
-  color: white;
-
+  color: var(--white);
 }
