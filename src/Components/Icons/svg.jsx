@@ -1,4 +1,4 @@
-const svg = ({ width, height, color, path }) => {
+const SVG = ({ width, height, color, children }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -7,9 +7,9 @@ const svg = ({ width, height, color, path }) => {
       viewBox="0 0 24 24"
       fill={color}
     >
-      {path}
+      {children}
     </svg>
   );
 };
 
-export default svg;
+export default SVG;
