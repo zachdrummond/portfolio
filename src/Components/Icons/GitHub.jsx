@@ -8,9 +8,10 @@ const GitHub = ({ href, image, alt }) => {
       target="_blank"
       rel="noreferrer"
       alt="GitHub Link"
+      aria-label="Github"
     >
       {image ? (
-        <span className="HoverBlue p-2">
+        <span className="p-2">
           <img className="img-fluid" src={image} alt={alt} width="27" />
         </span>
       ) : (

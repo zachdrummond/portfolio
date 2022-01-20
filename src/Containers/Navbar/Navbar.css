@@ -13,8 +13,3 @@
 .navbar-brand:hover {
   color: var(--sky-blue);
 }
-
-#LinkedIn:hover {
-  background-color: white !important;
-  border-radius: 10px;
-}
