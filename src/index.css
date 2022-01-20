@@ -1,5 +1,16 @@
+:root{
+  --ivory-black: #1d2731;
+  --light-ivory-black: #394D61;
+  --prussian-blue: #0b3c5d;
+  --light-prussian-blue: #10598B;
+  --sky-blue: #328cc1;
+  --dark-sky-blue: #226084;
+  --gold-leaf: #d9b310;
+  --light-gold-leaf: #F1D144;
+}
+
 body {
-  background-color: #1e2631;
+  background-color: var(--ivory-black);
   color: white;
 
 }
