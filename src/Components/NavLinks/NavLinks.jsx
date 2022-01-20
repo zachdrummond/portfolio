@@ -10,15 +10,15 @@ const Links = () => {
       <div className="navbar-nav ms-auto fw-bold">
         {/* About */}
         <a className="navbar-brand" href="#About">
-          <span className="HoverBlue p-2">About</span>
+          <span className="p-2">About</span>
         </a>
         {/* Portfolio */}
         <a className="navbar-brand" href="#Projects">
-          <span className="HoverBlue p-2">Projects</span>
+          <span className="p-2">Projects</span>
         </a>
         {/* Contact */}
         <a className="navbar-brand" href="#Contact">
-          <span className="HoverBlue p-2">Contact</span>
+          <span className="p-2">Contact</span>
         </a>
         {/* Resume */}
         <a
@@ -28,7 +28,7 @@ const Links = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="HoverBlue p-2">Resume</span>
+          <span className="p-2">Resume</span>
         </a>
         {/* LinkedIn Icon */}
         <LinkedIn />

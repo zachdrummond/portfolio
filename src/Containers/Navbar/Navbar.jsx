@@ -6,7 +6,7 @@ import NavLinks from "../../Components/NavLinks/NavLinks.jsx";
 // SUMMARY - Displays the Navbar Section with the Brand Name and Nav Links
 const Navbar = () => {
   return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar sticky-top navbar-expand-lg bg-dark">
       <div className="container-fluid">
         <Name />
         <NavLinks />
