@@ -1,4 +1,3 @@
-import IMAGES from "../../images/images";
 import GitHub from "../Icons/GitHub";
 import LinkedIn from "../Icons/LinkedIn";
 
@@ -10,15 +9,15 @@ const Links = () => {
       <div className="navbar-nav ms-auto fw-bold">
         {/* About */}
         <a className="navbar-brand" href="#About">
-          <span className="p-2">About</span>
+          About
         </a>
         {/* Portfolio */}
         <a className="navbar-brand" href="#Projects">
-          <span className="p-2">Projects</span>
+          Projects
         </a>
         {/* Contact */}
         <a className="navbar-brand" href="#Contact">
-          <span className="p-2">Contact</span>
+          Contact
         </a>
         {/* Resume */}
         <a
@@ -28,12 +27,12 @@ const Links = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <span className="p-2">Resume</span>
+          Resume
         </a>
         {/* LinkedIn Icon */}
         <LinkedIn />
         {/* GitHub Icon */}
-        <GitHub href="https://github.com/zachdrummond" image={IMAGES.General.GitHub} alt="GitHub Logo"/>
+        <GitHub href="https://github.com/zachdrummond"/>
       </div>
     </div>
   );
