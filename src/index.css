@@ -1,9 +1,11 @@
 #About {
   background-color: aqua;
+  min-height: 100vh;
 }
 
 #Projects {
   background-color: aquamarine;
+  min-height: 100vh;
 }
 
 #Contact {
