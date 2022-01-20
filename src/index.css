@@ -1,13 +1,5 @@
-#About {
-  background-color: aqua;
-  min-height: 100vh;
-}
+body {
+  background-color: #1e2631;
+  color: white;
 
-#Projects {
-  background-color: aquamarine;
-  min-height: 100vh;
-}
-
-#Contact {
-  background-color: red;
 }
