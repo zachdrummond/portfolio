@@ -119,7 +119,7 @@ const Contact = () => {
         </div>
         {/* Form - Button */}
         <div className="col-sm-12" id="submitButton">
-          <button type="submit" className="btn btn-primary color">
+          <button type="submit" className="btn">
             Submit
           </button>
         </div>

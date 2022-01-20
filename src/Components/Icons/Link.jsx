@@ -2,7 +2,7 @@
 // PROPS - href = The URL to the source
 const Link = ({ href }) => {
   return (
-    <a className="btn btn-sm btn-danger" href={href} target="_blank" rel="noreferrer">
+    <a className="btn btn-sm" href={href} target="_blank" rel="noreferrer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1.5em"

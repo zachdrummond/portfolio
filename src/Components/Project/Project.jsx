@@ -26,7 +26,7 @@ const Project = ({
       </figcaption>
       <button
         type="button"
-        className="gallery-btn btn btn-lg btn-danger"
+        className="gallery-btn btn btn-lg"
         data-bs-toggle="modal"
         data-bs-target={`#modal-${id}`} // Needs a specific id to target the right modal to open
       >

@@ -1,4 +1,3 @@
-import GitHub from "../Icons/GitHub";
 import SVG from "../Icons/SVG";
 
 // SECTION - Navbar
