@@ -66,7 +66,13 @@ body {
   --nav-text-color: var(--sleek-grey);
   --nav-text-hover-color: var(--marine);
   --btn-bg-color: var(--feather); */
-
+  /* *********************************************** #12 */
+  /* --bg-color: var(--summer-sky);
+  --header-text-color: var(--warm-peach);
+  --text-color: var(--field);
+  --nav-text-color: var(--white);
+  --nav-text-hover-color: var(--summer-sky);
+  --btn-bg-color: var(--breeze); */
 }
 .navbar-brand {
   color: var(--nav-text-color);
