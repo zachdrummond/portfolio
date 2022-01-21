@@ -1,6 +1,7 @@
 :root {
   --white: #d8d8d8;
 
+  /* *********************************************** #11 */
   --prussian-blue: #0b3c5d;
   --light-prussian-blue: #10598b;
   --sky-blue: #328cc1;
@@ -10,21 +11,25 @@
   --light-ivory-black: #394d61;
   --ivory-black: #1d2731;
 
+  /* *********************************************** #36 */
   --stormy: #494e6b;
   --cloud: #98878f;
   --sunset: #985e6d;
   --evening: #192231;
 
+  /* *********************************************** #20 */
   --crimson-sky: #cf6766;
   --indigo: #30415d;
   --ultramarine: #031424;
   --light-blue: #8eaebd;
 
+  /* *********************************************** #15 */
   --feather: #77c9d4;
   --marine: #57bc90;
   --forest: #015249;
   --sleek-grey: #a5a5af;
 
+  /* *********************************************** #12 */
   --summer-sky: #286da8;
   --warm-peach: #cd5360;
   --field: #b37d4e;
