@@ -37,6 +37,15 @@ section {
 
 body {
   background-color: var(--bg-color);
+
+  /* *********************************************** #11 */
+  /* --bg-color: var(--ivory-black);
+  --header-text-color: var(--gold-leaf);
+  --text-color: var(--white);
+  --nav-text-color: var(--white);
+  --nav-text-hover-color: var(--gold-leaf);
+  --btn-bg-color: var(--sky-blue); */
+
 }
 .navbar-brand {
   color: var(--nav-text-color);
