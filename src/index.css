@@ -1,19 +1,45 @@
-:root{
-  --ivory-black: #1d2731;
-  --light-ivory-black: #394D61;
+:root {
+  --white: #d8d8d8;
+
   --prussian-blue: #0b3c5d;
-  --light-prussian-blue: #10598B;
+  --light-prussian-blue: #10598b;
   --sky-blue: #328cc1;
   --dark-sky-blue: #226084;
   --gold-leaf: #d9b310;
-  --light-gold-leaf: #F1D144;
-  --white: #D8D8D8;
+  --light-gold-leaf: #f1d144;
+  --light-ivory-black: #394d61;
+  --ivory-black: #1d2731;
 }
 
+
 body {
-  background-color: var(--ivory-black);
+  background-color: var(--bg-color);
+}
+.navbar-brand {
+  color: var(--nav-text-color);
+  padding-right: 10px;
+}
+.navbar-brand:hover,
+.navbar-brand svg:hover {
+  color: var(--nav-text-hover-color);
+  fill: var(--nav-text-hover-color);
 }
 
 h1 {
-  color: var(--gold-leaf);
+  color: var(--header-text-color);
+}
+h3 {
+  color: var(--text-color);
+}
+
+figcaption {
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--btn-bg-color) !important;
+  color: var(--text-color) !important;
+}
+.errorMessage {
+  color: var(--text-color);
 }
