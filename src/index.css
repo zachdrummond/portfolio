@@ -11,6 +11,9 @@
   --ivory-black: #1d2731;
 }
 
+section {
+  min-height: 100vh;
+}
 
 body {
   background-color: var(--bg-color);
