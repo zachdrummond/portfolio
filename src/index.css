@@ -52,6 +52,13 @@ body {
   --nav-text-color: var(--sunset);
   --nav-text-hover-color: var(--white);
   --btn-bg-color: var(--sunset); */
+  /* *********************************************** #20 */
+  --bg-color: var(--ultramarine);
+  --header-text-color: var(--crimson-sky);
+  --text-color: var(--light-blue);
+  --nav-text-color: var(--white);
+  --nav-text-hover-color: var(--crimson-sky);
+  --btn-bg-color: var(--crimson-sky);
 
 }
 .navbar-brand {
