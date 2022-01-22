@@ -5,7 +5,7 @@ const Section = ({ id, grid, name, children }) => {
     <section id={id} className="py-4">
       <div className={`container text-center ${grid}`}>
         {/* Adds < /> to each header */}
-        <h1 className="mb-4">&lt;&nbsp;{name}&nbsp;/&gt;</h1>
+        <h1 className="mb-4">{name}</h1>
         {children}
       </div>
     </section>

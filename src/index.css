@@ -51,19 +51,19 @@ body {
   --nav-text-hover-color: var(--gold-leaf);
   --btn-bg-color: var(--sky-blue); */
   /* *********************************************** #36 */
-  /* --bg-color: var(--evening);
+  --bg-color: var(--evening);
   --header-text-color: var(--white);
   --text-color: var(--cloud);
   --nav-text-color: var(--sunset);
   --nav-text-hover-color: var(--white);
-  --btn-bg-color: var(--sunset); */
+  --btn-bg-color: var(--sunset);
   /* *********************************************** #20 */
-  --bg-color: var(--ultramarine);
+  /* --bg-color: var(--ultramarine);
   --header-text-color: var(--crimson-sky);
   --text-color: var(--light-blue);
   --nav-text-color: var(--white);
   --nav-text-hover-color: var(--crimson-sky);
-  --btn-bg-color: var(--crimson-sky);
+  --btn-bg-color: var(--crimson-sky); */
   /* *********************************************** #15 */
   /* --bg-color: var(--forest);
   --header-text-color: var(--feather);
