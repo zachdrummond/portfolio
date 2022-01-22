@@ -115,4 +115,7 @@ figcaption {
 .form-control {
   background-color: var(--white) !important;
 }
+label {
+  color: var(--bg-color);
+}
 
