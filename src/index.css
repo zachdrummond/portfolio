@@ -21,14 +21,6 @@ section {
 
 body {
   background-color: var(--bg-color);
-
-  /* *********************************************** #11 */
-  /* --bg-color: var(--ivory-black);
-  --header-text-color: var(--gold-leaf);
-  --text-color: var(--white);
-  --nav-text-color: var(--white);
-  --nav-text-hover-color: var(--gold-leaf);
-  --btn-bg-color: var(--sky-blue); */
   /* *********************************************** #36 FAVORITE */
   /* --bg-color: var(--evening);
   --header-text-color: var(--white);
@@ -45,23 +37,8 @@ body {
   --nav-text-hover-color: var(--white);
   --btn-bg-color: var(--crimson-sky);
   --btn-text-color: var(--white);
-  /* *********************************************** #15 */
-  /* --bg-color: var(--forest);
-  --header-text-color: var(--feather);
-  --text-color: var(--sleek-grey);
-  --nav-text-color: var(--sleek-grey);
-  --nav-text-hover-color: var(--marine);
-  --btn-bg-color: var(--feather);
-  --btn-text-color: var(--sleek-grey); */
-  /* *********************************************** #12 */
-  /* --bg-color: var(--summer-sky);
-  --header-text-color: var(--warm-peach);
-  --text-color: var(--field);
-  --nav-text-color: var(--white);
-  --nav-text-hover-color: var(--summer-sky);
-  --btn-bg-color: var(--breeze);
-  --btn-text-color: var(--white); */
 }
+
 .navbar-brand {
   color: var(--nav-text-color);
   padding-right: 10px;
