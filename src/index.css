@@ -2,16 +2,6 @@
   
   --white: #d8d8d8;
 
-  /* *********************************************** #11 */
-  --prussian-blue: #0b3c5d;
-  --light-prussian-blue: #10598b;
-  --sky-blue: #328cc1;
-  --dark-sky-blue: #226084;
-  --gold-leaf: #d9b310;
-  --light-gold-leaf: #f1d144;
-  --light-ivory-black: #394d61;
-  --ivory-black: #1d2731;
-
   /* *********************************************** #36 */
   --stormy: #494e6b;
   --cloud: #98878f;
@@ -23,18 +13,6 @@
   --indigo: #30415d;
   --ultramarine: #031424;
   --light-blue: #8eaebd;
-
-  /* *********************************************** #15 */
-  --feather: #77c9d4;
-  --marine: #57bc90;
-  --forest: #015249;
-  --sleek-grey: #a5a5af;
-
-  /* *********************************************** #12 */
-  --summer-sky: #286da8;
-  --warm-peach: #cd5360;
-  --field: #b37d4e;
-  --breeze: #438496;
 }
 
 section {
@@ -64,7 +42,7 @@ body {
   --header-text-color: var(--white);
   --text-color: var(--light-blue);
   --nav-text-color: var(--crimson-sky);
-  --nav-text-hover-color: var(--crimson-sky);
+  --nav-text-hover-color: var(--white);
   --btn-bg-color: var(--crimson-sky);
   --btn-text-color: var(--white);
   /* *********************************************** #15 */
@@ -122,5 +100,5 @@ label {
   color: var(--bg-color);
 }
 svg[fill] {
-  fill: var(--btn-bg-color) !important;
+  fill: var(--btn-bg-color);
 }
