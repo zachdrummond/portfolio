@@ -118,4 +118,7 @@ figcaption {
 label {
   color: var(--bg-color);
 }
+.modal-content {
+  color: var(--bg-color);
+}
 
