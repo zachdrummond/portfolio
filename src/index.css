@@ -121,4 +121,6 @@ label {
 .modal-content {
   color: var(--bg-color);
 }
-
+svg[fill] {
+  fill: var(--btn-bg-color) !important;
+}
