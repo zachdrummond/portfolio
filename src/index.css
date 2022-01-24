@@ -12,6 +12,12 @@
   --indigo: #30415d;
   --ultramarine: #031424;
   --light-blue: #8eaebd;
+
+  --lato-thin: 100;
+  --lato-light: 300;
+  --lato-regular: 400;
+  --lato-bold: 700;
+  --lato-black: 900;
 }
 section {
   min-height: 100vh;
@@ -41,7 +47,7 @@ body {
 .navbar-brand {
   color: var(--nav-text-color);
   padding-right: 10px;
-  
+  font-weight: var(--lato-bold);
 }
 .navbar-brand:hover,
 .navbar-brand svg:hover {
@@ -51,10 +57,11 @@ body {
 
 h1 {
   color: var(--header-text-color);
-  font-weight: 900;
+  font-weight: var(--lato-black);
 }
 h3 {
   color: var(--text-color);
+  font-weight: var(--lato-regular);
 }
 
 figcaption {
