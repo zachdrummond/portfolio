@@ -107,7 +107,7 @@ const IMAGES = {
     },
   },
   Skills: {
-    Row1: {
+    // Row1: {
       React: {
         name: "REACT.JS",
         image: require("./Skills/React.svg").default,
@@ -128,8 +128,8 @@ const IMAGES = {
         image: require("./Skills/MongoDB.svg").default,
         alt: "MongoDB Logo",
       },
-    },
-    Row2: {
+    // },
+    // Row2: {
       HTML: {
         name: "HTML",
         image: require("./Skills/HTML.svg").default,
@@ -155,7 +155,7 @@ const IMAGES = {
         image: require("./Skills/MySQL.svg").default,
         alt: "MySQL Logo",
       },
-    },
+    // },
   },
 };
 export default IMAGES;

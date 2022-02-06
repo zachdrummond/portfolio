@@ -16,7 +16,7 @@
   font-size: 15px;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .skill-frame {
     min-width: 90px;
   }
@@ -28,16 +28,16 @@
   }
 }
 @media (max-width: 500px) {
+  .skill-frame {
+    min-width: 90px;
+  }
   .skill-img {
-    height: 30px;
+    height: 60px;
   }
   .skill-title {
+    font-size: 13px;
   }
 }
 @media (max-width: 410px) {
-  .skill-img {
-    height: 26px;
-  }
-  .skill-title {
-  }
-}
+
+} */
