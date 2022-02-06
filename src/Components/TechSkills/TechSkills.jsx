@@ -19,7 +19,7 @@ const TechSkills = () => {
           let { name, image, alt } = object[key];
           return (
             <div
-              className="border border-3 border-light rounded m-2 p-1"
+              className="bob border border-3 border-light rounded m-2 p-1"
               key={key}
             >
               <img className="skill-img img-fluid" src={image} alt={alt} />
