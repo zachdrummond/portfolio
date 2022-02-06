@@ -63,6 +63,11 @@ h3 {
   color: var(--text-color);
   font-weight: var(--lato-regular);
 }
+h5 {
+  color: var(--text-color);
+  font-weight: var(--lato-regular);
+
+}
 
 figcaption {
   color: var(--text-color);

@@ -19,7 +19,7 @@ const TechSkills = () => {
           let { name, image, alt } = object[key];
           return (
             <div
-              className="col-2 border border-3 border-dark rounded-pill m-3 p-1"
+              className="col-2 border border-3 border-light rounded-pill m-3 p-1"
               key={key}
             >
               <img className="skill-img img-fluid" src={image} alt={alt} />
@@ -35,82 +35,7 @@ const TechSkills = () => {
     <Section name="Technical Skills">
       {/* {objectMap(IMAGES.Skills.TopRow)}
       {objectMap(IMAGES.Skills.BottomRow)} */}
-      <div className="row d-flex align-items-center">
-        <div className="col-sm-2 col-md-3">
-          <img
-            className="img-fluid"
-            src={IMAGES.Skills.TopRow.React.image}
-            alt={IMAGES.Skills.TopRow.React.alt}
-          />
-          <h5>{IMAGES.Skills.TopRow.React.name}</h5>
-        </div>
-        <div className="col-sm-2 col-md-3">
-          <img
-            className="img-fluid"
-            src={IMAGES.Skills.TopRow.Nodejs.image}
-            alt={IMAGES.Skills.TopRow.Nodejs.alt}
-          />
-          <h5>{IMAGES.Skills.TopRow.Nodejs.name}</h5>
-        </div>
-        <div className="col-sm-2 col-md-3">
-          <img
-            className="img-fluid"
-            src={IMAGES.Skills.TopRow.Expressjs.image}
-            alt={IMAGES.Skills.TopRow.Expressjs.alt}
-          />
-          <h5>{IMAGES.Skills.TopRow.Expressjs.name}</h5>
-        </div>
-        <div className="col-sm-2 col-md-3">
-          <img
-            className="img-fluid"
-            src={IMAGES.Skills.TopRow.MongoDB.image}
-            alt={IMAGES.Skills.TopRow.MongoDB.alt}
-          />
-          <h5>{IMAGES.Skills.TopRow.MongoDB.name}</h5>
-        </div>
-        <div className="row d-flex align-items-center">
-          <div className="col-md-2">
-            <img
-              className="img-fluid"
-              src={IMAGES.Skills.BottomRow.HTML.image}
-              alt={IMAGES.Skills.BottomRow.HTML.alt}
-            />
-            <h5>{IMAGES.Skills.BottomRow.HTML.name}</h5>
-          </div>
-          <div className="col-md-2">
-            <img
-              className="img-fluid"
-              src={IMAGES.Skills.BottomRow.CSS.image}
-              alt={IMAGES.Skills.BottomRow.CSS.alt}
-            />
-            <h5>{IMAGES.Skills.BottomRow.CSS.name}</h5>
-          </div>
-          <div className="col-md-2">
-            <img
-              className="img-fluid"
-              src={IMAGES.Skills.BottomRow.Javascript.image}
-              alt={IMAGES.Skills.BottomRow.Javascript.alt}
-            />
-            <h5>{IMAGES.Skills.BottomRow.Javascript.name}</h5>
-          </div>
-          <div className="col-md-2">
-            <img
-              className="img-fluid"
-              src={IMAGES.Skills.BottomRow.Git.image}
-              alt={IMAGES.Skills.BottomRow.Git.alt}
-            />
-            <h5>{IMAGES.Skills.BottomRow.Git.name}</h5>
-          </div>
-          <div className="col-md-2">
-            <img
-              className="img-fluid"
-              src={IMAGES.Skills.BottomRow.MySQL.image}
-              alt={IMAGES.Skills.BottomRow.MySQL.alt}
-            />
-            <h5>{IMAGES.Skills.BottomRow.MySQL.name}</h5>
-          </div>
-        </div>
-      </div>
+      
     </Section>
   );
 };
