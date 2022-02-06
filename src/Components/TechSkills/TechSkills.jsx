@@ -19,11 +19,11 @@ const TechSkills = () => {
           let { name, image, alt } = object[key];
           return (
             <div
-              className="border border-3 border-light rounded-pill m-3 p-1"
+              className="col-2 border border-3 border-light rounded-pill m-2 p-2"
               key={key}
             >
               <img className="skill-img img-fluid" src={image} alt={alt} />
-              <h5 className="title">{name}</h5>
+              <p className="title m-0">{name}</p>
             </div>
           );
         })}

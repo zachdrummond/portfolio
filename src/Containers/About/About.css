@@ -8,3 +8,16 @@
     width: 50%;
   }
 }
+
+.skill-img {
+  height: 60px;
+}
+.title {
+}
+
+@media (max-width: 1000px) {
+  .skill-img {
+  }
+  .title {
+  }
+}

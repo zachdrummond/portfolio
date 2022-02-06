@@ -63,9 +63,9 @@ h3 {
   color: var(--text-color);
   font-weight: var(--lato-regular);
 }
-h5 {
+p {
   color: var(--text-color);
-  font-weight: var(--lato-regular);
+  font-weight: var(--lato-light);
 
 }
 
