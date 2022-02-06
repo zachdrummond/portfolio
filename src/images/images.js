@@ -125,7 +125,7 @@ const IMAGES = {
       },
       MongoDB: {
         name: "MONGO DB",
-        image: require("./Skills/MongoDB2.svg").default,
+        image: require("./Skills/MongoDB.svg").default,
         alt: "MongoDB Logo",
       },
     },
