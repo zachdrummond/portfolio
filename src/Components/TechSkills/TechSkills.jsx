@@ -14,7 +14,7 @@ const TechSkills = () => {
   // RETURNS - A new object (React Element <div>)
   const objectMap = (object) => {
     return (
-      <div className="d-flex justify-content-center">
+      <div className="d-flex flex-wrap-reverse justify-content-center border border-5 border-danger">
         {Object.keys(object).map((key) => {
           let { name, image, alt } = object[key];
           return (
@@ -35,7 +35,7 @@ const TechSkills = () => {
     <Section name="Technical Skills">
       {/* {objectMap(IMAGES.Skills.TopRow)}
       {objectMap(IMAGES.Skills.BottomRow)} */}
-      
+      {objectMap(IMAGES.Skills)}
     </Section>
   );
 };
