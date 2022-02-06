@@ -10,13 +10,42 @@
 }
 
 .skill-img {
-  height: 60px;
+  height: 70px;
 }
-.title {
+@media (max-width: 1200px) {
+  .skill-img {
+    height: 45px;
+  }
+  .title {
+    font-size: 14px;
+  }
 }
-
 @media (max-width: 1000px) {
   .skill-img {
+    height: 30px;
+  }
+  .title {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .skill-img {
+    height: 70px;
+  }
+  .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .skill-img {
+    height: 30px;
+  }
+  .title {
+  }
+}
+@media (max-width: 410px) {
+  .skill-img {
+    height: 26px;
   }
   .title {
   }
