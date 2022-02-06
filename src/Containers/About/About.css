@@ -10,8 +10,9 @@
 }
 
 .skill-img {
-  height: 70px;
+  /* height: 70px; */
 }
+
 @media (max-width: 1200px) {
   .skill-img {
     height: 45px;

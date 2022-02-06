@@ -140,9 +140,9 @@ const IMAGES = {
         image: require("./Skills/CSS.svg").default,
         alt: "CSS Logo",
       },
-      Javascript: {
+      JavaScript: {
         name: "JAVASCRIPT",
-        image: require("./Skills/Javascript.svg").default,
+        image: require("./Skills/JavaScript.svg").default,
         alt: "JavaScript Logo",
       },
       Git: {
