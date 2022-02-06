@@ -15,6 +15,9 @@
 .skill-title {
   font-size: 15px;
 }
+#About > div > section > div > div > div:nth-child(5) {
+  float: left !important;
+}
 
 /* @media (max-width: 600px) {
   .skill-frame {
