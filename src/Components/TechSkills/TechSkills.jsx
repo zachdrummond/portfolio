@@ -14,16 +14,16 @@ const TechSkills = () => {
   // RETURNS - A new object (React Element <div>)
   const objectMap = (object) => {
     return (
-      <div className="d-flex justify-content-center border border-5 border-danger">
+      <div className="d-flex justify-content-center align-items-center">
         {Object.keys(object).map((key) => {
           let { name, image, alt } = object[key];
           return (
             <div
-              className="col-2 border border-3 border-light rounded-pill m-3 p-1"
+              className="border border-3 border-light rounded-pill m-3 p-1"
               key={key}
             >
               <img className="skill-img img-fluid" src={image} alt={alt} />
-              <h5>{name}</h5>
+              <h5 className="title">{name}</h5>
             </div>
           );
         })}

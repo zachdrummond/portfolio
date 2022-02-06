@@ -1,8 +1,3 @@
-/* Styles the images for Technical Skills */
-.skill-img {
-  height: 75px !important;
-}
-
 /* MEDIA QUERIES - Headshot & Text */
 @media (max-width: 530px) {
   /* If screen is < 576px */
