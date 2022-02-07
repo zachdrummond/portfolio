@@ -33,10 +33,10 @@ const TechSkills = () => {
 
   return (
     <Section name="Technical Skills">
-      {objectMap(IMAGES.Skills)}
+      {/* {objectMap(IMAGES.Skills)} */}
       {/* {objectMap(IMAGES.Skills.Row2)} */}
-      <div className="d-flex flex-wrap justify-content-center border border-5 border-danger">
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+      <div className="row justify-content-evenly">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.React.image}
@@ -44,7 +44,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.React.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.Nodejs.image}
@@ -52,7 +52,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.Nodejs.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.Expressjs.image}
@@ -60,7 +60,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.Expressjs.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.MongoDB.image}
@@ -68,7 +68,9 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.MongoDB.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+      </div>
+      <div className="row justify-content-evenly">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.HTML.image}
@@ -76,7 +78,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.HTML.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.CSS.image}
@@ -84,7 +86,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.CSS.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.JavaScript.image}
@@ -92,7 +94,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.JavaScript.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.Git.image}
@@ -100,7 +102,7 @@ const TechSkills = () => {
           />
           <p className="skill-title m-0">{IMAGES.Skills.Git.name}</p>
         </div>
-        <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
           <img
             className="skill-img img-fluid"
             src={IMAGES.Skills.MySQL.image}
