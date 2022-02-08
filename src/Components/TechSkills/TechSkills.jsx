@@ -32,86 +32,92 @@ const TechSkills = () => {
   };
 
   return (
-    <Section name="Technical Skills">
+    <div className="container border border-5 border-danger">
+      {/* <Section name="Technical Skills"> */}
       {/* {objectMap(IMAGES.Skills)} */}
       {/* {objectMap(IMAGES.Skills.Row2)} */}
-      <div className="row justify-content-evenly">
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.React.image}
-            alt={IMAGES.Skills.React.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.React.name}</p>
+      <div className="border border-5 border-primary">
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.React.image}
+              alt={IMAGES.Skills.React.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.React.name}</p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.Nodejs.image}
-            alt={IMAGES.Skills.Nodejs.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.Nodejs.name}</p>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.Nodejs.image}
+              alt={IMAGES.Skills.Nodejs.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.Nodejs.name}</p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.Expressjs.image}
-            alt={IMAGES.Skills.Expressjs.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.Expressjs.name}</p>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.Expressjs.image}
+              alt={IMAGES.Skills.Expressjs.alt}
+            />
+            <p className="skill-title m-0 p-0">
+              {IMAGES.Skills.Expressjs.name}
+            </p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.MongoDB.image}
-            alt={IMAGES.Skills.MongoDB.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.MongoDB.name}</p>
-        </div>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.MongoDB.image}
+              alt={IMAGES.Skills.MongoDB.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.MongoDB.name}</p>
+          </div>
       </div>
-      <div className="row justify-content-evenly">
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.HTML.image}
-            alt={IMAGES.Skills.HTML.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.HTML.name}</p>
+      <div className="row border border-5 border-primary">
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.HTML.image}
+              alt={IMAGES.Skills.HTML.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.HTML.name}</p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.CSS.image}
-            alt={IMAGES.Skills.CSS.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.CSS.name}</p>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.CSS.image}
+              alt={IMAGES.Skills.CSS.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.CSS.name}</p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.JavaScript.image}
-            alt={IMAGES.Skills.JavaScript.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.JavaScript.name}</p>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.JavaScript.image}
+              alt={IMAGES.Skills.JavaScript.alt}
+            />
+            <p className="skill-title m-0 p-0">
+              {IMAGES.Skills.JavaScript.name}
+            </p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.Git.image}
-            alt={IMAGES.Skills.Git.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.Git.name}</p>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.Git.image}
+              alt={IMAGES.Skills.Git.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.Git.name}</p>
         </div>
-        <div className="col-1 skill-frame border border-3 border-light rounded m-2 p-1">
-          <img
-            className="skill-img img-fluid"
-            src={IMAGES.Skills.MySQL.image}
-            alt={IMAGES.Skills.MySQL.alt}
-          />
-          <p className="skill-title m-0">{IMAGES.Skills.MySQL.name}</p>
-        </div>
+          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+            <img
+              className="skill-img img-fluid"
+              src={IMAGES.Skills.MySQL.image}
+              alt={IMAGES.Skills.MySQL.alt}
+            />
+            <p className="skill-title m-0 p-0">{IMAGES.Skills.MySQL.name}</p>
+          </div>
       </div>
-    </Section>
+    </div>
+    // </Section>
   );
 };
 
