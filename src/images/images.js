@@ -113,6 +113,11 @@ const IMAGES = {
         image: require("./Skills/Angular.svg").default,
         alt: "Angular Logo",
       },
+      Bootstrap: {
+        name: "Bootstrap",
+        image: require("./Skills/Bootstrap.svg").default,
+        alt: "Bootstrap Logo",
+      },
       Drupal: {
         name: "Drupal",
         image: require("./Skills/Drupal.svg").default,
