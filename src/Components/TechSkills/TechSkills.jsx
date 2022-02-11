@@ -14,7 +14,7 @@ const TechSkills = () => {
   // RETURNS - A new object (React Element <div>)
   const objectMap = (object) => {
     return (
-      <div className="d-flex flex-wrap justify-content-evenly align-items-center">
+      <div className="d-flex flex-wrap justify-content-center align-items-center">
         {Object.keys(object).map((key) => {
           let { name, image, alt } = object[key];
           return (
