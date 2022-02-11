@@ -95,7 +95,7 @@ const IMAGES = {
       name: "Budget Tracker",
       pitch: "Manage your financial budget.",
       description:
-        "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
+      "Budget Tracker is a progressive web app tracks all of your financial needs in one place. You can access everything at any time, even if you are offline. You can even download this app on your mobile device.",
       images: {
         logo: require("./Projects/BudgetTracker/Example.png"),
         one: require("./Projects/BudgetTracker/HomePage.png"),
@@ -107,9 +107,8 @@ const IMAGES = {
     },
   },
   Skills: {
-    // Row1: {
-      Angular: {
-        name: "Angular",
+    Angular: {
+      name: "Angular",
         image: require("./Skills/Angular.svg").default,
         alt: "Angular Logo",
       },
@@ -118,79 +117,76 @@ const IMAGES = {
         image: require("./Skills/Bootstrap.svg").default,
         alt: "Bootstrap Logo",
       },
+      CSS: {
+        name: "CSS",
+        image: require("./Skills/CSS.svg").default,
+        alt: "CSS Logo",
+      },
       Drupal: {
         name: "Drupal",
         image: require("./Skills/Drupal.svg").default,
         alt: "Drupal Logo",
-      },
-      GraphQL: {
-        name: "GraphQL",
-        image: require("./Skills/GraphQL.svg").default,
-        alt: "GraphQL Logo",
-      },
-      TypeScript: {
-        name: "TypeScript",
-        image: require("./Skills/TypeScript.svg").default,
-        alt: "TypeScript Logo",
-      },
-      Sass: {
-        name: "Sass",
-        image: require("./Skills/Sass.svg").default,
-        alt: "Sass Logo",
-      },
-    PHP: {
-        name: "PHP",
-        image: require("./Skills/PHP.svg").default,
-        alt: "PHP Logo",
-      },  
-    React: {
-        name: "REACT.JS",
-        image: require("./Skills/React.svg").default,
-        alt: "React Logo",
-      },
-      Nodejs: {
-        name: "NODE.JS",
-        image: require("./Skills/Nodejs.svg").default,
-        alt: "Nodejs Logo",
       },
       Expressjs: {
         name: "EXPRESS.JS",
         image: require("./Skills/Expressjs.svg").default,
         alt: "Expressjs Logo",
       },
-      MongoDB: {
-        name: "MONGO DB",
-        image: require("./Skills/MongoDB.svg").default,
-        alt: "MongoDB Logo",
-      },
-    // },
-    // Row2: {
-      HTML: {
-        name: "HTML",
-        image: require("./Skills/HTML.svg").default,
-        alt: "HTML Logo",
-      },
-      CSS: {
-        name: "CSS",
-        image: require("./Skills/CSS.svg").default,
-        alt: "CSS Logo",
-      },
-      JavaScript: {
-        name: "JAVASCRIPT",
-        image: require("./Skills/JavaScript.svg").default,
-        alt: "JavaScript Logo",
+      GraphQL: {
+        name: "GraphQL",
+        image: require("./Skills/GraphQL.svg").default,
+        alt: "GraphQL Logo",
       },
       Git: {
         name: "GIT",
         image: require("./Skills/Git.svg").default,
         alt: "Git Logo",
       },
+      HTML: {
+        name: "HTML",
+        image: require("./Skills/HTML.svg").default,
+        alt: "HTML Logo",
+      },
+      JavaScript: {
+        name: "JAVASCRIPT",
+        image: require("./Skills/JavaScript.svg").default,
+        alt: "JavaScript Logo",
+      },
+      MongoDB: {
+        name: "MONGO DB",
+        image: require("./Skills/MongoDB.svg").default,
+        alt: "MongoDB Logo",
+      },
       MySQL: {
         name: "MYSQL",
         image: require("./Skills/MySQL.svg").default,
         alt: "MySQL Logo",
       },
-    // },
+      Nodejs: {
+        name: "NODE.JS",
+        image: require("./Skills/Nodejs.svg").default,
+        alt: "Nodejs Logo",
+      },
+      PHP: {
+          name: "PHP",
+          image: require("./Skills/PHP.svg").default,
+          alt: "PHP Logo",
+        },  
+        React: {
+            name: "REACT.JS",
+            image: require("./Skills/React.svg").default,
+            alt: "React Logo",
+          },
+      Sass: {
+        name: "Sass",
+        image: require("./Skills/Sass.svg").default,
+        alt: "Sass Logo",
+      },
+      TypeScript: {
+        name: "TypeScript",
+        image: require("./Skills/TypeScript.svg").default,
+        alt: "TypeScript Logo",
+      },
   },
 };
 export default IMAGES;
