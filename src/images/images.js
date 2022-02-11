@@ -108,7 +108,32 @@ const IMAGES = {
   },
   Skills: {
     // Row1: {
-      PHP: {
+      Angular: {
+        name: "Angular",
+        image: require("./Skills/Angular.svg").default,
+        alt: "Angular Logo",
+      },
+      Drupal: {
+        name: "Drupal",
+        image: require("./Skills/Drupal.svg").default,
+        alt: "Drupal Logo",
+      },
+      GraphQL: {
+        name: "GraphQL",
+        image: require("./Skills/GraphQL.svg").default,
+        alt: "GraphQL Logo",
+      },
+      TypeScript: {
+        name: "TypeScript",
+        image: require("./Skills/TypeScript.svg").default,
+        alt: "TypeScript Logo",
+      },
+      Sass: {
+        name: "Sass",
+        image: require("./Skills/Sass.svg").default,
+        alt: "Sass Logo",
+      },
+    PHP: {
         name: "PHP",
         image: require("./Skills/PHP.svg").default,
         alt: "PHP Logo",
