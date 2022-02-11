@@ -108,7 +108,12 @@ const IMAGES = {
   },
   Skills: {
     // Row1: {
-      React: {
+      PHP: {
+        name: "PHP",
+        image: require("./Skills/PHP.svg").default,
+        alt: "PHP Logo",
+      },  
+    React: {
         name: "REACT.JS",
         image: require("./Skills/React.svg").default,
         alt: "React Logo",
