@@ -152,6 +152,11 @@ const IMAGES = {
         image: require("./Skills/JavaScript.svg").default,
         alt: "JavaScript Logo",
       },
+      MariaDB: {
+        name: "MariaDB",
+        image: require("./Skills/MariaDB.svg").default,
+        alt: "MariaDB Logo",
+      },
       MongoDB: {
         name: "MONGO DB",
         image: require("./Skills/MongoDB.svg").default,
