@@ -122,6 +122,11 @@ const IMAGES = {
         image: require("./Skills/CSS.svg").default,
         alt: "CSS Logo",
       },
+      Docker: {
+        name: "Docker",
+        image: require("./Skills/Docker.svg").default,
+        alt: "Docker Logo",
+      },
       Drupal: {
         name: "Drupal",
         image: require("./Skills/Drupal.svg").default,
