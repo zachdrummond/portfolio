@@ -32,12 +32,12 @@ const TechSkills = () => {
   };
 
   return (
-    <div className="container border border-5 border-danger">
-      {/* <Section name="Technical Skills"> */}
-      {/* {objectMap(IMAGES.Skills)} */}
+    // <div className="container d-flex flex-column border border-5 border-danger">
+      <Section name="Technical Skills">
+      {objectMap(IMAGES.Skills)}
       {/* {objectMap(IMAGES.Skills.Row2)} */}
-      <div className="border border-5 border-primary">
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+      {/* <div className="row d-flex flex-row justify-content-center border border-5 border-primary">
+          <div className="col d-flex flex-column skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.React.image}
@@ -45,7 +45,7 @@ const TechSkills = () => {
             />
             <p className="skill-title m-0 p-0">{IMAGES.Skills.React.name}</p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col d-flex flex-column skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.Nodejs.image}
@@ -53,7 +53,7 @@ const TechSkills = () => {
             />
             <p className="skill-title m-0 p-0">{IMAGES.Skills.Nodejs.name}</p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col d-flex flex-column skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.Expressjs.image}
@@ -63,7 +63,7 @@ const TechSkills = () => {
               {IMAGES.Skills.Expressjs.name}
             </p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col d-flex flex-column skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.MongoDB.image}
@@ -72,8 +72,8 @@ const TechSkills = () => {
             <p className="skill-title m-0 p-0">{IMAGES.Skills.MongoDB.name}</p>
           </div>
       </div>
-      <div className="row border border-5 border-primary">
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+      <div className="row d-flex flex-row justify-content-center border border-5 border-primary">
+          <div className="col skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.HTML.image}
@@ -81,7 +81,7 @@ const TechSkills = () => {
             />
             <p className="skill-title m-0 p-0">{IMAGES.Skills.HTML.name}</p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.CSS.image}
@@ -89,7 +89,7 @@ const TechSkills = () => {
             />
             <p className="skill-title m-0 p-0">{IMAGES.Skills.CSS.name}</p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.JavaScript.image}
@@ -99,7 +99,7 @@ const TechSkills = () => {
               {IMAGES.Skills.JavaScript.name}
             </p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.Git.image}
@@ -107,7 +107,7 @@ const TechSkills = () => {
             />
             <p className="skill-title m-0 p-0">{IMAGES.Skills.Git.name}</p>
         </div>
-          <div className="skill-frame border border-3 border-light rounded m-2 p-1">
+          <div className="col skill-frame border border-3 border-light rounded m-2 p-1">
             <img
               className="skill-img img-fluid"
               src={IMAGES.Skills.MySQL.image}
@@ -116,8 +116,8 @@ const TechSkills = () => {
             <p className="skill-title m-0 p-0">{IMAGES.Skills.MySQL.name}</p>
           </div>
       </div>
-    </div>
-    // </Section>
+    </div> */}
+    </Section>
   );
 };
 
