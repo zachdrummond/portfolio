@@ -20,4 +20,17 @@
 
     /*========== Font and typography ==========*/
     --body-font: "Lato", sans-serif;
+
+    --big-font-size: 2rem; /* 32px */
+    --h1-font-size: 1.5rem; /* 24px */
+    --h2-font-size: 1.25rem; /* 20px */
+    --h3-font-size: 1.125rem; /* 18px */
+    --normal-font-size: .938rem; /* 15.008px */
+    --small-font-size: .813rem; /* 13.008px */
+    --smaller-font-size: .75rem; /* 12px */
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
 }
