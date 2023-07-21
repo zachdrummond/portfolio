@@ -21,12 +21,12 @@
     /*========== Font and typography ==========*/
     --body-font: "Lato", sans-serif;
 
-    --big-font-size: 2rem; /* 32px */
-    --h1-font-size: 1.5rem; /* 24px */
-    --h2-font-size: 1.25rem; /* 20px */
-    --h3-font-size: 1.125rem; /* 18px */
+    --big-font-size: 2rem;       /* 32px */
+    --h1-font-size: 1.5rem;      /* 24px */
+    --h2-font-size: 1.25rem;     /* 20px */
+    --h3-font-size: 1.125rem;    /* 18px */
     --normal-font-size: .938rem; /* 15.008px */
-    --small-font-size: .813rem; /* 13.008px */
+    --small-font-size: .813rem;  /* 13.008px */
     --smaller-font-size: .75rem; /* 12px */
 
     /*========== Font weight ==========*/
@@ -35,16 +35,29 @@
 
     /*========== Bottom Margin ==========*/
     --mb-0-25: .25rem; /* 4px */
-    --mb-0-5: .5rem; /* 8px */
+    --mb-0-5: .5rem;   /* 8px */
     --mb-0-75: .75rem; /* 12px */
-    --mb-1: 1rem; /* 16px */
-    --mb-1-5: 1.5rem; /* 24px */
-    --mb-2: 2rem; /* 32px */
-    --mb-2-5: 2.5rem; /* 40px */
-    --mb-3: 3rem; /* 48x */
+    --mb-1: 1rem;      /* 16px */
+    --mb-1-5: 1.5rem;  /* 24px */
+    --mb-2: 2rem;      /* 32px */
+    --mb-2-5: 2.5rem;  /* 40px */
+    --mb-3: 3rem;      /* 48px */
 
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /* Font size for Large Devices */
+    @media screen and (min-width: 968px) {
+        :root {
+            --big-font-size: 3rem;        /* 48px */
+            --h1-font-size: 2.25rem;      /* 36px */
+            --h2-font-size: 1.5rem;       /* 24px */
+            --h3-font-size: 1.25rem;      /* 20px */
+            --normal-font-size: 1rem;     /* 16px */
+            --small-font-size: .875rem;   /* 14px */
+            --smaller-font-size: .813rem; /* 13.008px */
+        }
+    }
 }
