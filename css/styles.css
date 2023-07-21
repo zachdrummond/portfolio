@@ -1,10 +1,13 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 /* ==================== VARIABLES ==================== */
 :root {
-    --header-height: 3rem;
+    --header-height: 3rem; /* 48px */
 
     /* ========== Colors ========== */
     /* Change favorite color */
-    --hue-color: 209;
+    --hue-color: 209; /* ultramarine */
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -61,3 +64,40 @@
         }
     }
 }
+
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+  }
+  
+ul {
+    list-style: none;
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
