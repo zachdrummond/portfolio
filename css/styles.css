@@ -33,4 +33,13 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
+    /*========== Bottom Margin ==========*/
+    --mb-0-25: .25rem; /* 4px */
+    --mb-0-5: .5rem; /* 8px */
+    --mb-0-75: .75rem; /* 12px */
+    --mb-1: 1rem; /* 16px */
+    --mb-1-5: 1.5rem; /* 24px */
+    --mb-2: 2rem; /* 32px */
+    --mb-2-5: 2.5rem; /* 40px */
+    --mb-3: 3rem; /* 48x */
 }
