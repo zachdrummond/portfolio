@@ -531,7 +531,7 @@ img {
   color: var(--first-color);
 }
 
-.qualification__icont {
+.qualification__icon {
   font-size: 1.8rem;
   margin-right: var(--mb-0-25);
 }
@@ -547,7 +547,7 @@ img {
   font-weight: var(--font-regular);
 }
 
-.qualification__subtitle{
+.qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
@@ -566,7 +566,7 @@ img {
   border-radius: 50%;
 }
 
-.qualification__line{
+.qualification__line {
   display: block;
   width: 1px;
   height: 100%;
@@ -574,7 +574,7 @@ img {
   transform: translate(6px, -7px);
 }
 
-.qualification[data-content] {
+.qualification [data-content] {
   display: none;
 }
 
