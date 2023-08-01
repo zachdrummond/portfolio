@@ -94,8 +94,6 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*==================== TESTIMONIAL ====================*/
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
