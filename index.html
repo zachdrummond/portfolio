@@ -789,19 +789,89 @@
           <div class="project__container container grid">
             <div class="project__data">
               <h2 class="project__title">You have a new project</h2>
-              <p class="project__description">Contact me now and get a 30% discount on your new project.</p>
+              <p class="project__description">
+                Contact me now and get a 30% discount on your new project.
+              </p>
               <a href="#contact" class="button button--flex button--white">
-                <i class="uil uil-message project__icon button__icon"></i> Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+                Contact Me
               </a>
             </div>
 
-            <img src="assets/img/project.png" alt="" class="project__img">
+            <img src="assets/img/project.png" alt="" class="project__img" />
           </div>
         </div>
       </section>
 
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <!-- PERSONAL INFO -->
+          <div>
+            <!-- PHONE NUMBER -->
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle">999-777-666</span>
+              </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">alexa@email.com</span>
+              </div>
+            </div>
+
+            <!-- LOCATION -->
+            <div class="contact__information">
+              <i class="uil uil-map-marker"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">Atlanta, GA, USA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <!-- NAME -->
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="contact__content">
+                <label for="" class="contact__label">Email</label>
+                <input type="email" class="contact__input" />
+              </div>
+
+              <!-- MESSAGE -->
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+              </div>
+
+              <div>
+                <a href="#" class="button button--flex">
+                  <i class="uil uil-message button__icon"></i> Send Message
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
