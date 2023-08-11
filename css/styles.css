@@ -454,12 +454,12 @@ img {
 .experience__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
 }
 
 .experience__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  margin-bottom: var(--mb-1);
 }
 
 .experience__rounder {
