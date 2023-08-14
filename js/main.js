@@ -116,3 +116,7 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+/*==================== FOOTER DATE ====================*/
+const footerDate = document.getElementById("date");
+footerDate.innerHTML = new Date().getFullYear();
