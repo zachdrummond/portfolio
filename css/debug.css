@@ -1,0 +1,15 @@
+/* Targets the children of body for debugging */
+body * {
+    /* hsla = Hue - Color | Saturation | Lightness - 100% = White, 50% = Normal, 0% = Black | Alpha - Transparent */
+    color: hsla(210, 100%, 100%, 0.88) !important; /* Sets font color */
+    background: hsla(210, 100%, 50%, 0.33) !important;
+    /* Width | Style | Color */
+    outline: 0.25rem solid hsla(210, 100%, 100%, 0.50) !important;
+  }
+  
+  /* Uses flexbox to horizontally and vertically center elements*/
+  .debug-center {
+    display: flex; /* Flexbox - Fast way to position elements inside of a box */
+    justify-content: center;
+    align-items: center;
+  }
