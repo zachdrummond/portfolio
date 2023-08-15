@@ -1,14 +1,4 @@
 :root {
-    /* ========== BREAKPOINTS ========== */
-    --mobile-max: 599px;
-    --tablet: 600px;
-    --tablet-max: 767px;
-    --laptop: 768px;
-    --laptop-max: 1023px;
-    --desktop: 1024px;
-    --desktop-max: 1439px;
-    --cinema: 1440px;
-    
     /* ========== COLORS ========== */
     /* Change favorite color */
     --hue-color: 209; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
