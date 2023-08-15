@@ -1,17 +1,29 @@
 :root {
     /* ========== SPACING ========== */
     --spacing-base: 0.25rem;  /* 4px */
-    --spacing-2: var(--spacing-base) * 2;   /* 0.50rem | 8px */
-    --spacing-3: var(--spacing-base) * 3;   /* 0.75rem | 12px */
-    --spacing-4: var(--spacing-base) * 4;   /* 1.0rem  | 16px */
-    --spacing-5: var(--spacing-base) * 5;   /* 1.25rem | 20px */
-    --spacing-6: var(--spacing-base) * 6;   /* 1.50rem | 24px */
-    --spacing-7: var(--spacing-base) * 7;   /* 1.75rem | 28px */
-    --spacing-8: var(--spacing-base) * 8;   /* 2.0rem  | 32px */
-    --spacing-9: var(--spacing-base) * 9;   /* 2.25rem | 36px */
-    --spacing-10: var(--spacing-base) * 10; /* 2.50rem | 40px */
-    --spacing-11: var(--spacing-base) * 11; /* 2.75rem | 44px */
-    --spacing-12: var(--spacing-base) * 12; /* 3.0rem  | 48px */
+    --spacing-2: calc(var(--spacing-base) * 2);   /* 0.50rem | 8px */
+    --spacing-3: calc(var(--spacing-base) * 3);   /* 0.75rem | 12px */
+    --spacing-4: calc(var(--spacing-base) * 4);   /* 1.0rem  | 16px */
+    --spacing-5: calc(var(--spacing-base) * 5);   /* 1.25rem | 20px */
+    --spacing-6: calc(var(--spacing-base) * 6);   /* 1.50rem | 24px */
+    --spacing-7: calc(var(--spacing-base) * 7);   /* 1.75rem | 28px */
+    --spacing-8: calc(var(--spacing-base) * 8);   /* 2.0rem  | 32px */
+    --spacing-9: calc(var(--spacing-base) * 9);   /* 2.25rem | 36px */
+    --spacing-10: calc(var(--spacing-base) * 10); /* 2.50rem | 40px */
+    --spacing-11: calc(var(--spacing-base) * 11); /* 2.75rem | 44px */
+    --spacing-12: calc(var(--spacing-base) * 12); /* 3.0rem  | 48px */
+    --spacing-13: calc(var(--spacing-base) * 13); /* 3.25rem | 52px */
+    --spacing-14: calc(var(--spacing-base) * 14); /* 3.50rem | 56px */
+    --spacing-15: calc(var(--spacing-base) * 15); /* 3.75rem | 60px */
+    --spacing-16: calc(var(--spacing-base) * 16); /* 4.0rem  | 64px */
+
+    --spacing-192: calc(var(--spacing-base) * 192); /* 48.0rem  | 768px */
+    --spacing-242: calc(var(--spacing-base) * 242); /* 60.5rem  | 968px */
+
+    /* ========== MOTION ========== */
+    --time-100: .1s;
+    --time-200: .2s;
+    --time-300: .3s;
 
     --header-height: 3rem; /* 48px */
 
