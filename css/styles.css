@@ -541,27 +541,8 @@ img {
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
-}
-
-.contact__information {
   display: flex;
-  margin-bottom: var(--mb-2);
-}
-
-.contact__icon {
-  font-size: 2rem;
-  color: var(--first-color);
-  margin-right: var(--mb-0-75);
-}
-
-.contact__title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-regular);
-}
-
-.contact__subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  justify-content: center;
 }
 
 .contact__content {
@@ -584,6 +565,10 @@ img {
   border: none;
   outline: none;
   padding: .25rem .5rem .5rem 0;
+}
+
+#submitBtn {
+  text-align: center;
 }
 
 /*==================== FOOTER ====================*/
