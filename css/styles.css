@@ -7,15 +7,15 @@
     font-size: var(--h1-font-size);
     color: var(--title-color);
     text-align: center;
-    margin-bottom: var(--mb-3);
+    margin-bottom: var(--spacing-12);
   }
 
 
 /*==================== LAYOUT ====================*/
 .container {
     max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
+    margin-left: var(--spacing-6);
+    margin-right: var(--spacing-6);
   }
   
 .grid {
@@ -171,11 +171,11 @@
   font-size: var(--h3-font-size);
   color: var(--text-color);
   font-weight: var(--font-regular);
-  margin-bottom: var(--mb-0-75)
+  margin-bottom: var(--spacing-3)
 }
 
 .home__description {
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--spacing-8);
 }
 
 /*==================== BUTTONS ====================*/
@@ -194,7 +194,7 @@
 
 .button__icon {
   font-size: 1.25rem;
-  margin-right: var(--mb-0-5);
+  margin-right: var(--spacing-2);
   transition: .3s;
 }
 
@@ -236,7 +236,7 @@
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
-  margin-right: var(--mb-1);
+  margin-right: var(--spacing-4);
   cursor: pointer;
 }
 
@@ -281,13 +281,13 @@
 
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--spacing-10);
 }
 
 .about__info {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--spacing-10);
 }
 
 .about__info-title {
@@ -315,7 +315,7 @@
 .experience__tabs {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--spacing-8);
 }
 
 .experience__button {
@@ -330,7 +330,7 @@
 
 .experience__icon {
   font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+  margin-right: var(--spacing-base);
 }
 
 .experience__data {
@@ -352,7 +352,7 @@
 .experience__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--spacing-4);
 }
 
 .experience__rounder {
@@ -400,11 +400,11 @@
 
 .portfolio__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--spacing-3);
 }
 
 .portfolio__description {
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--spacing-3);
 }
 
 .portfolio__button:hover .button__icon {
@@ -423,11 +423,11 @@
 
 .project__title {
   font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: var(--spacing-3);
 }
 
 .project__description {
-  margin-bottom: var(--mb-1-5);
+  margin-bottom: var(--spacing-6);
 }
 
 .project__title,
@@ -490,12 +490,12 @@
 
 .footer__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-25);
+  margin-bottom: var(--spacing-base);
 }
 
 .footer__social {
   font-size: 1.25rem;
-  margin-right: var(--mb-1);
+  margin-right: var(--spacing-4);
 }
 
 .footer__social:hover {
@@ -534,8 +534,8 @@
 /* For small devices */
 @media screen and (max-width: 350px) {
   .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    margin-left: var(--spacing-4);
+    margin-right: var(--spacing-4);
   }
   
   .nav__menu {
@@ -688,7 +688,7 @@
   }
 
   .experience__button {
-    margin: 0 var(--mb-1);
+    margin: 0 var(--spacing-4);
   }
 
   .experience__sections {
