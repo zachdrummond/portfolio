@@ -95,6 +95,14 @@
     .footer_container {
       padding: 0 var(--spacing-4);
     }
+
+    #brandInitials {
+      display: none;
+    }
+
+    #brandName {
+      display: inline-block;
+    }
   
     .nav {
       height: calc((--header-height) + var(--spacing-6));

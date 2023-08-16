@@ -33,6 +33,10 @@
   }
 
 /*==================== NAV ====================*/
+#brandName {
+  display: none;
+}
+
 .nav {
   max-width: var(--spacing-242);
   height: var(--header-height);
