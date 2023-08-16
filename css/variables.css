@@ -1,5 +1,5 @@
 :root {
-    /* ========== COLORS ========== */
+    /* ============================ COLORS ============================= */
     /* Change favorite color */
     --hue-color: 209; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
@@ -17,16 +17,16 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*========== MISCELLANEOUS ==========*/
+    /* ========================= MISCELLANEOUS ========================= */
     --header-height: var(--spacing-12);
 
-    /* ========== MOTION ========== */
+    /* ============================ MOTION ============================= */
     --time-100: .1s;
     --time-200: .2s;
     --time-300: .3s;
     --time-400: .4s;
 
-    /* ========== SPACING ========== */
+    /* ============================ SPACING ============================ */
     --spacing-base: 0.25rem;  /* 4px */
     --spacing-2: calc(var(--spacing-base) * 2);   /* 0.50rem  | 8px */
     --spacing-3: calc(var(--spacing-base) * 3);   /* 0.75rem  | 12px */
@@ -64,7 +64,7 @@
     --spacing-192: calc(var(--spacing-base) * 192); /* 48.0rem  | 768px */
     --spacing-242: calc(var(--spacing-base) * 242); /* 60.5rem  | 968px */
 
-    /*========== TYPOGRAPHY ==========*/
+    /* =========================== TYPOGRAPHY ========================== */
     --body-font: "Lato", sans-serif;
 
     /* Font Size */
@@ -100,7 +100,7 @@
     }
 }
 
-/*========== DARK THEME ==========*/
+/* =========================== DARK THEME ========================== */
 body.dark-theme {
     /* HSL color mode */
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
