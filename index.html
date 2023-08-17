@@ -372,18 +372,18 @@
 
         <div class="contact_container container grid">
           <!-- CONTACT FORM -->
-          <form action="" class="contact_form grid">
+          <form id="contactForm" action="" class="contact_form grid">
             <div class="contact_inputs grid">
               <!-- NAME -->
               <div class="contact_content">
                 <label for="" class="contact_label">Name</label>
-                <input type="text" class="contact_input" />
+                <input id="contact_name" type="text" class="contact_input" />
               </div>
 
               <!-- EMAIL -->
               <div class="contact_content">
                 <label for="" class="contact_label">Email</label>
-                <input type="email" class="contact_input" />
+                <input id="contact_email" type="email" class="contact_input" />
               </div>
 
               <!-- MESSAGE -->
@@ -391,7 +391,7 @@
                 <label for="" class="contact_label">Message</label>
                 <textarea
                   name=""
-                  id=""
+                  id="contact_message"
                   cols="0"
                   rows="7"
                   class="contact_input"
@@ -400,9 +400,9 @@
 
               <!-- SUBMIT -->
               <div id="submitBtn">
-                <a href="#" class="button button--flex">
+                <button onclick="sendMail()" class="button button--flex">
                   <i class="uil uil-message button_icon"></i> Send Message
-                </a>
+                </button>
               </div>
             </div>
           </form>
@@ -446,7 +446,16 @@
       <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
 
-    <!--==================== MAIN JS ====================-->
+    <!--==================== JAVASCRIPT ====================-->
     <script src="js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("fb8CbjtLjJNU4jK9v");
+      })();
+    </script>
   </body>
 </html>
