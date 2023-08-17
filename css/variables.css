@@ -1,7 +1,7 @@
 :root {
     /* ============================ COLORS ============================= */
     /* Change favorite color */
-    --hue-color: 209; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 218; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     --white: #d8d8d8;
 
@@ -26,7 +26,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 0%, 85%);
+    --body-color: hsl(var(--hue-color), 0%, 95%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
