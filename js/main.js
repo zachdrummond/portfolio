@@ -20,11 +20,11 @@ if (navClose) {
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll(".nav__link");
+const navLink = document.querySelectorAll(".nav_link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
+  // When we click on each nav_link, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -38,16 +38,16 @@ tabs.forEach((tab) => {
     const target = document.querySelector(tab.dataset.target);
 
     tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("experience__active");
+      tabContent.classList.remove("experience_active");
     });
 
-    target.classList.add("experience__active");
+    target.classList.add("experience_active");
 
     tabs.forEach((tab) => {
-      tab.classList.remove("experience__active");
+      tab.classList.remove("experience_active");
     });
 
-    tab.classList.add("experience__active");
+    tab.classList.add("experience_active");
   });
 });
 
@@ -63,9 +63,9 @@ function scrollActive(){
         sectionId = current.getAttribute('id');
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link');
         }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link');
         }
     })
 }
