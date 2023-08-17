@@ -3,6 +3,20 @@
     /* Change favorite color */
     --hue-color: 209; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
+    --white: #d8d8d8;
+
+    /* *********************************************** #36 */
+    --stormy: #494e6b;
+    --cloud: #98878f;
+    --sunset: #985e6d;
+    --evening: #192231;
+  
+    /* *********************************************** #20 */
+    --crimson-sky: #cf6766;
+    --indigo: #30415d;
+    --ultramarine: #031424;
+    --light-blue: #8eaebd;
+
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -12,7 +26,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color: hsl(var(--hue-color), 0%, 85%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
