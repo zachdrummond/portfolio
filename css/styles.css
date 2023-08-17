@@ -277,46 +277,6 @@
   bottom: var(--spacing-20);
 }
 
-/*==================== ABOUT ====================*/
-.about_img {
-  width: var(--spacing-50);
-  border-radius: var(--spacing-2);
-  justify-self: center;
-  align-self: center;
-}
-
-.about_description {
-  text-align: center;
-  margin-bottom: var(--spacing-10);
-}
-
-.about_info {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--spacing-10);
-}
-
-.about_info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-bold);
-  color: var(--title-color);
-}
-
-.about_info-name {
-  font-size: var(--smaller-font-size);
-}
-
-.about_info-title,
-.about_info-name {
-  display: block;
-  text-align: center;
-}
-
-.about_buttons {
-  display: flex;
-  justify-content: center;
-}
-
 /*==================== EXPERIENCE ====================*/
 .experience_tabs {
   display: flex;

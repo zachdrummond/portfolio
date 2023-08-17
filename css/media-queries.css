@@ -49,7 +49,6 @@
       justify-self: center;
     }
   
-    .about_container,
     .skills_container,
     .portfolio_content,
     .project_container,
@@ -143,26 +142,6 @@
   
     .home_blob {
       width: var(--spacing-67);
-    }
-  
-    .about_container {
-      column-gap: var(--spacing-20);
-    }
-  
-    .about_img {
-      width: var(--spacing-87);
-    }
-  
-    .about_description {
-      text-align: initial;
-    }
-  
-    .about_info {
-      justify-content: space-between;
-    }
-  
-    .about_buttons {
-      justify-content: initial;
     }
   
     .experience_tabs {
