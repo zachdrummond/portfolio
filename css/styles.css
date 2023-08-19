@@ -188,7 +188,7 @@
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: var(--container-color);
+  color: #fff;
   padding: var(--spacing-4);
   border-radius: var(--spacing-2);
   font-weight: var(--font-regular);
@@ -205,12 +205,12 @@
 }
 
 .button--white {
-  background-color: var(--container-color);
+  background-color: #fff;
   color: var(--first-color);
 }
 
 .button--white:hover {
-  background-color: var(--container-color);
+  background-color: #fff;
 }
 
 .button--flex {
@@ -477,7 +477,7 @@
 .footer_link,
 .footer_social,
 .footer_copy {
-  color: var(--container-color);
+  color: #fff;
 }
 
 /*========== SCROLL BAR ==========*/
