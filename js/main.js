@@ -144,14 +144,16 @@ function sendMail() {
   const serviceID = "service_3rmf0mq";
   const templateID = "template_9abixd9";
 
-  emailjs
-    .send(serviceID, templateID, params)
-    .then((response) => {
-      (document.getElementById("contact_name").value = ""),
-        (document.getElementById("contact_email").value = ""),
-        (document.getElementById("contact_message").value = ""),
-        console.log(response);
-      alert("Message sent successfully");
-    })
-    .catch((error) => console.log(error));
+  alert("Message Sent");
+
+  // emailjs
+  //   .send(serviceID, templateID, params)
+  //   .then((response) => {
+  //     (document.getElementById("contact_name").value = ""),
+  //       (document.getElementById("contact_email").value = ""),
+  //       (document.getElementById("contact_message").value = ""),
+  //       console.log(response);
+  //     alert("Message sent successfully");
+  //   })
+  //   .catch((error) => console.log(error));
 };

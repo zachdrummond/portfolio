@@ -439,6 +439,10 @@
   text-align: center;
 }
 
+#submitBtn > button:hover {
+  cursor: pointer;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: var(--spacing-8);

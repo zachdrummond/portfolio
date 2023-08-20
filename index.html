@@ -377,13 +377,13 @@
               <!-- NAME -->
               <div class="contact_content">
                 <label for="" class="contact_label">Name</label>
-                <input id="contact_name" type="text" class="contact_input" />
+                <input id="contact_name" type="text" class="contact_input" required />
               </div>
 
               <!-- EMAIL -->
               <div class="contact_content">
                 <label for="" class="contact_label">Email</label>
-                <input id="contact_email" type="email" class="contact_input" />
+                <input id="contact_email" type="email" class="contact_input" required />
               </div>
 
               <!-- MESSAGE -->
@@ -395,12 +395,13 @@
                   cols="0"
                   rows="7"
                   class="contact_input"
+                  required
                 ></textarea>
               </div>
 
               <!-- SUBMIT -->
               <div id="submitBtn">
-                <button onclick="sendMail()" class="button button--flex">
+                <button type="submit" onclick="sendMail()" class="button button--flex">
                   <i class="uil uil-message button_icon"></i> Send Message
                 </button>
               </div>
