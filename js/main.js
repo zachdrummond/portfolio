@@ -134,26 +134,27 @@ const footerDate = document.getElementById("date");
 footerDate.innerHTML = new Date().getFullYear();
 
 /*==================== EMAIL JS ====================*/
-function sendMail() {
-  const params = {
-    name: document.getElementById("contact_name").value,
-    email: document.getElementById("contact_email").value,
-    message: document.getElementById("contact_message").value,
-  };
+function sendMail(event) {
 
-  const serviceID = "service_3rmf0mq";
-  const templateID = "template_9abixd9";
+  if (document.getElementById("contact_form").checkValidity()) {
+    const params = {
+      name: document.getElementById("contact_name").value,
+      email: document.getElementById("contact_email").value,
+      message: document.getElementById("contact_message").value,
+    };
 
-  alert("Message Sent");
+    const serviceID = "service_3rmf0mq";
+    const templateID = "template_9abixd9";
 
-  // emailjs
-  //   .send(serviceID, templateID, params)
-  //   .then((response) => {
-  //     (document.getElementById("contact_name").value = ""),
-  //       (document.getElementById("contact_email").value = ""),
-  //       (document.getElementById("contact_message").value = ""),
-  //       console.log(response);
-  //     alert("Message sent successfully");
-  //   })
-  //   .catch((error) => console.log(error));
-};
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((response) => {
+        (document.getElementById("contact_name").value = ""),
+          (document.getElementById("contact_email").value = ""),
+          (document.getElementById("contact_message").value = ""),
+          console.log(response);
+        alert("Message sent successfully");
+      })
+      .catch((error) => console.log(error));
+  }
+}
