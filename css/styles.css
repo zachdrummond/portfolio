@@ -398,7 +398,7 @@
 
 .project_title,
 .project_description {
-  color:var(--container-color);
+  color: #fff;
 }
 
 .project_img {

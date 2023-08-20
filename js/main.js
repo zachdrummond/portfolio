@@ -152,9 +152,8 @@ function sendMail(event) {
         (document.getElementById("contact_name").value = ""),
           (document.getElementById("contact_email").value = ""),
           (document.getElementById("contact_message").value = ""),
-          console.log(response);
-        alert("Message sent successfully");
+        alert("Message sent successfully!");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => alert("Something went wrong. Please try again later."));
   }
 }
