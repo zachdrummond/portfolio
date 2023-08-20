@@ -134,26 +134,50 @@ const footerDate = document.getElementById("date");
 footerDate.innerHTML = new Date().getFullYear();
 
 /*==================== EMAIL JS ====================*/
-function sendMail(event) {
+const contactForm = document.getElementById("contact_form"),
+  contactMessage = document.getElementById("contact_message");
 
-  if (document.getElementById("contact_form").checkValidity()) {
-    const params = {
-      name: document.getElementById("contact_name").value,
-      email: document.getElementById("contact_email").value,
-      message: document.getElementById("contact_message").value,
-    };
+const sendEmail = (e) => {
+  e.preventDefault();
 
-    const serviceID = "service_3rmf0mq";
-    const templateID = "template_9abixd9";
+  // serviceID - templateID - #form - publicKey
+  emailjs.sendForm(
+    "service_3rmf0mq",
+    "template_9abixd9",
+    '#contact_form',
+    "fb8CbjtLjJNU4jK9v"
+  ).then(() => {
+    contactMessage.textContent = "Message sent successfully";
 
-    emailjs
-      .send(serviceID, templateID, params)
-      .then((response) => {
-        (document.getElementById("contact_name").value = ""),
-          (document.getElementById("contact_email").value = ""),
-          (document.getElementById("contact_message").value = ""),
-        alert("Message sent successfully!");
-      })
-      .catch((error) => alert("Something went wrong. Please try again later."));
-  }
-}
+    setTimeOut(() => {
+      contactMessage.textContent = '';
+    }, 5000);
+
+    contactForm.reset();
+  }, () => {
+    contactMessage.textContent = "Something went wrong. Please try again later.";
+  });
+};
+
+contactForm.addEventListener("submit", sendEmail);
+
+// function sendMail(event) {
+//   if (document.getElementById("contact_form").checkValidity()) {
+//     const params = {
+//       name: document.getElementById("contact_name").value,
+//       email: document.getElementById("contact_email").value,
+//       message: document.getElementById("contact_message").value,
+//     };
+
+//     // serviceID - templateID - #form - publicKey
+//     emailjs
+//       .send("service_3rmf0mq", "template_9abixd9", params, "fb8CbjtLjJNU4jK9v")
+//       .then((response) => {
+//         (document.getElementById("contact_name").value = ""),
+//           (document.getElementById("contact_email").value = ""),
+//           (document.getElementById("contact_message").value = ""),
+//           alert("Message sent successfully!");
+//       })
+//       .catch((error) => alert("Something went wrong. Please try again later."));
+//   }
+// }

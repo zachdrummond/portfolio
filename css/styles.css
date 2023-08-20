@@ -435,6 +435,14 @@
   padding: var(--spacing-base) var(--spacing-2) var(--spacing-2) 0;
 }
 
+.contact_message {
+  /* color:  */
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
+
 #submitBtn {
   text-align: center;
 }

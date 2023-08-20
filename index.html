@@ -161,6 +161,12 @@
               Education
             </div>
 
+            <!--==================== SKILLS TAB ====================-->
+            <div class="experience_button button--flex" data-target="#skills">
+              <i class="uil uil-wrench experience_icon"></i>
+              Skills
+            </div>
+
             <!--==================== WORK TAB ====================-->
             <div class="experience_button button--flex" data-target="#work">
               <i class="uil uil-briefcase-alt experience_icon"></i>
@@ -372,18 +378,28 @@
 
         <div class="contact_container container grid">
           <!-- CONTACT FORM -->
-          <form id="contact_form" action="" class="contact_form grid">
+          <form id="contact_form" action="" class="grid">
             <div class="contact_inputs grid">
               <!-- NAME -->
               <div class="contact_content">
                 <label for="" class="contact_label">Name</label>
-                <input id="contact_name" type="text" class="contact_input" required />
+                <input
+                  id="contact_name"
+                  type="text"
+                  class="contact_input"
+                  required
+                />
               </div>
 
               <!-- EMAIL -->
               <div class="contact_content">
                 <label for="" class="contact_label">Email</label>
-                <input id="contact_email" type="email" class="contact_input" required />
+                <input
+                  id="contact_email"
+                  type="email"
+                  class="contact_input"
+                  required
+                />
               </div>
 
               <!-- MESSAGE -->
@@ -399,9 +415,15 @@
                 ></textarea>
               </div>
 
+              <p id="contact_message">Message sent successfully</p>
+
               <!-- SUBMIT -->
               <div id="submitBtn">
-                <button type="submit" onclick="sendMail(event)" class="button button--flex">
+                <button
+                  type="submit"
+                  onclick="sendMail(event)"
+                  class="button button--flex"
+                >
                   <i class="uil uil-message button_icon"></i> Send Message
                 </button>
               </div>
@@ -449,14 +471,6 @@
 
     <!--==================== JAVASCRIPT ====================-->
     <script src="js/main.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("fb8CbjtLjJNU4jK9v");
-      })();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </body>
 </html>

@@ -209,7 +209,7 @@
       column-gap: var(--spacing-20);
     }
   
-    .contact_form {
+    #contact_form {
       width: var(--spacing-115);
     }
   }
