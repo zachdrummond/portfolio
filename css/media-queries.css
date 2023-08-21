@@ -51,8 +51,6 @@
   
     .skills_container,
     .portfolio_content,
-    .project_container,
-    .contact_container,
     .footer_container {
       grid-template-columns: repeat(2, 1fr);
     }
