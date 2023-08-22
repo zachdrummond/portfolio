@@ -21,9 +21,6 @@
     .home_blob {
       width: var(--spacing-45);
     }
-    .skills_title {
-      font-size: var(--normal-font-size);
-    }
   
     .experience_data {
       gap: var(--spacing-2);
@@ -49,7 +46,6 @@
       justify-self: center;
     }
   
-    .skills_container,
     .portfolio_content,
     .footer_container {
       grid-template-columns: repeat(2, 1fr);
