@@ -35,7 +35,9 @@ const tabs = document.querySelectorAll("[data-target]"),
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
+    console.log("TAB",tab);
     const target = document.querySelector(tab.dataset.target);
+    console.log("target",target);
 
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("experience_active");

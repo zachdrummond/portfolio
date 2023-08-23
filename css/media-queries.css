@@ -56,6 +56,10 @@
       grid-template-columns: .6fr;
       justify-content: center;
     }
+
+    .skills_info {
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
   
   /*==================== MEDIUM DEVICES 2 ====================*/
