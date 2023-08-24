@@ -45,7 +45,13 @@
       order: 1;
       justify-self: center;
     }
+
+    .projects__container {
+      grid-template-columns: 360px;
+      justify-content: center;
+    }
   
+    .project__container,
     .portfolio_content,
     .footer_container {
       grid-template-columns: repeat(2, 1fr);
@@ -169,6 +175,10 @@
     .project_bg {
       background: none;
     }
+
+    .projects__container {
+      grid-template-columns: repeat(2, 352px)
+    }
   
     .project_container {
       background-color: var(--first-color-second);
@@ -202,9 +212,24 @@
     .home_social {
       transform: translateX(-var(--spacing-24));
     }
+
+    .projects__container {
+      grid-template-columns: repeat(3, 350px);
+      row-gap: 3rem;
+      padding-block: 2.5rem 4rem;
+    }
+
+    .projects__button {
+      font-size: var(--normal-font-size);
+    }
   
     .portfolio_content {
       column-gap: var(--spacing-20);
+    }
+
+    .contact_form {
+      grid-template-columns: 680px;
+      padding-block: 2.5rem 2rem;
     }
   
     #contact_form {
