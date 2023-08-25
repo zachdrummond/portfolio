@@ -408,7 +408,7 @@
 
 /*==================== PORTFOLIO ====================*/
 .portfolio {
-  background-color: var(--container-color);
+  background-color: var(--first-color-second);
 }
 
 .portfolio_container {
@@ -446,9 +446,10 @@
   transition: bottom var(--time-400);
 }
 
+.portfolio_title,
 .portfolio_subtitle,
 .portfolio_button {
-  color: var(--title-color);
+  color: #fff;
   font-size: var(--small-font-size);
 }
 
