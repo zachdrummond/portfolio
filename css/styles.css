@@ -258,7 +258,7 @@
   background-color: var(--first-color);
   opacity: .8;
   padding: 0 var(--spacing-base);
-  border-radius: var(--spacing-2);;
+  border-radius: var(--spacing-2);
   z-index: var(--z-tooltip);
   transition: var(--time-400);
 }
@@ -358,7 +358,7 @@
 
 .skills_info {
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem 1rem;
+  gap: var(--spacing-4) var(--spacing-4);
 }
 
 .skills_data {
@@ -367,16 +367,16 @@
 }
 
 .skills_blob {
-  width: 80px;
-  height: 80px;
+  width: var(--spacing-20);
+  height: var(--spacing-20);
   border: 2px solid var(--first-color);
-  border-radius: 3rem;
+  border-radius: var(--spacing-12);
   place-items: center;
-  margin-top: .5rem;
+  margin-top: var(--spacing-2);
 }
 
 .skills_blob img {
-  width: 40px;
+  width: var(--spacing-10);
 }
 
 .skills_name {
@@ -385,7 +385,7 @@
 
 /* Animation SKills */
 .skills_blob:hover img {
-  animation: bounce-skills .6s;
+  animation: bounce-skills var(--time-600);
 }
 
 @keyframes bounce-skills {
@@ -393,13 +393,13 @@
     transform: translate(0);
   }
   20% {
-    transform: translateY(-6px);
+    transform: translateY(calc(var(--spacing-2) * -1));
   }
   40% {
     transform: translate(0);
   }
   60% {
-    transform: translateY(-3px);
+    transform: translateY(calc(var(--spacing-base) * -1));
   }
   80% {
     transform: translate(0);
@@ -412,14 +412,13 @@
 }
 
 .portfolio_container {
-  row-gap: 2rem;
+  row-gap: var(--spacing-8);
   justify-content: center;
-  padding-block: 1rem;
 }
 
 .portfolio_card {
   position: relative;
-  border-radius: 1rem;
+  border-radius: var(--spacing-4);
   overflow: hidden;
 }
 
@@ -437,14 +436,14 @@
   background: linear-gradient(180deg, 
   hsla(0, 0%, 0%, 0) 0%, 
   hsla(var(--hue-color), 70%, 40%, 0.8) 120%);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px); /* For Safari */
-  border-radius: 1rem;
+  backdrop-filter: blur(var(--spacing-base));
+  -webkit-backdrop-filter: blur(var(--spacing-base)); /* For Safari */
+  border-radius: var(--spacing-4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: bottom .4s;
+  transition: bottom var(--time-400);
 }
 
 .portfolio_subtitle,
@@ -455,7 +454,7 @@
 
 .portfolio_subtitle {
   display: block;
-  margin-bottom: .25rem;
+  margin-bottom: var(--spacing-base);
 }
 
 .portfolio_title {
@@ -466,12 +465,12 @@
 .portfolio_button {
   display: flex;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: var(--spacing-2);
   font-weight: var(--font-regular);
 }
 
 .portfolio_button i {
-  font-size: 1.25rem;
+  font-size: var(--spacing-5);
 }
 
 .portfolio_card:hover .portfolio_modal {
@@ -520,7 +519,7 @@
 .contact_form,
 .contact_group {
   display: grid;
-  row-gap: 1.25rem;
+  row-gap: var(--spacing-5);
 }
 
 .contact_form {
@@ -530,7 +529,7 @@
 .contact_box {
   position: relative;
   width: 100%;
-  height: 58px;
+  height: var(--spacing-14);
 }
 
 .contact_input,
@@ -546,23 +545,23 @@
   width: 100%;
   height: 100%;
   background-color: var(--body-color); /* --black-color */
-  border: 3px solid var(--first-color-lighter); /* --black-color-light */
+  border: var(--spacing-base) solid var(--first-color-lighter); /* --black-color-light */
   border-radius: var(--spacing-2);
   color: var(--text-color); /* --white-color */
-  padding: .5rem 1rem;
+  padding: var(--spacing-2) var(--spacing-4);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-regular);
-  transition: border .4s, background-color .4s;
+  transition: border var(--time-400), background-color var(--time-400);
 }
 
 .contact_input::placeholder {
   color: var(--text-color-light);
-  transition: opacity .4s;
+  transition: opacity var(--time-400);
 }
 
 .contact_input:focus {
-  border: 3px solid var(--first-color); /* --white-color */
+  border: var(--spacing-base) solid var(--first-color); /* --white-color */
 }
 
 .contact_input:-webkit-autofill {
@@ -571,25 +570,25 @@
 
 .contact_label {
   position: absolute;
-  top: -16px;
-  left: 10px;
+  top: calc(var(--spacing-4) * -1);
+  left: var(--spacing-3);
   color: var(--text-color-light);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
   background-color: var(--body-color); /* --black-color */
-  padding: 8px;
+  padding: var(--spacing-2);
   pointer-events: none;
-  transition: top .4s, opacity .4s, background-color .4s;
+  transition: top var(--time-400), opacity var(--time-400), background-color var(--time-400);
   opacity: 0;
 }
 
 .contact_form .contact_area {
-  height: 10rem;
+  height: var(--spacing-40);
 }
 
 .contact_area textarea {
   resize: none;
-  padding-top: 1rem;
+  padding-top: var(--spacing-4);
 }
 
 .contact_button {
@@ -604,7 +603,7 @@
 .contact_input:focus + .contact_label,
 .contact_input:not(:placeholder-shown).contact_input:not(:focus) + .contact_label {
   opacity: 1;
-  top: -16px;
+  top: calc(var(--spacing-4) * -1);
 }
 
 .contact_content {

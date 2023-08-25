@@ -39,6 +39,8 @@
     --time-200: .2s;
     --time-300: .3s;
     --time-400: .4s;
+    --time-500: .5s;
+    --time-600: .6s;
 
     /* ============================ SPACING ============================ */
     --spacing-base: 0.25rem;  /* 4px */
@@ -65,6 +67,9 @@
     --spacing-22: calc(var(--spacing-base) * 22); /* 5.50rem  | 88px */
     --spacing-23: calc(var(--spacing-base) * 23); /* 5.75rem  | 92px */
     --spacing-24: calc(var(--spacing-base) * 24); /* 6.0rem   | 96px */
+    --spacing-40: calc(var(--spacing-base) * 40); /* 10.0rem  | 160px */
+    --spacing-41: calc(var(--spacing-base) * 41); /* 10.25rem | 164px */
+    --spacing-42: calc(var(--spacing-base) * 42); /* 10.50rem | 168px */
     --spacing-43: calc(var(--spacing-base) * 43); /* 10.75rem | 172px */
     --spacing-45: calc(var(--spacing-base) * 45); /* 11.25rem | 180px */
     --spacing-50: calc(var(--spacing-base) * 50); /* 12.5rem  | 200px */
@@ -73,6 +78,9 @@
     --spacing-67: calc(var(--spacing-base) * 67); /* 16.75rem | 268px */
     --spacing-80: calc(var(--spacing-base) * 80); /* 20.0rem  | 320px */
     --spacing-87: calc(var(--spacing-base) * 87); /* 21.75rem | 348px */
+    --spacing-88: calc(var(--spacing-base) * 88); /* 22.0rem  | 352px */
+    --spacing-89: calc(var(--spacing-base) * 89); /* 22.25rem | 356px */
+    --spacing-90: calc(var(--spacing-base) * 90); /* 22.50rem | 360px */
 
     --spacing-115: calc(var(--spacing-base) * 115); /* 28.75rem | 460px */
     --spacing-192: calc(var(--spacing-base) * 192); /* 48.0rem  | 768px */

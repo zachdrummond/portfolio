@@ -47,7 +47,7 @@
     }
 
     .portfolio_container {
-      grid-template-columns: 360px;
+      grid-template-columns: var(--spacing-90);
       justify-content: center;
     }
   
@@ -77,10 +77,6 @@
   
     body {
       margin: 0;
-    }
-  
-    .section {
-      padding: var(--spacing-24) 0 var(--spacing-8);
     }
   
     .section_title {
@@ -172,7 +168,7 @@
     }
 
     .portfolio_container {
-      grid-template-columns: repeat(2, 352px)
+      grid-template-columns: repeat(2, var(--spacing-88))
     }
   
     .project_container {
@@ -205,13 +201,12 @@
     }
   
     .home_social {
-      transform: translateX(-var(--spacing-24));
+      transform: translateX(calc(var(--spacing-24) * -1));
     }
 
     .portfolio_container {
-      grid-template-columns: repeat(3, 350px);
-      row-gap: 3rem;
-      padding-block: 2.5rem 4rem;
+      grid-template-columns: repeat(3, var(--spacing-88));
+      row-gap: var(--spacing-12);
     }
 
     .portfolio_button {
