@@ -629,13 +629,9 @@
   padding: var(--spacing-base) var(--spacing-2) var(--spacing-2) 0;
 } */
 
-/* #submitBtn {
+#submitBtn {
   text-align: center;
 }
-
-#submitBtn > button:hover {
-  cursor: pointer;
-} */
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: var(--spacing-8);

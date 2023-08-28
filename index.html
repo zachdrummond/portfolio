@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
-    <!-- <link rel="stylesheet" href="css/debug.css" /> -->
+    <link rel="stylesheet" href="css/debug.css" />
 
     <title>Zach Drummond | Software Engineer</title>
   </head>
@@ -466,7 +466,7 @@
         <div class="container">
           <!-- CONTACT FORM -->
           <form action="" id="contact-form" class="contact_form">
-            <div class="contact_group">
+            <div class="contact_group grid">
               <!-- NAME -->
               <div class="contact_box">
                 <input
@@ -491,7 +491,7 @@
                 />
                 <label for="email" class="contact_label">Email Address</label>
               </div>
-            </div>
+            
 
             <div class="contact_box contact_area">
               <textarea
@@ -504,9 +504,12 @@
               <label for="message" class="contact_label">Message</label>
             </div>
 
-            <button type="submit" class="contact_button button button--flex">
-              <i class="uil uil-message button_icon"></i> Send Message
-            </button>
+            <div id="submitBtn">
+              <button type="submit" class="contact_button button button--flex">
+                <i class="uil uil-message button_icon"></i> Send Message
+              </button>
+            </div>
+          </div>
           </form>
 
           <!-- CONTACT FORM -->
