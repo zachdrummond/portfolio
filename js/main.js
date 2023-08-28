@@ -136,8 +136,8 @@ const footerDate = document.getElementById("date");
 footerDate.innerHTML = new Date().getFullYear();
 
 /*==================== EMAIL JS ====================*/
-const contactForm = document.getElementById("contact_form"),
-  contactMessage = document.getElementById("contact_message");
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("message");
 
 const sendEmail = (e) => {
   e.preventDefault();
@@ -146,7 +146,7 @@ const sendEmail = (e) => {
   emailjs.sendForm(
     "service_3rmf0mq",
     "template_9abixd9",
-    '#contact_form',
+    '#contact-form',
     "fb8CbjtLjJNU4jK9v"
   ).then(() => {
     contactMessage.textContent = "Message sent successfully";

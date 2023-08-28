@@ -517,16 +517,6 @@
   justify-content: center; */
 }
 
-.contact_form,
-.contact_group {
-  display: grid;
-  row-gap: var(--spacing-5);
-}
-
-.contact_form {
-  position: relative;
-}
-
 .contact_box {
   position: relative;
   width: 100%;
@@ -583,7 +573,7 @@
   opacity: 0;
 }
 
-.contact_form .contact_area {
+.contact_area {
   height: var(--spacing-40);
 }
 

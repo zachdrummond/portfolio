@@ -212,8 +212,4 @@
     .portfolio_button {
       font-size: var(--normal-font-size);
     }
-  
-    #contact_form {
-      width: var(--spacing-115);
-    }
   }
