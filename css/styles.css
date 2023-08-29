@@ -596,8 +596,8 @@
   color: var(--text-color);
   font-size: var(--small-font-size);
   position: absolute;
-  bottom: -1.6rem;
-  left: 0;
+  bottom: calc(var(--spacing-8) * -1);
+  left: var(--spacing-41);
 }
 
 #submitBtn {
