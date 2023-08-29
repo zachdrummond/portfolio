@@ -35,9 +35,9 @@ const tabs = document.querySelectorAll("[data-target]"),
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    console.log("TAB",tab);
+    console.log("TAB", tab);
     const target = document.querySelector(tab.dataset.target);
-    console.log("target",target);
+    console.log("target", target);
 
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("experience_active");
@@ -137,28 +137,38 @@ footerDate.innerHTML = new Date().getFullYear();
 
 /*==================== EMAIL JS ====================*/
 const contactForm = document.getElementById("contact-form"),
-  contactMessage = document.getElementById("message");
+  contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  // serviceID - templateID - #form - publicKey
-  emailjs.sendForm(
-    "service_3rmf0mq",
-    "template_9abixd9",
-    '#contact-form',
-    "fb8CbjtLjJNU4jK9v"
-  ).then(() => {
-    contactMessage.textContent = "Message sent successfully";
+  if (contactForm.checkValidity()) {
 
-    setTimeOut(() => {
-      contactMessage.textContent = '';
-    }, 5000);
+    // serviceID - templateID - #form - publicKey
+    emailjs
+      .sendForm(
+        "service_3rmf0mq",
+        "template_9abixd9",
+        "#contact-form",
+        "fb8CbjtLjJNU4jK9v"
+      )
+      .then(
+        () => {
+          contactMessage.textContent = "✅ Message sent successfully.";
 
-    contactForm.reset();
-  }, () => {
-    contactMessage.textContent = "Something went wrong. Please try again later.";
-  });
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+
+          contactForm.reset();
+
+        },
+        () => {
+          contactMessage.textContent =
+            "❌ Something went wrong. Please try again later.";
+        }
+      );
+  }
 };
 
 contactForm.addEventListener("submit", sendEmail);

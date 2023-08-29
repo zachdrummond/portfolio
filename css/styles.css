@@ -508,6 +508,9 @@
 }
 
 /*==================== CONTACT ME ====================*/
+.contact_group {
+  position: relative;
+}
 
 .contact_box {
   position: relative;
@@ -589,27 +592,13 @@
   top: calc(var(--spacing-4) * -1);
 }
 
-/* .contact_content {
-  background-color: var(--input-color);
-  border-radius: var(--spacing-2);
-  padding: var(--spacing-3) var(--spacing-4) var(--spacing-base);
-} */
-
-/* .contact_label {
-  font-size: var(--smaller-font-size);
-  color: var(--title-color);
-} */
-
-/* .contact_input {
-  width: 100%;
-  background-color: var(--input-color);
+.contact__message {
   color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
-  padding: var(--spacing-base) var(--spacing-2) var(--spacing-2) 0;
-} */
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
 
 #submitBtn {
   text-align: center;
