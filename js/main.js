@@ -172,24 +172,3 @@ const sendEmail = (e) => {
 };
 
 contactForm.addEventListener("submit", sendEmail);
-
-// function sendMail(event) {
-//   if (document.getElementById("contact_form").checkValidity()) {
-//     const params = {
-//       name: document.getElementById("contact_name").value,
-//       email: document.getElementById("contact_email").value,
-//       message: document.getElementById("contact_message").value,
-//     };
-
-//     // serviceID - templateID - #form - publicKey
-//     emailjs
-//       .send("service_3rmf0mq", "template_9abixd9", params, "fb8CbjtLjJNU4jK9v")
-//       .then((response) => {
-//         (document.getElementById("contact_name").value = ""),
-//           (document.getElementById("contact_email").value = ""),
-//           (document.getElementById("contact_message").value = ""),
-//           alert("Message sent successfully!");
-//       })
-//       .catch((error) => alert("Something went wrong. Please try again later."));
-//   }
-// }
