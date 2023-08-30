@@ -536,7 +536,7 @@
   height: 100%;
 }
 
-.portfolio_modal {
+.portfolio_cover {
   position: absolute;
   left: 0;
   bottom: -100%;
@@ -552,7 +552,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: bottom var(--time-400);
+  transition: bottom var(--time-600) ease-in-out;
 }
 
 .portfolio_title,
@@ -564,26 +564,24 @@
 
 .portfolio_subtitle {
   display: block;
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--spacing-3);
 }
 
 .portfolio_title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--spacing-3);
+  margin-bottom: var(--spacing-base);
 }
 
 .portfolio_button {
-  display: flex;
-  align-items: center;
   column-gap: var(--spacing-2);
-  font-weight: var(--font-regular);
+  padding: var(--spacing-3);
 }
 
 .portfolio_button i {
   font-size: var(--spacing-5);
 }
 
-.portfolio_card:hover .portfolio_modal {
+.portfolio_card:hover .portfolio_cover {
   bottom: 0;
 }
 
