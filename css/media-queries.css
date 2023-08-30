@@ -26,6 +26,19 @@
       gap: var(--spacing-2);
     }
 
+    .services__container {
+      grid-template-columns: max-content;
+      justify-content: center;
+    }
+  
+    .services__content {
+      padding-right: 3.5rem;
+    }
+  
+    .services__modal {
+      padding: 0 0.5rem;
+    }
+
   }
   
 /*==================== MEDIUM DEVICES 1 ====================*/
@@ -160,6 +173,23 @@
     .skills_container {
       padding: var(--spacing-10);
     }
+
+    .services__container {
+      grid-template-columns: repeat(3, 218px);
+      justify-content: center;
+    }
+  
+    .services__icon {
+      font-size: 2rem;
+    }
+  
+    .services__content {
+      padding: 6rem 0 2rem 2.5rem;
+    }
+  
+    .services__modal-content {
+      width: 450px;
+    }
   
     .porfolio_img {
       width: var(--spacing-80);
@@ -185,6 +215,10 @@
     .home_social {
       transform: translateX(calc(var(--spacing-24) * -1));
     }
+
+    .services__container {
+      grid-template-columns: repeat(3, 238px);
+    }  
 
     .portfolio_container {
       grid-template-columns: repeat(3, var(--spacing-88));
