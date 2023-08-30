@@ -156,15 +156,13 @@
     .experience_sections {
       grid-template-columns: .5fr;
     }
+
+    .skills_container {
+      padding: var(--spacing-10);
+    }
   
     .porfolio_img {
       width: var(--spacing-80);
-    }
-  
-    .skills_container {
-      background-color: var(--first-color-second);
-      border-radius: var(--spacing-4);
-      padding: var(--spacing-10);
     }
   
     .footer_bg {

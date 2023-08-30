@@ -350,6 +350,12 @@
 }
 
 /*==================== SKILLS ====================*/
+.skills_container {
+  background-color: var(--first-color-second);
+  border-radius: var(--spacing-4);
+  padding: var(--spacing-4);
+}
+
 .skills_info,
 .skills_data,
 .skills_blob {
