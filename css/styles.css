@@ -188,7 +188,7 @@
 .button {
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--white);
   padding: var(--spacing-4);
   border-radius: var(--spacing-2);
   font-weight: var(--font-regular);
@@ -205,12 +205,12 @@
 }
 
 .button--white {
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--first-color);
 }
 
 .button--white:hover {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .button--flex {
@@ -388,12 +388,12 @@
 
 .skills_name {
   font-size: var(--small-font-size);
-  color: #fff;
+  color: var(--white);
 }
 
 .skills_name,
 .skills_blob {
-  color: #fff;
+  color: var(--white);
 }
 
 /* Animation SKills */
@@ -459,7 +459,7 @@
 .portfolio_title,
 .portfolio_subtitle,
 .portfolio_button {
-  color: #fff;
+  color: var(--white);
   font-size: var(--small-font-size);
 }
 
@@ -511,10 +511,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--body-color); /* --black-color */
-  border: var(--spacing-base) solid var(--first-color-lighter); /* --black-color-light */
+  background-color: var(--body-color);
+  border: var(--spacing-base) solid var(--first-color);
   border-radius: var(--spacing-2);
-  color: var(--text-color); /* --white-color */
+  color: var(--text-color);
   padding: var(--spacing-2) var(--spacing-4);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -528,7 +528,7 @@
 }
 
 .contact_input:focus {
-  border: var(--spacing-base) solid var(--first-color); /* --white-color */
+  border: var(--spacing-base) solid var(--first-color-lighter);
 }
 
 .contact_input:-webkit-autofill {
@@ -542,7 +542,7 @@
   color: var(--text-color-light);
   font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
-  background-color: var(--body-color); /* --black-color */
+  background-color: var(--body-color);
   padding: var(--spacing-2);
   pointer-events: none;
   transition: top var(--time-400), opacity var(--time-400), background-color var(--time-400);
@@ -622,7 +622,7 @@
 .footer_link,
 .footer_social,
 .footer_copy {
-  color: #fff;
+  color: var(--white);
 }
 
 /*========== SCROLL BAR ==========*/

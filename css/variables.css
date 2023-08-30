@@ -3,7 +3,8 @@
     /* Change favorite color */
     --hue-color: 218; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    --white: #d8d8d8;
+    --white: #fff;
+    --off-white: #d8d8d8;
 
     /* *********************************************** #36 */
     --stormy: #494e6b;
