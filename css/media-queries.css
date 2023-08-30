@@ -25,10 +25,7 @@
     .experience_data {
       gap: var(--spacing-2);
     }
-  
-    .project_img {
-      width: var(--spacing-50);
-    }
+
   }
   
 /*==================== MEDIUM DEVICES 1 ====================*/
@@ -51,7 +48,6 @@
       justify-content: center;
     }
   
-    .project_container,
     .footer_container {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -165,28 +161,10 @@
       width: var(--spacing-80);
     }
   
-    .project {
-      text-align: initial;
-    }
-  
-    .project_bg {
-      background: none;
-    }
-
-    .portfolio_container {
-      grid-template-columns: repeat(2, var(--spacing-88))
-    }
-  
-    .project_container {
+    .skills_container {
       background-color: var(--first-color-second);
       border-radius: var(--spacing-4);
-      padding: var(--spacing-12) var(--spacing-10) 0;
-      grid-template-columns: 1fr max-content;
-      column-gap: var(--spacing-12);
-    }
-  
-    .project_data {
-      padding-top: var(--spacing-3);
+      padding: var(--spacing-10);
     }
   
     .footer_bg {

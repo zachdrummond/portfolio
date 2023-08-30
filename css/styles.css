@@ -369,6 +369,7 @@
 .skills_blob {
   width: var(--spacing-20);
   height: var(--spacing-20);
+  background-color: var(--container-color);
   border: 2px solid var(--first-color);
   border-radius: var(--spacing-12);
   place-items: center;
@@ -381,6 +382,12 @@
 
 .skills_name {
   font-size: var(--small-font-size);
+  color: #fff;
+}
+
+.skills_name,
+.skills_blob {
+  color: #fff;
 }
 
 /* Animation SKills */
@@ -407,9 +414,6 @@
 }
 
 /*==================== PORTFOLIO ====================*/
-.portfolio {
-  background-color: var(--first-color-second);
-}
 
 .portfolio_container {
   row-gap: var(--spacing-8);
@@ -476,35 +480,6 @@
 
 .portfolio_card:hover .portfolio_modal {
   bottom: 0;
-}
-
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
-
-.project_bg {
-  background-color: var(--first-color-second);
-  padding-top: var(--spacing-12);
-}
-
-.project_title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--spacing-3);
-}
-
-.project_description {
-  margin-bottom: var(--spacing-6);
-}
-
-.project_title,
-.project_description {
-  color: #fff;
-}
-
-.project_img {
-  width: var(--spacing-58);
-  justify-self: center;
 }
 
 /*==================== CONTACT ME ====================*/
