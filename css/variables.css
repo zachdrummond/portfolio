@@ -3,8 +3,8 @@
     /* Change favorite color */
     --hue-color: 218; /* ultramarine */  /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    --white: #fff;
-    --off-white: #d8d8d8;
+    --white: hsl(var(--hue-color), 0%, 95%); /* 60%, 99% */
+    --off-white: #d8d8d8; /* hsl(0, 0%, 85%); */
 
     /* *********************************************** #36 */
     --stormy: #494e6b;
@@ -27,8 +27,8 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 100%);
-    --body-color: hsl(var(--hue-color), 60%, 99%); /* 60%, 99% */
-    --container-color: #fff;
+    --body-color: var(--white);
+    --container-color: var(--white);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
