@@ -420,47 +420,13 @@
 }
 
 /*==================== SERVICES ====================*/
-.services__container {
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
-}
 
-.services__content {
-  position: relative;
-  background-color: var(--container-color);
-  padding: 3.5rem .5rem 1.25rem 1.5rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,.15);
-  transition: .3s;
-}
-
-.services__content:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,.15);
-}
-
-.services__icon {
-  display: block;
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
-}
-
-.services__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
-  font-weight: var(--font-regular);
-}
-
-.services__button {
+.portfolio_button {
   cursor: pointer;
   font-size: var(--small-font-size);
 }
 
-.services__button:hover .button__icon {
-  transform: translateX(.25rem);
-}
-
-.services__modal {
+.portfolio_modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -477,28 +443,28 @@
   transition: .3s;
 }
 
-.services__modal-content {
+.portfolio_modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
 }
 
-.services__modal-services {
+.portfolio_modal-services {
   row-gap: 1rem;
 }
 
-.services__modal-service {
+.portfolio_modal-service {
   display: flex;
 }
 
-.services__modal-title {
+.portfolio_modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-regular);
   margin-bottom: var(--mb-1-5);
 }
 
-.services__modal-close {
+.portfolio_modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -507,7 +473,7 @@
   cursor: pointer;
 }
 
-.services__modal-icon {
+.portfolio_modal-icon {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
@@ -555,21 +521,22 @@
   transition: bottom var(--time-600) ease-in-out;
 }
 
-.portfolio_title,
 .portfolio_subtitle,
 .portfolio_button {
   color: var(--white);
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
 }
 
 .portfolio_subtitle {
   display: block;
-  margin-bottom: var(--spacing-3);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--spacing-4);
 }
 
 .portfolio_title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--spacing-base);
+  color: var(--white);
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--spacing-2);
 }
 
 .portfolio_button {

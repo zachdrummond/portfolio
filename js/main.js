@@ -174,9 +174,9 @@ const sendEmail = (e) => {
 contactForm.addEventListener("submit", sendEmail);
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close');
+const modalViews = document.querySelectorAll('.portfolio_modal'),
+      modalBtns = document.querySelectorAll('.portfolio_button'),
+      modalCloses = document.querySelectorAll('.portfolio_modal-close');
 
 let modal = function(modalClick){
   modalViews[modalClick].classList.add('active-modal');
