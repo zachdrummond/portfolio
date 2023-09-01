@@ -142,7 +142,6 @@
 }
 
 .home_social {
-  display: grid;
   grid-template-columns: max-content;
   row-gap: var(--spacing-4);
 }
@@ -300,7 +299,6 @@
 }
 
 .experience_data {
-  display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: var(--spacing-6);
 }
@@ -356,8 +354,6 @@
   padding: var(--spacing-4);
 }
 
-.skills_info,
-.skills_data,
 .skills_blob {
   display: grid;
 }
@@ -512,6 +508,7 @@
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
+  gap: var(--spacing-4);
 }
 
 .portfolio_modal-title {
