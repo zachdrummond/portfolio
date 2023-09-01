@@ -173,25 +173,34 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener("submit", sendEmail);
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.portfolio_modal'),
-      modalBtns = document.querySelectorAll('.portfolio_button'),
-      modalCloses = document.querySelectorAll('.portfolio_modal-close');
+/*==================== PORTFOLIO MODAL ====================*/
+const learnMoreBtns = document.querySelectorAll('.portfolio_button'),
+      allModalContainers = document.querySelectorAll('.portfolio_modal'),
+      modalCloseBtns = document.querySelectorAll('.portfolio_modal-close');
 
-let modal = function(modalClick){
-  modalViews[modalClick].classList.add('active-modal');
+let modal = function(modalNumber){
+  const openModal = allModalContainers[modalNumber];
+  openModal.classList.add('active-modal');
+
+  openModal.addEventListener('click', event => {
+    const isClickInsideOpenModal = openModal.firstElementChild.contains(event.target);
+
+    if(!isClickInsideOpenModal){
+      openModal.classList.remove('active-modal');
+    }
+  })
 }
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener('click', () => {
-    modal(i);
+learnMoreBtns.forEach((button, modalNumber) => {
+  button.addEventListener('click', () => {
+    modal(modalNumber);
   });
 });
 
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener('click', () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal');
+modalCloseBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    allModalContainers.forEach((modalContainer) => {
+      modalContainer.classList.remove('active-modal');
     });
   });
 });

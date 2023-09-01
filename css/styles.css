@@ -419,71 +419,6 @@
   }
 }
 
-/*==================== SERVICES ====================*/
-
-.portfolio_button {
-  cursor: pointer;
-  font-size: var(--small-font-size);
-}
-
-.portfolio_modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-  z-index: var(--z-modal);
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
-}
-
-.portfolio_modal-content {
-  position: relative;
-  background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: .5rem;
-}
-
-.portfolio_modal-services {
-  row-gap: 1rem;
-}
-
-.portfolio_modal-service {
-  display: flex;
-}
-
-.portfolio_modal-title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-regular);
-  margin-bottom: var(--mb-1-5);
-}
-
-.portfolio_modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  color: var(--first-color);
-  cursor: pointer;
-}
-
-.portfolio_modal-icon {
-  color: var(--first-color);
-  margin-right: var(--mb-0-25);
-}
-
-/* Active Modal */
-.active-modal {
-  opacity: 1;
-  visibility: visible;
-}
-
 /*==================== PORTFOLIO ====================*/
 
 .portfolio_container {
@@ -540,6 +475,7 @@
 }
 
 .portfolio_button {
+  cursor: pointer;
   column-gap: var(--spacing-2);
   padding: var(--spacing-3);
 }
@@ -550,6 +486,65 @@
 
 .portfolio_card:hover .portfolio_cover {
   bottom: 0;
+}
+
+/*==================== PORTFOLIO MODAL ====================*/
+
+.portfolio_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.portfolio_modal-content {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.portfolio_modal-services {
+  row-gap: 1rem;
+}
+
+.portfolio_modal-service {
+  display: flex;
+}
+
+.portfolio_modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-regular);
+  margin-bottom: var(--mb-1-5);
+}
+
+.portfolio_modal-close {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.portfolio_modal-icon {
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+
+/* Active Modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*==================== CONTACT ME ====================*/
