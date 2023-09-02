@@ -46,11 +46,6 @@
       order: 1;
       justify-self: center;
     }
-
-    .portfolio_container {
-      grid-template-columns: repeat(2, var(--spacing-88));
-      justify-content: center;
-    }
   
     .footer_container {
       grid-template-columns: repeat(2, 1fr);
@@ -167,6 +162,11 @@
 
     .skills_container {
       padding: var(--spacing-10);
+    }
+
+    .portfolio_container {
+      grid-template-columns: repeat(2, var(--spacing-88));
+      justify-content: center;
     }
   
     .portfolio_content {
