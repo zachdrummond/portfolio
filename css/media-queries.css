@@ -27,7 +27,7 @@
     }
   
     .portfolio_modal {
-      padding: 0 0.5rem;
+      padding: 0 var(--spacing-2);
     }
 
   }
@@ -48,7 +48,7 @@
     }
 
     .portfolio_container {
-      grid-template-columns: var(--spacing-90);
+      grid-template-columns: repeat(2, var(--spacing-88));
       justify-content: center;
     }
   
@@ -64,6 +64,10 @@
 
     .skills_info {
       grid-template-columns: repeat(6, 1fr);
+    }
+
+    .portfolio_modal-content {
+      width: var(--spacing-138);
     }
 
     .contact_group {
@@ -166,11 +170,12 @@
     }
   
     .portfolio_content {
-      padding: 6rem 0 2rem 2.5rem;
+      padding: var(--spacing-24) 0 var(--spacing-8) var(--spacing-10);
     }
-  
-    .portfolio_modal-content {
-      width: 450px;
+
+    .portfolio_modal-close {
+      top: var(--spacing-base);
+      right: var(--spacing-base);
     }
   
     .porfolio_img {

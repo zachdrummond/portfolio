@@ -218,7 +218,7 @@
 }
 
 .button--small {
-  padding: var(--spacing-3) var(--spacing-4);
+  padding: var(--spacing-2) var(--spacing-3);
   font-size: var(--h3-font-size);
 }
 
@@ -432,6 +432,7 @@
 .portfolio_img {
   width: 100%;
   height: 100%;
+  border-radius: var(--spacing-4);
 }
 
 .portfolio_cover {
@@ -497,7 +498,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0 var(--spacing-4);
   z-index: var(--z-modal);
   opacity: 0;
   visibility: hidden;
@@ -507,21 +508,34 @@
 .portfolio_modal-content {
   position: relative;
   background-color: var(--container-color);
-  padding: 1.5rem;
-  border-radius: .5rem;
+  padding: var(--spacing-6);
+  border-radius: var(--spacing-2);
   gap: var(--spacing-4);
 }
 
-.portfolio_modal-title {
-  font-size: var(--h2-font-size);
-  color: var(--title-color);
+.modal-body {
+  row-gap: var(--spacing-2);
   text-align: center;
-  margin-bottom: var(--spacing-2);
 }
 
-.modal-body {
-  row-gap: .5rem;
+.portfolio_modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
   text-align: center;
+}
+.portfolio_modal-text,
+.portfolio_modal-tech {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-regular);
+}
+
+.portfolio_modal-text {
+  color: var(--text-color);
+}
+
+.portfolio_modal-tech {
+  color: var(--text-color-light);
 }
 
 .modal-links {
@@ -530,9 +544,9 @@
 
 .portfolio_modal-close {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
+  bottom: var(--spacing-4);
+  right: var(--spacing-4);
+  font-size: var(--h1-font-size);
   color: var(--first-color);
   cursor: pointer;
 }
