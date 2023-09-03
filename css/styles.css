@@ -278,6 +278,10 @@
 }
 
 /*==================== EXPERIENCE ====================*/
+.experience_sections {
+  text-align: center;
+}
+
 .experience_tabs {
   display: flex;
   justify-content: space-evenly;
@@ -362,6 +366,7 @@
 .skills_info {
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-4) var(--spacing-4);
+  place-items: center;
 }
 
 .skills_data {

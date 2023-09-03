@@ -34,6 +34,7 @@
   
 /*==================== MEDIUM DEVICES 1 ====================*/
   @media screen and (min-width: 568px) {
+
     .home_content {
       grid-template-columns: max-content 1fr 1fr;
     }
@@ -46,11 +47,7 @@
       order: 1;
       justify-self: center;
     }
-  
-    .footer_container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
+
     .experience_sections {
       display: grid;
       grid-template-columns: .6fr;
@@ -58,7 +55,7 @@
     }
 
     .skills_info {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
 
     .portfolio_modal-content {
@@ -69,6 +66,10 @@
       max-width: var(--spacing-125);
       margin-left: auto;
       margin-right: auto;
+    }
+    
+    .footer_container {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
@@ -162,6 +163,10 @@
 
     .skills_container {
       padding: var(--spacing-10);
+    }
+
+    .skills_info {
+      grid-template-columns: repeat(6, 1fr);
     }
 
     .portfolio_container {
