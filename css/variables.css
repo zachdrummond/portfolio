@@ -83,6 +83,7 @@
     --spacing-89: calc(var(--spacing-base) * 89); /* 22.25rem | 356px */
     --spacing-90: calc(var(--spacing-base) * 90); /* 22.50rem | 360px */
 
+    --spacing-100: calc(var(--spacing-base) * 100); /* 25.0rem  | 400px */
     --spacing-115: calc(var(--spacing-base) * 115); /* 28.75rem | 460px */
     --spacing-125: calc(var(--spacing-base) * 125); /* 31.25rem | 500px */
     --spacing-138: calc(var(--spacing-base) * 138); /* 34.5rem  | 552px */

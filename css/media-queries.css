@@ -59,7 +59,7 @@
     }
 
     .portfolio_modal-content {
-      width: var(--spacing-138);
+      width: var(--spacing-100);
     }
 
     .contact_group {
@@ -176,6 +176,10 @@
   
     .portfolio_content {
       padding: var(--spacing-24) 0 var(--spacing-8) var(--spacing-10);
+    }
+
+    .portfolio_modal-content {
+      width: var(--spacing-125);
     }
 
     .portfolio_modal-close {
