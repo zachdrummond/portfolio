@@ -212,12 +212,18 @@
       transform: translateX(calc(var(--spacing-24) * -1));
     }
 
-    .portfolio_container {
+    /* UNCOMMENT - WHEN PROJECTS > 2
+      .portfolio_container {
       grid-template-columns: repeat(3, var(--spacing-88));
       row-gap: var(--spacing-12);
-    }
+    } */
 
     .portfolio_button {
       font-size: var(--normal-font-size);
     }
+  }
+  
+  /*==================== EXTRA LARGE DEVICES ====================*/
+  @media screen and (min-width: 1440px) {
+    
   }
