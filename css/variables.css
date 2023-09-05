@@ -14,15 +14,25 @@
     --gray-700: #68768f;
     --gray-900: #23282b;
 
-    --white: hsl(var(--hue-color), 0%, 95%); /* 60%, 99% */
+    --test: #80bcf4;
 
     /* HSL color mode */
+    --white: hsl(var(--hue-color), 0%, 95%); /* 60%, 99% */
+    --base-color-100: hsl(var(--hue-color), 85%, 92%); /* #edf5fd */
+    --base-color-200: hsl(var(--hue-color), 85%, 85%); /* #b6d9f9 */
+    --base-color-300: hsl(var(--hue-color), 84%, 73%); /* #80bcf4 */
+    --base-color-400: hsl(var(--hue-color), 85%, 62%); /* #4a9ff0 */
     --base-color: hsl(var(--hue-color), 84%, 50%); /* #1483eb */
+    --base-color-600: hsl(var(--hue-color), 85%, 38%); /* #0f64b5 */
+    --base-color-700: hsl(var(--hue-color), 84%, 27%); /* #0b467f */
+    --base-color-800: hsl(var(--hue-color), 85%, 15%); /* #062848 */
+    --base-color-900: hsl(var(--hue-color), 89%, 4%); /* #010a12 */
+
     --base-color-second: hsl(var(--hue-color), 69%, 61%);
     --base-color-alt: hsl(var(--hue-color), 57%, 53%);
     --base-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 8%, 15%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --title-color: var(--base-color-900); /* 8%, 15% */
+    --text-color: hsl(var(--hue-color), 8%, 45%); /* 8%, 45% */
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --body-color: var(--white);
     --container-color: var(--white);
@@ -130,7 +140,7 @@ body.dark-theme {
     --title-color: hsl(var(--hue-color), 8%, 95%);
     --text-color: hsl(var(--hue-color), 8%, 75%);
     --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --body-color: var(--base-color-900); /* 28%, 12% */
     --container-color: hsl(var(--hue-color), 29%, 16%);
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
