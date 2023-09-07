@@ -58,28 +58,26 @@
     --light-blue-color-800: hsl(var(--light-blue-hue-color), 26%, 15%); /* #1c2a30 */
     --light-blue-color-900: hsl(var(--light-blue-hue-color), 29%, 3%); /* #06090b */
 
-    --test: hsl(200, 26%, 61%);
-    /* GREYS */
-    --gray-hue-color: ;
-    --gray-color-100: #c3cace;
-    --gray-color-200: #f0f8fc;
-    --gray-color-300: #f2f3f4;
-    --gray-color-400: #ebebeb;
-    --gray-color-500: #c3cace;
-    --gray-color-600: #90a0a7;
-    --gray-color-700: #68768f;
-    --gray-color-800: ;
-    --gray-color-900: #23282b;
+    /* GRAYS */
+    --gray-hue-color: 0;
+    --white-color-base: hsl(var(--gray-hue-color), 0%, 95%); /* f2f2f2 */
+    --gray-color-200: hsl(var(--gray-hue-color), 0%, 84%); /* d6d6d6 */
+    --gray-color-300: hsl(var(--gray-hue-color), 0%, 73%); /* #b9b9b9 */
+    --gray-color-400: hsl(var(--gray-hue-color), 0%, 61.25%); /* #9c9c9c */;
+    --gray-color-base: hsl(var(--gray-hue-color), 0%, 50%); /* #808080 */
+    --gray-color-600: hsl(var(--gray-hue-color), 0%, 38%); /* #606060 */
+    --gray-color-700: hsl(var(--gray-hue-color), 0%, 25%); /* #404040 */
+    --gray-color-800: hsl(var(--gray-hue-color), 0%, 13%); /* #212121 */
+    --black-color-base: hsl(var(--gray-hue-color), 0%, 0%); /* #000000 */
 
-    --white: hsl(var(--ultramarine-hue-color), 0%, 95%); /* 60%, 99% */
     --ultramarine-color-second: hsl(var(--ultramarine-hue-color), 69%, 61%);
     --ultramarine-color-alt: hsl(var(--ultramarine-hue-color), 57%, 53%);
     --ultramarine-color-lighter: hsl(var(--ultramarine-hue-color), 92%, 85%);
     --title-color: var(--ultramarine-color-900); /* 8%, 15% */
     --text-color: hsl(var(--ultramarine-hue-color), 8%, 45%); /* 8%, 45% */
     --text-color-light: hsl(var(--ultramarine-hue-color), 8%, 65%);
-    --body-color: var(--white);
-    --container-color: var(--white);
+    --body-color: var(--white-color-base);
+    --container-color: var(--white-color-base);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 80%);
 

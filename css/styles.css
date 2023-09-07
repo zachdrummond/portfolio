@@ -202,8 +202,8 @@
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
-  background-color: var(--ultramarine-color-400);
-  color: var(--white);
+  background-color: var(--ultramarine-color-base);
+  color: var(--white-color-base);
   padding: var(--spacing-4);
   border-radius: var(--spacing-2);
   font-weight: var(--font-regular);
@@ -219,13 +219,13 @@
   transition: var(--time-300);
 }
 
-.button--white {
-  background-color: var(--white);
+.button--white-color-base {
+  background-color: var(--white-color-base);
   color: var(--ultramarine-color-base);
 }
 
-.button--white:hover {
-  background-color: var(--white);
+.button--white-color-base:hover {
+  background-color: var(--white-color-base);
 }
 
 .button--flex {
@@ -406,12 +406,12 @@
 
 .skills_name {
   font-size: var(--small-font-size);
-  color: var(--white);
+  color: var(--white-color-base);
 }
 
 .skills_name,
 .skills_blob {
-  color: var(--white);
+  color: var(--white-color-base);
 }
 
 /* Animation SKills */
@@ -482,7 +482,7 @@
 
 .portfolio_subtitle,
 .portfolio_button {
-  color: var(--white);
+  color: var(--white-color-base);
   font-size: var(--normal-font-size);
 }
 
@@ -493,7 +493,7 @@
 }
 
 .portfolio_title {
-  color: var(--white);
+  color: var(--white-color-base);
   font-size: var(--h2-font-size);
   margin-bottom: var(--spacing-2);
 }
@@ -717,7 +717,7 @@
 .footer_link,
 .footer_social,
 .footer_copy {
-  color: var(--white);
+  color: var(--white-color-base);
 }
 
 /*========== SCROLL BAR ==========*/
