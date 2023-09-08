@@ -1,25 +1,33 @@
-/*==================== MENU SHOW/HIDDEN ====================*/
+/*======================= NAVIGATION =======================*/
+/*=== NAV SHOW UNDERLINE ===*/
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 80) nav.classList.add("scroll-header");
+  else nav.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
+
+/*=== MOBILE MENU SHOW/HIDDEN ===*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+/* SHOW */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
   });
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+/* HIDE */
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*=== REMOVE MOBILE MENU ===*/
 const navLink = document.querySelectorAll(".nav_link");
 
 function linkAction() {
@@ -29,7 +37,32 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*==================== EXPERIENCE TABS ====================*/
+/*=== NAV HIGHLIGHT ON SCROLL ===*/
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+  const scrollY = window.scrollY;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
+    }
+  });
+}
+window.addEventListener("scroll", scrollActive);
+
+/*====================== EXPERIENCE =======================*/
+/*=== TABS ===*/
 const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
 
@@ -53,49 +86,8 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll("section[id]");
-
-function scrollActive() {
-  const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
-
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
-    }
-  });
-}
-window.addEventListener("scroll", scrollActive);
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-function scrollHeader() {
-  const nav = document.getElementById("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 80) nav.classList.add("scroll-header");
-  else nav.classList.remove("scroll-header");
-}
-window.addEventListener("scroll", scrollHeader);
-
-/*==================== SHOW SCROLL UP ====================*/
-function scrollUp() {
-  const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
-}
-window.addEventListener("scroll", scrollUp);
-
-/*==================== DARK LIGHT THEME ====================*/
+/*========================= BUTTONS =========================*/
+/*=== DARK LIGHT THEME ===*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
@@ -131,11 +123,50 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*==================== FOOTER DATE ====================*/
-const footerDate = document.getElementById("date");
-footerDate.innerHTML = new Date().getFullYear();
+/*=== SHOW SCROLL UP ===*/
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
 
-/*==================== EMAIL JS ====================*/
+/*========================= PORTFOLIO =========================*/
+/*=== PORTFOLIO MODAL ===*/
+const learnMoreBtns = document.querySelectorAll('.portfolio_button'),
+      allModalContainers = document.querySelectorAll('.portfolio_modal'),
+      modalCloseBtns = document.querySelectorAll('.portfolio_modal-close');
+
+let modal = function(modalNumber){
+  const openModal = allModalContainers[modalNumber];
+  openModal.classList.add('active-modal');
+
+  openModal.addEventListener('click', event => {
+    const isClickInsideOpenModal = openModal.firstElementChild.contains(event.target);
+
+    if(!isClickInsideOpenModal){
+      openModal.classList.remove('active-modal');
+    }
+  })
+}
+
+learnMoreBtns.forEach((button, modalNumber) => {
+  button.addEventListener('click', () => {
+    modal(modalNumber);
+  });
+});
+
+modalCloseBtns.forEach((button) => {
+  button.addEventListener('click', () => {
+    allModalContainers.forEach((modalContainer) => {
+      modalContainer.classList.remove('active-modal');
+    });
+  });
+});
+
+/*========================= CONTACT =========================*/
+/*=== EMAIL JS ===*/
 const contactForm = document.getElementById("contact-form"),
   contactMessage = document.getElementById("contact-message");
 
@@ -173,34 +204,7 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener("submit", sendEmail);
 
-/*==================== PORTFOLIO MODAL ====================*/
-const learnMoreBtns = document.querySelectorAll('.portfolio_button'),
-      allModalContainers = document.querySelectorAll('.portfolio_modal'),
-      modalCloseBtns = document.querySelectorAll('.portfolio_modal-close');
-
-let modal = function(modalNumber){
-  const openModal = allModalContainers[modalNumber];
-  openModal.classList.add('active-modal');
-
-  openModal.addEventListener('click', event => {
-    const isClickInsideOpenModal = openModal.firstElementChild.contains(event.target);
-
-    if(!isClickInsideOpenModal){
-      openModal.classList.remove('active-modal');
-    }
-  })
-}
-
-learnMoreBtns.forEach((button, modalNumber) => {
-  button.addEventListener('click', () => {
-    modal(modalNumber);
-  });
-});
-
-modalCloseBtns.forEach((button) => {
-  button.addEventListener('click', () => {
-    allModalContainers.forEach((modalContainer) => {
-      modalContainer.classList.remove('active-modal');
-    });
-  });
-});
+/*======================= FOOTER =======================*/
+/*=== DATE ===*/
+const footerDate = document.getElementById("date");
+footerDate.innerHTML = new Date().getFullYear();
