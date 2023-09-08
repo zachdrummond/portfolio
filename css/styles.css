@@ -112,7 +112,7 @@
 }
 
 .nav_close:hover {
-  color: var(--ultramarine-color-alt);
+  color: var(--hover-color);
 }
 
 /* show menu */
@@ -187,12 +187,12 @@
 }
 
 .home_social-icon:hover {
-  color: var(--ultramarine-color-alt);
+  color: var(--hover-color);
 }
 
 .home_blob {
   width: var(--spacing-50);
-  fill: var(--test);
+  fill: var(--ultramarine-color-base);
 }
 
 .home_blob-img {
@@ -210,22 +210,13 @@
 }
 
 .button:hover {
-  background-color: var(--ultramarine-color-alt);
+  background-color: var(--hover-color);
 }
 
 .button_icon {
   font-size: var(--h2-font-size);
   margin-right: var(--spacing-2);
   transition: var(--time-300);
-}
-
-.button--white-color-base {
-  background-color: var(--white-color-base);
-  color: var(--ultramarine-color-base);
-}
-
-.button--white-color-base:hover {
-  background-color: var(--white-color-base);
 }
 
 .button--flex {
@@ -246,7 +237,7 @@
 
 .button--link:hover {
   background-color: transparent;
-  color: var(--ultramarine-color-alt);
+  color: var(--hover-color);
 }
 
 /* Dark/Light */
@@ -280,7 +271,7 @@
 }
 
 .scrollup:hover {
-  background-color: var(--ultramarine-color-alt);
+  background-color: var(--hover-color);
 }
 
 .scrollup_icon {
@@ -394,7 +385,7 @@
   width: var(--spacing-20);
   height: var(--spacing-20);
   background-color: var(--container-color);
-  border: 2px solid var(--ultramarine-color-base);
+  border: 2px solid var(--ultramarine-color-300);
   border-radius: var(--spacing-12);
   place-items: center;
   margin-top: var(--spacing-2);
@@ -623,7 +614,7 @@
 }
 
 .contact_input:focus {
-  border: var(--spacing-base) solid var(--ultramarine-color-lighter);
+  border: var(--spacing-base) solid var(--hover-color);
 }
 
 .contact_input:-webkit-autofill {
@@ -705,7 +696,7 @@
 }
 
 .footer_social:hover {
-  color: var(--ultramarine-color-lighter);
+  color: var(--hover-color);
   text-align: center;
 }
 

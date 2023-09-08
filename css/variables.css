@@ -1,22 +1,14 @@
 :root {
     /* ============================ COLORS ============================= */
-    --complementary-orange: hsl(29, 84%, 50%);
-    --monochromatic: hsl(209, 84%, 60%);
-    --analogous-blue: hsl(239, 84%, 50%);
-    --analogous-light-blue: hsl(179, 84%, 50%);
-    --triadic-pink: hsl(329, 84%, 50%); /* #EB1483 */
-    --triadic-green: hsl(89, 84%, 50%); /* #83EB14 */
-    --tetradic-pink: hsl(299, 84%, 50%);
-    --tetradic-orange: hsl(29, 84%, 50%);
-    --tetradic-green: hsl(119, 84%, 50%);
 
     /* ULTRAMARINE */
     --ultramarine-hue-color: 209;
+    --ultramarine-color-base: var(--ultramarine-color-600);
     --ultramarine-color-100: hsl(var(--ultramarine-hue-color), 85%, 92%); /* #edf5fd */
-    --ultramarine-color-200: hsl(var(--ultramarine-hue-color), 85%, 85%); /* #b6d9f9 */
+    --ultramarine-color-200: hsl(var(--ultramarine-hue-color), 85%, 85%); /* #b7d9f9 */
     --ultramarine-color-300: hsl(var(--ultramarine-hue-color), 84%, 73%); /* #80bcf4 */
     --ultramarine-color-400: hsl(var(--ultramarine-hue-color), 85%, 62%); /* #4a9ff0 */
-    --ultramarine-color-base: hsl(var(--ultramarine-hue-color), 84%, 50%); /* #1483eb */
+    --ultramarine-color-500: hsl(var(--ultramarine-hue-color), 84%, 50%); /* #1483eb */
     --ultramarine-color-600: hsl(var(--ultramarine-hue-color), 85%, 38%); /* #0f64b5 */
     --ultramarine-color-700: hsl(var(--ultramarine-hue-color), 84%, 27%); /* #0b467f */
     --ultramarine-color-800: hsl(var(--ultramarine-hue-color), 85%, 15%); /* #062848 */
@@ -71,12 +63,11 @@
     --black-color-base: hsl(var(--gray-hue-color), 0%, 0%); /* #000000 */
 
     --ultramarine-color-second: hsl(var(--ultramarine-hue-color), 69%, 61%);
-    --ultramarine-color-alt: hsl(var(--ultramarine-hue-color), 57%, 53%);
-    --ultramarine-color-lighter: hsl(var(--ultramarine-hue-color), 92%, 85%);
+    --hover-color: var(--crimson-sky-color-base);
     --title-color: var(--ultramarine-color-900); /* 8%, 15% */
     --text-color: hsl(var(--ultramarine-hue-color), 8%, 45%); /* 8%, 45% */
     --text-color-light: hsl(var(--ultramarine-hue-color), 8%, 65%);
-    --body-color: var(--white-color-base);
+    --body-color: var(--ultramarine-color-100);
     --container-color: var(--white-color-base);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 80%);
@@ -178,7 +169,8 @@
 /* =========================== DARK THEME ========================== */
 body.dark-theme {
     /* HSL color mode */
-    --ultramarine-color: hsl(var(--ultramarine-hue-color), 30%, 8%);
+    --ultramarine-color-base: var(--ultramarine-color-600);
+    --hover-color: var(--crimson-sky-color-600);
     --title-color: hsl(var(--ultramarine-hue-color), 8%, 95%);
     --text-color: hsl(var(--ultramarine-hue-color), 8%, 75%);
     --input-color: hsl(var(--ultramarine-hue-color), 29%, 16%);
