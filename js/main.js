@@ -208,3 +208,8 @@ contactForm.addEventListener("submit", sendEmail);
 /*=== DATE ===*/
 const footerDate = document.getElementById("date");
 footerDate.innerHTML = new Date().getFullYear();
+
+/*======================== MISC ========================*/
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
+}, false);
