@@ -9,7 +9,6 @@
 
 html {
     scroll-behavior: smooth;
-    height: 100%;
   }
 
 body {
@@ -18,7 +17,6 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
-    min-height:100%;
   }
 
 h1, h2, h3, h4 {
