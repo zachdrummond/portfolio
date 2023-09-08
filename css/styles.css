@@ -576,6 +576,9 @@
 }
 
 /*==================== CONTACT ME ====================*/
+.contact {
+  min-height:75vh;
+}
 
 .contact_group {
   position: relative;
