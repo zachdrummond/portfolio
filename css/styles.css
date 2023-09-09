@@ -5,7 +5,7 @@
   }
   
 .section_title {
-    font-size: var(--h1-font-size);
+    font-size: var(--font-size-xxl);
     color: var(--title-color);
     text-align: center;
     margin-bottom: var(--spacing-8);
@@ -59,7 +59,7 @@
 }
 
 .nav_toggle {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   color: var(--title-color);
   font-weight: var(--font-regular);
 }
@@ -100,14 +100,14 @@
 }
 
 .nav_icon {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
 }
 
 .nav_close {
   position: absolute;
   right: var(--spacing-5);
   bottom: var(--spacing-2);
-  font-size: var(--h1-font-size);
+  font-size: var(--font-size-xxl);
   cursor: pointer;
   color: var(--ultramarine-color-base);
 }
@@ -137,8 +137,7 @@
 }
 
 .home_content {
-  grid-template-columns: .5fr 3fr;
-  padding-top: var(--spacing-14);
+  grid-template-columns: .5fr 2fr;
   align-items: center;
 }
 
@@ -147,7 +146,7 @@
 }
 
 .home_title {
-  font-size: var(--big-font-size);
+  font-size: clamp(40px, 8vw, 80px);
 }
 
 .home_wave {
@@ -170,7 +169,7 @@
 }
 
 .home_description {
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-xl);
   color: var(--text-color);
   font-weight: var(--font-regular);
   margin-top: var(--spacing-3);
@@ -183,7 +182,7 @@
 }
 
 .home_social-icon {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   color: var(--ultramarine-color-base);
 }
 
@@ -192,7 +191,7 @@
 }
 
 .home_blob {
-  width: var(--spacing-50);
+  width: var(--spacing-0);
   fill: var(--ultramarine-color-base);
 }
 
@@ -218,7 +217,7 @@
 }
 
 .button_icon {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   margin-right: var(--spacing-2);
   transition: var(--time-300);
 }
@@ -230,7 +229,7 @@
 
 .button--small {
   padding: var(--spacing-2) var(--spacing-3);
-  font-size: var(--h3-font-size);
+  font-size: var(--font-size-lg);
 }
 
 .button--link {
@@ -251,7 +250,7 @@
 }
 
 .change-theme {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   color: var(--title-color);
   margin-right: var(--spacing-4);
   cursor: pointer;
@@ -279,7 +278,7 @@
 }
 
 .scrollup_icon {
-  font-size: var(--h1-font-size);
+  font-size: var(--font-size-xxl);
   color: var(--container-color);
 }
 
@@ -300,7 +299,7 @@
 }
 
 .experience_button {
-  font-size: var(--h3-font-size);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-regular);
   cursor: pointer;
 }
@@ -310,7 +309,7 @@
 }
 
 .experience_icon {
-  font-size: var(--h1-font-size);
+  font-size: var(--font-size-xxl);
   margin-right: var(--spacing-base);
 }
 
@@ -320,17 +319,17 @@
 }
 
 .experience_title {
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   font-weight: var(--font-regular);
 }
 
 .experience_subtitle {
   display: inline-block;
-  font-size: var(--small-font-size);
+  font-size: var(--font-size-xs);
 }
 
 .experience_calendar {
-  font-size: var(--smaller-font-size);
+  font-size: var(--font-size-xxs);
   color: var(--text-color-light);
   margin-bottom: var(--spacing-4);
 }
@@ -429,7 +428,7 @@
 }
 
 .skills_name {
-  font-size: var(--small-font-size);
+  font-size: var(--font-size-xs);
   color: var(--white-color-base);
 }
 
@@ -485,18 +484,18 @@
 .portfolio_subtitle,
 .portfolio_button {
   color: var(--white-color-base);
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
 }
 
 .portfolio_subtitle {
   display: block;
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   margin-bottom: var(--spacing-4);
 }
 
 .portfolio_title {
   color: var(--white-color-base);
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   margin-bottom: var(--spacing-2);
 }
 
@@ -547,14 +546,14 @@
 }
 
 .portfolio_modal-title {
-  font-size: var(--h3-font-size);
+  font-size: var(--font-size-lg);
   font-weight: var(--font-bold);
   color: var(--title-color);
   text-align: center;
 }
 .portfolio_modal-text,
 .portfolio_modal-tech {
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   font-weight: var(--font-regular);
 }
 
@@ -574,7 +573,7 @@
   position: absolute;
   bottom: var(--spacing-4);
   right: var(--spacing-4);
-  font-size: var(--h1-font-size);
+  font-size: var(--font-size-xxl);
   color: var(--hover-color);
   cursor: pointer;
 }
@@ -610,7 +609,7 @@
 .contact_input,
 .contact_button {
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   outline: none;
   border: none;
 }
@@ -625,7 +624,7 @@
   color: var(--text-color);
   padding: var(--spacing-2) var(--spacing-4);
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  font-size: var(--font-size-md);
   font-weight: var(--font-regular);
   transition: border var(--time-400), background-color var(--time-400);
 }
@@ -648,7 +647,7 @@
   top: calc(var(--spacing-4) * -1);
   left: var(--spacing-3);
   color: var(--text-color-light);
-  font-size: var(--smaller-font-size);
+  font-size: var(--font-size-xxs);
   font-weight: var(--font-regular);
   background-color: var(--body-color);
   padding: var(--spacing-2);
@@ -683,7 +682,7 @@
 
 .contact__message {
   color: var(--text-color);
-  font-size: var(--small-font-size);
+  font-size: var(--font-size-xs);
   position: absolute;
   bottom: calc(var(--spacing-8) * -1);
   left: var(--spacing-41);
@@ -708,12 +707,12 @@
 }
 
 .footer_title {
-  font-size: var(--h3-font-size);
+  font-size: var(--font-size-lg);
   margin-bottom: var(--spacing-base);
 }
 
 .footer_social {
-  font-size: var(--h2-font-size);
+  font-size: var(--font-size-xl);
   margin-right: var(--spacing-4);
 }
 
@@ -723,7 +722,7 @@
 }
 
 .footer_copy {
-  font-size: var(--smaller-font-size);
+  font-size: var(--font-size-xxs);
 }
 
 .footer_title,

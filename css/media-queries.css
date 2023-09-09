@@ -224,7 +224,7 @@
     } */
 
     .portfolio_button {
-      font-size: var(--normal-font-size);
+      font-size: var(--font-size-md);
     }
   }
   
