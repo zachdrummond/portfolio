@@ -195,6 +195,10 @@
     .porfolio_img {
       width: var(--spacing-80);
     }
+
+    .social_links_container {
+      display: block;
+    }
   
     .footer_bg {
       padding: var(--spacing-12) 0;
@@ -225,6 +229,10 @@
 
     .portfolio_button {
       font-size: var(--font-size-md);
+    }
+
+    .social_links_container {
+      left: var(--spacing-10);
     }
   }
   
