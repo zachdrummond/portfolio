@@ -214,7 +214,7 @@
     }
   
     .home_social {
-      transform: translateX(calc(var(--spacing-24) * -1));
+      /* transform: translateX(calc(var(--spacing-24) * -1)); */
     }
 
     /* UNCOMMENT - WHEN PROJECTS > 2

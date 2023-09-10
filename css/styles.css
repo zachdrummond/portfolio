@@ -137,8 +137,17 @@
 }
 
 .home_content {
-  grid-template-columns: .5fr 2fr;
+  grid-template-columns: .5fr 3fr;
   align-items: center;
+}
+
+.home_blob {
+  width: var(--spacing-66);
+  fill: var(--ultramarine-color-base);
+}
+
+.home_blob-img {
+  width: var(--spacing-43);
 }
 
 .home_data {
@@ -188,15 +197,6 @@
 
 .home_social-icon:hover {
   color: var(--hover-color);
-}
-
-.home_blob {
-  width: var(--spacing-0);
-  fill: var(--ultramarine-color-base);
-}
-
-.home_blob-img {
-  width: var(--spacing-43);
 }
 
 /*==================== BUTTONS ====================*/
@@ -260,6 +260,61 @@
   color: var(--ultramarine-color-base);
 }
 
+.social-links {
+  position: fixed;
+  left: 40px;
+  bottom: 0px;
+  right: auto;
+  width: 40px;
+  z-index: var(--z-tooltip);
+}
+
+/* Scroll Up */
+.social-link {
+  display: inline-block;
+  position: relative;
+  opacity: .8;
+  padding: var(--spacing-2);
+  border-radius: var(--spacing-2);
+  z-index: var(--z-tooltip);
+  font-size: var(--font-size-xl);
+  color: var(--ultramarine-color-base);
+}
+
+.social-link:hover {
+  color: var(--hover-color);
+}
+
+.banana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.banana::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 200px;
+  margin: 8px auto 0;
+  background-color: var(--ultramarine-color-base);
+}
+
+.social-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  color: var(--ultramarine-color-base);
+  background-color: var(--ultramarine-color-base);
+  font-size: var(--font-size-xl);
+  z-index: var(--z-tooltip);
+  opacity: .8;
+  transform: translate(6px, -7px);
+}
+
 /* Scroll Up */
 .scrollup {
   position: fixed;
@@ -284,7 +339,7 @@
 
 /* Show scroll */
 .show-scroll {
-  bottom: var(--spacing-20);
+  bottom: var(--spacing-40);
 }
 
 /*==================== EXPERIENCE ====================*/
