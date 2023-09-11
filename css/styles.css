@@ -141,6 +141,20 @@
   align-items: center;
 }
 
+.home_social {
+  grid-template-columns: max-content;
+  row-gap: var(--spacing-4);
+}
+
+.home_social-icon {
+  font-size: var(--font-size-xl);
+  color: var(--ultramarine-color-base);
+}
+
+.home_social-icon:hover {
+  color: var(--hover-color);
+}
+
 .home_blob {
   width: var(--spacing-66);
   fill: var(--ultramarine-color-base);
@@ -201,20 +215,6 @@
   font-weight: var(--font-regular);
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-8);
-}
-
-.home_social {
-  grid-template-columns: max-content;
-  row-gap: var(--spacing-4);
-}
-
-.home_social-icon {
-  font-size: var(--font-size-xl);
-  color: var(--ultramarine-color-base);
-}
-
-.home_social-icon:hover {
-  color: var(--hover-color);
 }
 
 /*==================== BUTTONS ====================*/
@@ -772,12 +772,12 @@
   margin-bottom: var(--spacing-base);
 }
 
-.footer_social {
+.footer_social_links {
   font-size: var(--font-size-xl);
   margin-right: var(--spacing-4);
 }
 
-.footer_social:hover {
+.footer_social_links:hover {
   color: var(--hover-color);
   text-align: center;
 }
@@ -788,7 +788,7 @@
 
 .footer_title,
 .footer_link,
-.footer_social,
+.footer_social_links,
 .footer_copy {
   color: var(--white-color-base);
 }

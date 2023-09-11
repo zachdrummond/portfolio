@@ -149,6 +149,10 @@
       padding-top: var(--spacing-22);
       column-gap: var(--spacing-8);
     }
+
+    .home_social {
+      visibility: hidden;
+    }
   
     .home_blob {
       width: var(--spacing-67);
@@ -202,7 +206,7 @@
   
     .footer_bg {
       padding: var(--spacing-12) 0;
-    }
+    }    
   }
   
 /*==================== LARGE DEVICES ====================*/
@@ -215,10 +219,6 @@
   
     .home_blob {
       width: var(--spacing-80);
-    }
-  
-    .home_social {
-      /* transform: translateX(calc(var(--spacing-24) * -1)); */
     }
 
     /* UNCOMMENT - WHEN PROJECTS > 2
