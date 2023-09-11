@@ -171,19 +171,20 @@
     --body-font: "Lato", sans-serif;
 
     /* Font Size */
-    --font-size-xxs: 0.75rem;  /* 12px */
-    --font-size-xs: 0.813rem;  /* 13px */
-    --font-size-sm: 0.875rem;  /* 14px */
-    --font-size-md: 1rem;      /* 16px */
-    --font-size-lg: 1.125rem;  /* 18px */
-    --font-size-xl: 1.25rem;   /* 20px */
-    --font-size-xxl: 1.5rem;   /* 24px */
-    --font-size-big: 2rem; /* 32px */
+    --font-size-xxs: 0.75rem;    /* 12px */
+    --font-size-xs: 0.813rem;    /* 13px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-md: 1rem;        /* 16px */
+    --font-size-lg: 1.125rem;    /* 18px */
+    --font-size-xl: 1.25rem;     /* 20px */
+    --font-size-xxl: 1.5rem;     /* 24px */
+    --font-size-big: 2rem;       /* 32px */
+    --font-size-bigger: 2.25rem; /* 36px */
 
     /* Font Weight */
-    --font-light: 300;
-    --font-regular: 400;
-    --font-bold: 700;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
 
     /* Z-Index */
     --z-tooltip: 10;

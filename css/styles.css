@@ -15,8 +15,8 @@
 /*==================== LAYOUT ====================*/
 .container {
     max-width: var(--spacing-192);
-    margin-left: var(--spacing-10);
-    margin-right: var(--spacing-10);
+    margin-left: var(--spacing-8);
+    margin-right: var(--spacing-8);
   }
   
 .grid {
@@ -33,7 +33,7 @@
     background-color: var(--body-color);
   }
 
-/*==================== NAV ====================*/
+/*==================== NAVIGATION ====================*/
 #brandName {
   display: none;
 }
@@ -48,25 +48,6 @@
   padding-bottom: var(--spacing-base);
 }
 
-.nav_logo,
-.nav_toggle {
-  color: var(--title-color);
-  font-weight: var(--font-bold);
-}
-
-.nav_logo:hover {
-  color: var(--ultramarine-color-base);
-}
-
-.nav_toggle {
-  font-size: var(--font-size-xl);
-  cursor: pointer;
-}
-
-.nav_toggle:hover {
-  color: var(--ultramarine-color-base);
-}
-
 @media screen and (max-width: 767px){
   .nav_menu {
     position: fixed;
@@ -74,7 +55,7 @@
     left: 0;
     width: 100%;
     background-color: var(--body-color);
-    padding: var(--spacing-8) var(--spacing-6) var(--spacing-16);
+    padding: var(--spacing-8) var(--spacing-6) var(--spacing-10);
     box-shadow: 0 -1px var(--spacing-base) rgba(0,0,0,.15);
     border-radius: var(--spacing-6) var(--spacing-6) 0 0;
     transition: var(--time-300);
@@ -82,8 +63,8 @@
 }
 
 .nav_list {
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-8);
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-4);
 }
 
 .nav_link {
@@ -92,7 +73,7 @@
   align-items: center;
   font-size: var(--font-size-md);
   color: var(--title-color);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
 }
 
 .nav_link:hover{
@@ -103,9 +84,15 @@
   font-size: var(--font-size-xl);
 }
 
+.nav_btns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
 .nav_close {
   position: absolute;
-  right: var(--spacing-5);
+  right: var(--spacing-4);
   bottom: var(--spacing-2);
   font-size: var(--font-size-xxl);
   cursor: pointer;
@@ -114,6 +101,23 @@
 
 .nav_close:hover {
   color: var(--hover-color);
+}
+
+.nav_logo,
+.nav_social_link,
+.change-theme,
+.nav_toggle {
+  color: var(--title-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+}
+
+.nav_logo:hover,
+.nav_social_link:hover,
+.change-theme:hover,
+.nav_toggle:hover {
+  color: var(--ultramarine-color-base);
 }
 
 /* show menu */
@@ -169,7 +173,8 @@
 }
 
 .home_title {
-  font-size: clamp(40px, 8vw, 80px);
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
 }
 
 .home_wave {
@@ -192,9 +197,9 @@
 }
 
 .home_description {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   color: var(--text-color);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
   margin-top: var(--spacing-3);
   margin-bottom: var(--spacing-8);
 }
@@ -206,7 +211,7 @@
   color: var(--white-color-base);
   padding: var(--spacing-4);
   border-radius: var(--spacing-2);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
   box-shadow: 0px 2px 3px 1px rgba(35, 40, 43, 0.20);
 }
 
@@ -241,23 +246,6 @@
 .button--link:hover {
   background-color: transparent;
   color: var(--hover-color);
-}
-
-/* Dark/Light */
-.nav_btns {
-  display: flex;
-  align-items: center;
-}
-
-.change-theme {
-  font-size: var(--font-size-xl);
-  color: var(--title-color);
-  margin-right: var(--spacing-4);
-  cursor: pointer;
-}
-
-.change-theme:hover {
-  color: var(--ultramarine-color-base);
 }
 
 /* SOCIAL MEDIA */
@@ -310,7 +298,6 @@
   bottom: -20%;
   background-color: var(--ultramarine-color-base);
   opacity: .8;
-  padding: 0 var(--spacing-base);
   border-radius: var(--spacing-2);
   z-index: var(--z-tooltip);
   transition: var(--time-400);
@@ -327,7 +314,7 @@
 
 /* Show scroll */
 .show-scroll {
-  bottom: var(--spacing-50);
+  bottom: var(--spacing-53);
 }
 
 /*==================== EXPERIENCE ====================*/
@@ -343,7 +330,7 @@
 
 .experience_button {
   font-size: var(--font-size-lg);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
 
@@ -363,7 +350,7 @@
 
 .experience_title {
   font-size: var(--font-size-md);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
 }
 
 .experience_subtitle {
@@ -590,14 +577,14 @@
 
 .portfolio_modal-title {
   font-size: var(--font-size-lg);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-weight-bold);
   color: var(--title-color);
   text-align: center;
 }
 .portfolio_modal-text,
 .portfolio_modal-tech {
   font-size: var(--font-size-md);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
 }
 
 .portfolio_modal-text {
@@ -668,7 +655,7 @@
   padding: var(--spacing-2) var(--spacing-4);
   font-family: var(--body-font);
   font-size: var(--font-size-md);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
   transition: border var(--time-400), background-color var(--time-400);
 }
 
@@ -691,7 +678,7 @@
   left: var(--spacing-3);
   color: var(--text-color-light);
   font-size: var(--font-size-xxs);
-  font-weight: var(--font-regular);
+  font-weight: var(--font-weight-regular);
   background-color: var(--body-color);
   padding: var(--spacing-2);
   pointer-events: none;

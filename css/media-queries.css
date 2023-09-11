@@ -120,6 +120,7 @@
   
     .nav_icon,
     .nav_close,
+    .nav_social_link,
     .nav_toggle {
       display: none;
     }
@@ -130,7 +131,7 @@
     }
 
     .nav_link {
-      font-weight: var(--font-bold);
+      font-weight: var(--font-weight-bold);
     }
   
     /* .nav_menu {
@@ -209,7 +210,8 @@
     }
 
     .show-scroll {
-      bottom: var(--spacing-36);
+      padding: 0 var(--spacing-base);
+      bottom: var(--spacing-38);
     }
   }
   
