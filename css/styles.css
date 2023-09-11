@@ -141,22 +141,22 @@
   align-items: center;
 }
 
-/* .home_blob {
+.home_blob {
   width: var(--spacing-66);
   fill: var(--ultramarine-color-base);
 }
 
 .home_blob-img {
   width: var(--spacing-43);
-} */
+}
 
-.home_blob {
+/* .home_blob {
   box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
   animation: blob-animation 5s ease-in-out infinite;
   transition: all 1s ease-in-out;
-}
+} */
 
-@keyframes blob-animation {
+/* @keyframes blob-animation {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
@@ -166,7 +166,7 @@
   100% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-}
+} */
 
 .home_data {
   grid-column: 1/3;

@@ -16,7 +16,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
-    /* background: radial-gradient(#024d5a, #091813); */
+    /* background: radial-gradient(#0f64b5, #010a12); */
     color: var(--text-color);
   }
 
