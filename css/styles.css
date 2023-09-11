@@ -87,7 +87,7 @@
 .nav_btns {
   display: flex;
   align-items: center;
-  gap: var(--spacing-4);
+  gap: var(--spacing-2);
 }
 
 .nav_close {
@@ -314,7 +314,7 @@
 
 /* Show scroll */
 .show-scroll {
-  bottom: var(--spacing-53);
+  bottom: var(--spacing-42);
 }
 
 /*==================== EXPERIENCE ====================*/
@@ -741,23 +741,12 @@
   margin-bottom: var(--spacing-base);
 }
 
-.footer_social_links {
-  font-size: var(--font-size-xl);
-  margin-right: var(--spacing-4);
-}
-
-.footer_social_links:hover {
-  color: var(--hover-color);
-  text-align: center;
-}
-
 .footer_copy {
   font-size: var(--font-size-xxs);
 }
 
 .footer_title,
 .footer_link,
-.footer_social_links,
 .footer_copy {
   color: var(--white-color-base);
 }

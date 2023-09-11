@@ -67,10 +67,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-    
-    .footer_container {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
   
   /*==================== MEDIUM DEVICES 2 ====================*/
@@ -204,14 +200,11 @@
     .social_links_container {
       display: block;
     }
-  
-    .footer_bg {
-      padding: var(--spacing-12) 0;
-    }
+
 
     .show-scroll {
       padding: 0 var(--spacing-base);
-      bottom: var(--spacing-38);
+      bottom: var(--spacing-30);
     }
   }
   
