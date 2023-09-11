@@ -14,10 +14,6 @@
       column-gap: 0;
     }
   
-    .home_content {
-      grid-template-columns: .25fr 3fr;
-    }
-  
     .home_blob {
       width: var(--spacing-45);
     }
@@ -34,19 +30,6 @@
   
 /*==================== MEDIUM DEVICES 1 ====================*/
   @media screen and (min-width: 568px) {
-
-    .home_content {
-      grid-template-columns: max-content 1fr 1fr;
-    }
-  
-    .home_data {
-      grid-column: initial;
-    }
-  
-    .home_img {
-      order: 1;
-      justify-self: center;
-    }
 
     .experience_sections {
       display: grid;
@@ -101,10 +84,6 @@
       padding: 0 var(--spacing-4);
     }
 
-    #brandInitials {
-      display: none;
-    }
-
     #brandName {
       display: inline-block;
     }
@@ -114,6 +93,8 @@
       column-gap: var(--spacing-4);
     }
   
+    #brandInitials,
+    #nav_home,
     .nav_icon,
     .nav_close,
     .nav_social_link,
@@ -137,19 +118,6 @@
     .change-theme {
       margin: 0;
     } */
-  
-    .home_container {
-      row-gap: var(--spacing-20);
-    }
-  
-    .home_content {
-      padding-top: var(--spacing-22);
-      column-gap: var(--spacing-8);
-    }
-
-    .home_social {
-      visibility: hidden;
-    }
   
     .home_blob {
       width: var(--spacing-67);
