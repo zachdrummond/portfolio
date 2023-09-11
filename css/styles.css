@@ -15,8 +15,8 @@
 /*==================== LAYOUT ====================*/
 .container {
     max-width: var(--spacing-192);
-    margin-left: var(--spacing-6);
-    margin-right: var(--spacing-6);
+    margin-left: var(--spacing-10);
+    margin-right: var(--spacing-10);
   }
   
 .grid {
@@ -164,24 +164,6 @@
   width: var(--spacing-43);
 }
 
-/* .home_blob {
-  box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
-  animation: blob-animation 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
-} */
-
-/* @keyframes blob-animation {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-} */
-
 .home_data {
   grid-column: 1/3;
 }
@@ -324,7 +306,7 @@
 /* SCROLL UP */
 .scrollup {
   position: fixed;
-  right: var(--spacing-4);
+  right: var(--spacing-base);
   bottom: -20%;
   background-color: var(--ultramarine-color-base);
   opacity: .8;
@@ -345,7 +327,7 @@
 
 /* Show scroll */
 .show-scroll {
-  bottom: var(--spacing-40);
+  bottom: var(--spacing-50);
 }
 
 /*==================== EXPERIENCE ====================*/

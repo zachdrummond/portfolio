@@ -206,7 +206,11 @@
   
     .footer_bg {
       padding: var(--spacing-12) 0;
-    }    
+    }
+
+    .show-scroll {
+      bottom: var(--spacing-36);
+    }
   }
   
 /*==================== LARGE DEVICES ====================*/
