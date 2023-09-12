@@ -69,11 +69,6 @@
     .footer_container {
       padding: 0 var(--spacing-4);
     }
-  
-    .nav {
-      height: calc((--header-height) + var(--spacing-6));
-      column-gap: var(--spacing-4);
-    }
 
     .nav_list {
       gap: var(--spacing-12);
@@ -184,10 +179,11 @@
 
     .home_container {
       flex-direction: row-reverse;
+      height: calc(100vh - var(--header-height));
     }
   
     .home_blob {
-      width: var(--spacing-80);
+      width: var(--spacing-90);
     }
 
     /* UNCOMMENT - WHEN PROJECTS > 2

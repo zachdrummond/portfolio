@@ -122,7 +122,7 @@
   content: "";
   display: block;
   width: 1px;
-  height: 50vh;
+  height: calc(50vh - var(--header-height));
   margin: var(--spacing-2) auto 0;
   background-color: var(--ultramarine-color-base);
 }
@@ -160,6 +160,7 @@
 
 .nav {
   display: flex;
+  align-items: center;
   height: var(--header-height);
   padding-top: var(--spacing-base);
   padding-bottom: var(--spacing-base);
