@@ -1,10 +1,10 @@
 
 /*==================== SMALL DEVICES ====================*/
 @media screen and (max-width: 350px) {
-    .container {
+    /* .container {
       margin-left: var(--spacing-4);
       margin-right: var(--spacing-4);
-    }
+    } */
     
     .nav_menu {
       padding: var(--spacing-8) var(--spacing-base) var(--spacing-16);
@@ -31,10 +31,10 @@
 /*==================== MEDIUM DEVICES 1 ====================*/
   @media screen and (min-width: 568px) {
 
-    .container {
+    /* .container {
       margin-left: var(--spacing-12);
       margin-right: var(--spacing-12);
-    }
+    } */
 
     .experience_sections {
       display: grid;
@@ -170,8 +170,8 @@
     }
 
     .container {
-      margin-left: var(--spacing-32);
-      margin-right: var(--spacing-32);
+      margin-left: 10vw;
+      margin-right: 10vw;
     }
 
     #brandName {

@@ -14,9 +14,8 @@
 
 /*==================== LAYOUT ====================*/
 .container {
-    max-width: var(--spacing-192);
-    margin-left: var(--spacing-8);
-    margin-right: var(--spacing-8);
+    margin-left: 8vw;
+    margin-right: 8vw;
   }
   
 .grid {
@@ -253,7 +252,7 @@
 
 /* Change background header */
 .scroll-header {
-  box-shadow: 0 0 var(--spacing-base) rgba(0,0,0,.15);
+  box-shadow: 0 0 var(--spacing-2) var(--black-color-base);
 }
 
 /*==================== HOME ====================*/
