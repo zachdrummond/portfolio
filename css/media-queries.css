@@ -113,11 +113,6 @@
     .skills_info {
       grid-template-columns: repeat(6, 1fr);
     }
-
-    .portfolio_container {
-      grid-template-columns: repeat(2, var(--spacing-88));
-      justify-content: center;
-    }
   
     .portfolio_content {
       padding: var(--spacing-24) 0 var(--spacing-8) var(--spacing-10);
@@ -191,6 +186,10 @@
       grid-template-columns: repeat(3, var(--spacing-88));
       row-gap: var(--spacing-12);
     } */
+
+    .portfolio_container {
+      grid-template-columns: repeat(2, 40vw);
+    }
 
     .portfolio_button {
       font-size: var(--font-size-md);
