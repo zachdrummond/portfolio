@@ -169,7 +169,7 @@
   padding-bottom: var(--spacing-base);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .nav_menu {
     position: fixed;
     bottom: -100%;

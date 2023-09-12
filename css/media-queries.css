@@ -72,11 +72,6 @@
     .section_title {
       margin-bottom: var(--spacing-10);
     }
-
-    .container {
-      margin-left: var(--spacing-12);
-      margin-right: var(--spacing-12);
-    }
   
     .header,
     .main,
@@ -91,11 +86,6 @@
     .nav {
       height: calc((--header-height) + var(--spacing-6));
       column-gap: var(--spacing-4);
-    }
-  
-    .nav_list {
-      display: flex;
-      column-gap: var(--spacing-8);
     }
 
     .nav_link {
