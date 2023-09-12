@@ -31,6 +31,11 @@
 /*==================== MEDIUM DEVICES 1 ====================*/
   @media screen and (min-width: 568px) {
 
+    .container {
+      margin-left: var(--spacing-12);
+      margin-right: var(--spacing-12);
+    }
+
     .experience_sections {
       display: grid;
       grid-template-columns: .6fr;
@@ -60,11 +65,6 @@
       margin: 0;
     }
 
-    .container {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     .section {
       padding: var(--spacing-16) 0 var(--spacing-16);
     }
@@ -72,10 +72,10 @@
     .section_title {
       margin-bottom: var(--spacing-10);
     }
-  
-    .header {
-      top: 0;
-      bottom: initial;
+
+    .container {
+      margin-left: var(--spacing-12);
+      margin-right: var(--spacing-12);
     }
   
     .header,
@@ -84,22 +84,13 @@
       padding: 0 var(--spacing-4);
     }
 
-    #brandName {
+    #home_intro {
       display: inline-block;
     }
   
     .nav {
       height: calc((--header-height) + var(--spacing-6));
       column-gap: var(--spacing-4);
-    }
-  
-    #brandInitials,
-    #nav_home,
-    .nav_icon,
-    .nav_close,
-    .nav_social_link,
-    .nav_toggle {
-      display: none;
     }
   
     .nav_list {
@@ -111,16 +102,16 @@
       font-weight: var(--font-weight-bold);
     }
   
-    /* .nav_menu {
-      margin-left: auto;
-    }
-  
-    .change-theme {
-      margin: 0;
-    } */
-  
     .home_blob {
       width: var(--spacing-67);
+    }
+
+    .home_title {
+      font-size: var(--font-size-biggest);
+    }
+
+    .home_description {
+      font-size: var(--font-size-xl);
     }
   
     .experience_tabs {
@@ -169,7 +160,6 @@
       display: block;
     }
 
-
     .show-scroll {
       padding: 0 var(--spacing-base);
       bottom: var(--spacing-30);
@@ -178,10 +168,37 @@
   
 /*==================== LARGE DEVICES ====================*/
   @media screen and (min-width: 1024px) {
+    .header {
+      top: 0;
+      bottom: initial;
+    }
+
     .header,
     .main,
     .footer_container {
       padding: 0;
+    }
+
+    .container {
+      margin-left: var(--spacing-32);
+      margin-right: var(--spacing-32);
+    }
+
+    #brandName {
+      display: inline-block;
+    }
+
+    #brandInitials,
+    #nav_home,
+    .nav_icon,
+    .nav_close,
+    .nav_social_link,
+    .nav_toggle {
+      display: none;
+    }
+
+    .home_container {
+      flex-direction: row-reverse;
     }
   
     .home_blob {

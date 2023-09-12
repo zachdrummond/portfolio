@@ -40,161 +40,14 @@
     background-color: var(--body-color);
   }
 
-/*==================== NAVIGATION ====================*/
-#brandName {
-  display: none;
-}
-
-.nav {
-  max-width: var(--spacing-242);
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: var(--spacing-base);
-  padding-bottom: var(--spacing-base);
-}
-
-@media screen and (max-width: 767px){
-  .nav_menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--body-color);
-    padding: var(--spacing-8) var(--spacing-6) var(--spacing-10);
-    box-shadow: 0 -1px var(--spacing-base) rgba(0,0,0,.15);
-    border-radius: var(--spacing-6) var(--spacing-6) 0 0;
-    transition: var(--time-300);
-  }
-}
-
-.nav_list {
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--spacing-4);
-}
-
-.nav_link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: var(--font-size-md);
-  color: var(--title-color);
-  font-weight: var(--font-weight-regular);
-}
-
-.nav_link:hover{
-  color: var(--ultramarine-color-base);
-}
-
-.nav_icon {
-  font-size: var(--font-size-xl);
-}
-
-.nav_btns {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-2);
-}
-
-.nav_close {
-  position: absolute;
-  right: var(--spacing-4);
-  bottom: var(--spacing-2);
-  font-size: var(--font-size-xxl);
-  cursor: pointer;
-  color: var(--ultramarine-color-base);
-}
-
-.nav_close:hover {
-  color: var(--hover-color);
-}
-
-.nav_logo,
-.nav_social_link,
-.change-theme,
-.nav_toggle {
-  color: var(--title-color);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-xl);
-  cursor: pointer;
-}
-
-.nav_logo:hover,
-.nav_social_link:hover,
-.change-theme:hover,
-.nav_toggle:hover {
-  color: var(--ultramarine-color-base);
-}
-
-/* show menu */
-.show-menu {
-  bottom: 0;
-}
-
-/* Active link */
-.active-link {
-  color: var(--ultramarine-color-base);
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 0 var(--spacing-base) rgba(0,0,0,.15);
-}
-
-/*==================== HOME ====================*/
-.home_container {
-  flex-direction: column;
-}
-
-.home_blob {
-  width: var(--spacing-66);
-  fill: var(--ultramarine-color-base);
-}
-
-.home_blob-img {
-  width: var(--spacing-43);
-}
-
-.home_title {
-  font-size: var(--font-size-bigger);
-  font-weight: var(--font-weight-bold);
-}
-
-.home_wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(18.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-100% { transform: rotate( 0.0deg) }
-}
-
-.home_description {
-  font-size: var(--font-size-lg);
-  color: var(--text-color);
-  font-weight: var(--font-weight-regular);
-  margin-top: var(--spacing-3);
-  margin-bottom: var(--spacing-8);
-}
-
-/*==================== BUTTONS ====================*/
+  /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
   background-color: var(--ultramarine-color-base);
   color: var(--white-color-base);
-  padding: var(--spacing-4);
+  padding: var(--spacing-3);
   border-radius: var(--spacing-2);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
   box-shadow: 0px 2px 3px 1px rgba(35, 40, 43, 0.20);
 }
@@ -299,6 +152,167 @@
 /* Show scroll */
 .show-scroll {
   bottom: var(--spacing-42);
+}
+
+/*==================== NAVIGATION ====================*/
+#brandName {
+  display: none;
+}
+
+.nav {
+  max-width: var(--spacing-242);
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-base);
+  padding-bottom: var(--spacing-base);
+}
+
+@media screen and (max-width: 767px){
+  .nav_menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: var(--spacing-8) var(--spacing-6) var(--spacing-10);
+    box-shadow: 0 -1px var(--spacing-base) rgba(0,0,0,.15);
+    border-radius: var(--spacing-6) var(--spacing-6) 0 0;
+    transition: var(--time-300);
+  }
+}
+
+.nav_list {
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-4);
+}
+
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--font-size-md);
+  color: var(--title-color);
+  font-weight: var(--font-weight-regular);
+}
+
+.nav_link:hover{
+  color: var(--ultramarine-color-base);
+}
+
+.nav_icon {
+  font-size: var(--font-size-xl);
+}
+
+.nav_btns {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.nav_close {
+  position: absolute;
+  right: var(--spacing-4);
+  bottom: var(--spacing-2);
+  font-size: var(--font-size-xxl);
+  cursor: pointer;
+  color: var(--ultramarine-color-base);
+}
+
+.nav_close:hover {
+  color: var(--hover-color);
+}
+
+.nav_logo,
+.nav_social_link,
+.change-theme,
+.nav_toggle {
+  color: var(--title-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+}
+
+.nav_logo:hover,
+.nav_social_link:hover,
+.change-theme:hover,
+.nav_toggle:hover {
+  color: var(--ultramarine-color-base);
+}
+
+/* show menu */
+.open-mobile-menu {
+  bottom: 0;
+}
+
+/* Active link */
+.active-link {
+  color: var(--ultramarine-color-base);
+}
+
+/* Change background header */
+.scroll-header {
+  box-shadow: 0 0 var(--spacing-base) rgba(0,0,0,.15);
+}
+
+/*==================== HOME ====================*/
+.home_container {
+  flex-direction: column;
+}
+
+.home_blob {
+  width: var(--spacing-66);
+  fill: var(--ultramarine-color-base);
+}
+
+.home_blob-img {
+  width: var(--spacing-43);
+}
+
+.home_title {
+  text-align: center;
+  font-size: var(--font-size-bigger);
+  font-weight: var(--font-weight-bold);
+}
+
+.home_wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+ 10% { transform: rotate(18.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+ 20% { transform: rotate(-8.0deg) }
+ 30% { transform: rotate(14.0deg) }
+ 40% { transform: rotate(-4.0deg) }
+ 50% { transform: rotate(10.0deg) }
+ 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+100% { transform: rotate( 0.0deg) }
+}
+
+.home_description {
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+  font-weight: var(--font-weight-regular);
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-8);
+}
+
+#home_intro {
+  display: none;
+}
+
+#job_link {
+  color: var(--ultramarine-color-base)
+}
+
+#job_link:hover {
+  color: var(--hover-color);
 }
 
 /*==================== EXPERIENCE ====================*/

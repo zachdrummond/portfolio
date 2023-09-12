@@ -8,22 +8,22 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*=== MOBILE MENU SHOW/HIDDEN ===*/
+/*=== ALLOWS USER TO OPEN/CLOSE MOBILE MENU ===*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/* SHOW */
+/* OPEN */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
+    navMenu.classList.add("open-mobile-menu");
   });
 }
 
-/* HIDE */
+/* CLOSE */
 if (navClose) {
   navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
+    navMenu.classList.remove("open-mobile-menu");
   });
 }
 
@@ -32,8 +32,8 @@ const navLink = document.querySelectorAll(".nav_link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav_link, we remove the show-menu class
-  navMenu.classList.remove("show-menu");
+  // When we click on each nav_link, we remove the open-mobile-menu class
+  navMenu.classList.remove("open-mobile-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
