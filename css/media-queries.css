@@ -29,8 +29,19 @@
 
     .experience_sections {
       display: grid;
-      grid-template-columns: .6fr;
       justify-content: center;
+    }
+
+    .experience_title {
+      font-size: var(--font-size-lg);
+    }
+    
+    .experience_subtitle {
+      font-size: var(--font-size-md);
+    }
+    
+    .experience_calendar {
+      font-size: var(--font-size-md);
     }
 
     .skills_info {
@@ -104,10 +115,6 @@
   
     .experience_button {
       margin: 0 var(--spacing-4);
-    }
-  
-    .experience_sections {
-      grid-template-columns: .5fr;
     }
 
     .skills_container {

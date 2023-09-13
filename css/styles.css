@@ -6,7 +6,6 @@
   
 .section_title {
     font-size: var(--font-size-xxl);
-    color: var(--title-color);
     text-align: center;
     margin-bottom: var(--spacing-8);
   }
@@ -333,7 +332,7 @@
 }
 
 .experience_button {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
@@ -359,11 +358,11 @@
 
 .experience_subtitle {
   display: inline-block;
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
 }
 
 .experience_calendar {
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-sm);
   color: var(--text-color-light);
   margin-bottom: var(--spacing-4);
 }
