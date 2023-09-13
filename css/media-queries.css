@@ -70,6 +70,10 @@
       padding: 0 var(--spacing-4);
     }
 
+    .button {
+      font-size: var(--font-size-md);
+    }
+
     .nav_list {
       gap: var(--spacing-12);
     }
@@ -189,10 +193,6 @@
 
     .portfolio_container {
       grid-template-columns: repeat(2, 40vw);
-    }
-
-    .portfolio_button {
-      font-size: var(--font-size-md);
     }
 
     .social_links_container {
