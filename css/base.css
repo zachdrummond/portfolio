@@ -16,8 +16,9 @@ body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--font-size-md);
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     /* background: radial-gradient(#0f64b5, #010a12); */
+    background: linear-gradient(#b7d9f9, #4a9ff0, #b7d9f9);
     color: var(--text-color);
   }
 

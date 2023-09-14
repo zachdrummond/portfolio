@@ -1,14 +1,20 @@
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
     min-height: 100vh;
-    padding: var(--spacing-8) 0 var(--spacing-16);
+    padding: var(--spacing-4) 0 var(--spacing-16);
   }
   
 .section_title {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-big);
     text-align: center;
     margin-bottom: var(--spacing-8);
   }
+
+.section_title_text:hover {
+  text-shadow: var(--crimson-sky-color-base) 2px 2px;
+  /* WHITE BACKGROUND */
+  /* text-shadow: var(--ultramarine-color-500) 2px 2px; */
+}
 
 
 /*==================== LAYOUT ====================*/
@@ -110,7 +116,7 @@
   padding: var(--spacing-2);
   border-radius: var(--spacing-2);
   font-size: var(--font-size-xl);
-  color: var(--ultramarine-color-base);
+  color: var(--ultramarine-color-900);
 }
 
 .social_link:hover {
