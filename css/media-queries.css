@@ -148,7 +148,7 @@
 
     .show-scroll {
       padding: 0 var(--spacing-base);
-      bottom: var(--spacing-30);
+      bottom: var(--spacing-42);
     }
   }
   
@@ -157,6 +157,10 @@
     .header {
       top: 0;
       bottom: initial;
+    }
+
+    .footer {
+      margin-bottom: 0;
     }
 
     .header,
@@ -204,6 +208,11 @@
 
     .social_links_container {
       left: var(--spacing-10);
+    }
+
+    .show-scroll {
+      padding: 0 var(--spacing-base);
+      bottom: var(--spacing-30);
     }
   }
   

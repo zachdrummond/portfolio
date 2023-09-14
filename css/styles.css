@@ -41,7 +41,7 @@
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--nav-color);
   }
 
   /*==================== BUTTONS ====================*/
@@ -116,7 +116,7 @@
   padding: var(--spacing-2);
   border-radius: var(--spacing-2);
   font-size: var(--font-size-xl);
-  color: var(--ultramarine-color-900);
+  color: var(--social_links_color);
 }
 
 .social_link:hover {
@@ -129,7 +129,7 @@
   width: 1px;
   height: calc(50vh - var(--header-height));
   margin: var(--spacing-2) auto 0;
-  background-color: var(--ultramarine-color-base);
+  background-color: var(--social_links_color);
 }
 
 /* SCROLL UP */
@@ -185,7 +185,7 @@
     left: 0;
     width: 100%;
     flex: 1;
-    background-color: var(--body-color);
+    background-color: var(--nav-color);
     padding: var(--spacing-8) var(--spacing-6) var(--spacing-10);
     box-shadow: 0 -1px var(--spacing-base) rgba(0,0,0,.15);
     border-radius: var(--spacing-6) var(--spacing-6) 0 0;
@@ -657,7 +657,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--body-color);
+  background-color: var(--ultramarine-color-100);
   border: var(--spacing-base) solid var(--ultramarine-color-base);
   border-radius: var(--spacing-2);
   color: var(--text-color);
@@ -685,10 +685,10 @@
   position: absolute;
   top: calc(var(--spacing-4) * -1);
   left: var(--spacing-3);
-  color: var(--text-color-light);
-  font-size: var(--font-size-xxs);
+  color: var(--text-color);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
-  background-color: var(--body-color);
+  background-color: var(--background-color);
   padding: var(--spacing-2);
   pointer-events: none;
   transition: top var(--time-400), opacity var(--time-400), background-color var(--time-400);
@@ -716,7 +716,7 @@
 .contact_input:focus + .contact_label,
 .contact_input:not(:placeholder-shown).contact_input:not(:focus) + .contact_label {
   opacity: 1;
-  top: calc(var(--spacing-4) * -1);
+  top: calc(var(--spacing-7) * -1);
 }
 
 .contact__message {
@@ -732,11 +732,13 @@
 }
 /*==================== FOOTER ====================*/
 .footer {
+  position: relative;
+  z-index: var(--z-footer);
   padding-top: var(--spacing-8);
+  margin-bottom: var(--header-height);
 }
 
 .footer_container {
-  row-gap: var(--spacing-4);
   text-align: center;
 }
 

@@ -16,7 +16,7 @@ body {
     margin: 0 0 var(--header-height) 0;
     font-family: var(--body-font);
     font-size: var(--font-size-md);
-    background: var(--background);
+    background: var(--background-color);
     color: var(--text-color);
   }
 
