@@ -233,13 +233,15 @@
 /* =========================== DARK THEME ========================== */
 body.dark-theme {
     /* HSL color mode */
-    --ultramarine-color-base: var(--ultramarine-color-600);
+    --ultramarine-color-base: var(--ultramarine-color-900);
+    /* EXPERIENCE + CONTACT ME + FOOTER */
+    /* --ultramarine-color-base: var(--ultramarine-color-900); */
     --hover-color: var(--crimson-sky-color-600);
     --title-color: hsl(var(--ultramarine-hue-color), 8%, 95%);
     --text-color: hsl(var(--ultramarine-hue-color), 8%, 75%);
     --input-color: hsl(var(--ultramarine-hue-color), 29%, 16%);
     --body-color: var(--ultramarine-color-900); /* 28%, 12% */
-    --container-color: hsl(var(--ultramarine-hue-color), 29%, 16%);
+    --container-color: hsl(var(--ultramarine-hue-color), 29%, 35%);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 36%);
 }

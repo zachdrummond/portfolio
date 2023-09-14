@@ -429,7 +429,7 @@
   display: grid;
   width: var(--spacing-20);
   height: var(--spacing-20);
-  background-color: var(--container-color);
+  background-color: var(--ultramarine-color-800);
   border-radius: var(--spacing-12);
   place-items: center;
   margin-top: var(--spacing-base);
