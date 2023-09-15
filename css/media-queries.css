@@ -109,11 +109,11 @@
       display: inline-block;
     }
   
-    .experience_tabs {
+    .experience_tabs_container {
       justify-content: center;
     }
   
-    .experience_button {
+    .experience_tab {
       margin: 0 var(--spacing-4);
     }
 

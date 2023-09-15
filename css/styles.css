@@ -57,7 +57,7 @@
 }
 
 .button:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color-crimsonSky);
   box-shadow: 0px 6px 10px 2px rgba(35, 40, 43, 0.20);
   transition: box-shadow 300ms;
 }
@@ -76,17 +76,6 @@
 .button--small {
   padding: var(--spacing-2) var(--spacing-3);
   font-size: var(--font-size-lg);
-}
-
-.button--link {
-  padding: 0;
-  background-color: transparent;
-  color: var(--ultramarine-color-base);
-}
-
-.button--link:hover {
-  background-color: transparent;
-  color: var(--hover-color);
 }
 
 /* SOCIAL MEDIA */
@@ -120,7 +109,7 @@
 }
 
 .social_link:hover {
-  color: var(--hover-color);
+  color: var(--hover-color-ultramarine);
 }
 
 .social_links_list::after {
@@ -144,12 +133,12 @@
 }
 
 .scrollup:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color-crimsonSky);
 }
 
 .scrollup_icon {
   font-size: var(--font-size-xxl);
-  color: var(--container-color);
+  color: var(--white-color-base);
 }
 
 /* Show scroll */
@@ -206,7 +195,7 @@
 }
 
 .nav_link:hover{
-  color: var(--ultramarine-color-base);
+  color: var(--hover-color-ultramarine);
 }
 
 .nav_icon {
@@ -231,7 +220,7 @@
 }
 
 .nav_close:hover {
-  color: var(--hover-color);
+  color: var(--hover-color-crimsonSky);
 }
 
 .nav_brand,
@@ -248,7 +237,7 @@
 .nav_social_link:hover,
 .change-theme:hover,
 .nav_toggle:hover {
-  color: var(--ultramarine-color-base);
+  color: var(--hover-color-ultramarine);
 }
 
 /* show menu */
@@ -258,7 +247,7 @@
 
 /* Active link */
 .active-link {
-  color: var(--ultramarine-color-base);
+  color: var(--hover-color-ultramarine);
 }
 
 /* Change background header */
@@ -322,7 +311,7 @@
 }
 
 #job_link:hover {
-  color: var(--hover-color);
+  color: var(--hover-color-crimsonSky);
 }
 
 /*==================== EXPERIENCE ====================*/
@@ -330,20 +319,20 @@
   text-align: center;
 }
 
-.experience_tabs {
+.experience_tabs_container {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--spacing-8);
 }
 
-.experience_button {
+.experience_tab {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-regular);
   cursor: pointer;
 }
 
-.experience_button:hover{
-  color: var(--ultramarine-color-base);
+.experience_tab:hover{
+  color: var(--hover-color-ultramarine);
 }
 
 .experience_icon {
@@ -396,13 +385,13 @@
   display: block;
 }
 
-.experience_button.experience_active {
-  color: var(--ultramarine-color-base);
+.experience_tab.experience_active {
+  color: var(--hover-color-ultramarine);
 }
 
 /*==================== SKILLS ====================*/
 .skills_container {
-  background-color: var(--ultramarine-color-base);
+  background-color: var(--ultramarine-color-second);
   border-radius: var(--spacing-4);
   padding: var(--spacing-4);
   box-shadow: 0px 2px 3px 1px rgba(35, 40, 43, 0.20);
@@ -428,14 +417,14 @@
   display: grid;
   width: var(--spacing-20);
   height: var(--spacing-20);
-  background-color: var(--ultramarine-color-800);
+  background-color: var(--skills-blob-bg-color);
   border-radius: var(--spacing-12);
   place-items: center;
   margin-top: var(--spacing-base);
 }
 
 .skills_blob:hover {
-  border: 2px solid var(--ultramarine-color-200);
+  border: 4px solid var(--skills-blob-border-color);
 }
 
 .skills_blob img {
@@ -571,7 +560,7 @@
 
 .portfolio_modal-content {
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--ultramarine-color-base);
   padding: var(--spacing-6);
   border-radius: var(--spacing-2);
   gap: var(--spacing-4);
@@ -611,13 +600,13 @@
   bottom: var(--spacing-4);
   right: var(--spacing-4);
   font-size: var(--font-size-xxl);
-  color: var(--hover-color);
+  color: var(--hover-color-crimsonSky);
   cursor: pointer;
 }
 
 .portfolio_modal-close:hover {
   color: var(--white-color-base);
-  background-color: var(--hover-color);
+  background-color: var(--hover-color-crimsonSky);
   border-radius: var(--spacing-2);
   box-shadow: 0px 6px 10px 2px rgba(35, 40, 43, 0.20);
 }
@@ -655,7 +644,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--ultramarine-color-100);
+  background-color: var(--input-color);
   border: var(--spacing-base) solid var(--ultramarine-color-base);
   border-radius: var(--spacing-2);
   color: var(--text-color);
@@ -672,7 +661,7 @@
 }
 
 .contact_input:focus {
-  border: var(--spacing-base) solid var(--hover-color);
+  border: var(--spacing-base) solid var(--hover-color-crimsonSky);
 }
 
 .contact_input:-webkit-autofill {
@@ -732,7 +721,6 @@
 .footer {
   position: relative;
   z-index: var(--z-footer);
-  padding-top: var(--spacing-8);
   margin-bottom: var(--header-height);
 }
 
@@ -741,7 +729,7 @@
 }
 
 .footer_bg {
-  background-color: var(--ultramarine-color-base);
+  background-color: var(--ultramarine-color-second);
   padding: var(--spacing-8) 0;
 }
 

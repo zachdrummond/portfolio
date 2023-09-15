@@ -63,6 +63,7 @@
 
     --background-color: radial-gradient(var(--ultramarine-color-200), var(--ultramarine-color-300));
     --ultramarine-color-base: var(--ultramarine-color-600);
+    --ultramarine-color-second: var(--ultramarine-color-600);
     --crimsonSky-color-base: var(--crimsonSky-color-500);
     --indigo-color-base: var(--indigo-color-500);
     --lightBlue-color-base: var(var(--lightBlue-color-500));
@@ -72,8 +73,11 @@
     --title-color: var(--ultramarine-color-900); /* 8%, 15% */
     --text-color: var(--gray-color-600); /* 8%, 45% */
     --text-color-light: var(--gray-color-500); /* 8%, 65% */
-    --hover-color: var(--crimsonSky-color-base);
-    --container-color: var(--white-color-base);
+    --hover-color-ultramarine: var(--ultramarine-color-500);
+    --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --skills-blob-bg-color: var(--ultramarine-color-200);
+    --skills-blob-border-color: var(--ultramarine-color-800);
+    --input-color: var(--ultramarine-color-100);
     --social_links_color: var(--ultramarine-color-900);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 80%);
@@ -241,14 +245,23 @@
 /* =========================== DARK THEME ========================== */
 body.dark-theme {
     --background-color: radial-gradient(var(--ultramarine-color-700), var(--ultramarine-color-900));
-    --ultramarine-color-base: var(--ultramarine-color-900);
-    /* EXPERIENCE + CONTACT ME + FOOTER */
-    /* --ultramarine-color-base: var(--ultramarine-color-900); */
-    --hover-color: var(--crimsonSky-color-600);
-    --title-color: hsl(var(--ultramarine-hue-color), 8%, 95%);
-    --text-color: hsl(var(--ultramarine-hue-color), 8%, 75%);
-    --input-color: hsl(var(--ultramarine-hue-color), 29%, 16%);
-    --container-color: hsl(var(--ultramarine-hue-color), 29%, 35%);
+    --ultramarine-color-base: var(--ultramarine-color-700);
+    --ultramarine-color-second: var(--ultramarine-color-900);
+    --crimsonSky-color-base: var(--crimsonSky-color-600);
+    --nav-color: var(--ultramarine-color-900);
+    --title-color: hsl(var(--ultramarine-hue-color), 8%, 95%); /* 8%, 95% */
+    --text-color: hsl(var(--ultramarine-hue-color), 8%, 75%); /* 8%, 75% */
+
+    /* --title-color: var(--ultramarine-color-900);
+    --text-color: var(--gray-color-600);
+    --text-color-light: var(--gray-color-500); */
+
+    --hover-color-ultramarine: var(--ultramarine-color-600);
+    --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --skills-blob-bg-color: var(--ultramarine-color-800);
+    --skills-blob-border-color: var(--ultramarine-color-200);
+    --input-color: var(--ultramarine-color-200);
+    --social_links_color: var(--ultramarine-color-200);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 36%);
 }
