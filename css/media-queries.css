@@ -130,12 +130,13 @@
     }
 
     .portfolio_modal-content {
-      width: var(--spacing-125);
+      width: var(--spacing-142);
     }
 
     .portfolio_modal-close {
       top: var(--spacing-base);
       right: var(--spacing-base);
+      bottom: initial;
     }
   
     .porfolio_img {
@@ -204,6 +205,10 @@
 
     .portfolio_container {
       grid-template-columns: repeat(2, 40vw);
+    }
+
+    .portfolio_modal-content {
+      width: var(--spacing-192);
     }
 
     .social_links_container {

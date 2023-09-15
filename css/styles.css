@@ -138,7 +138,6 @@
   right: var(--spacing-base);
   bottom: -20%;
   background-color: var(--ultramarine-color-base);
-  opacity: .8;
   border-radius: var(--spacing-2);
   z-index: var(--z-tooltip);
   transition: var(--time-400);
@@ -467,8 +466,7 @@
 }
 
 .skills_name {
-  font-size: var(--font-size-xs);
-  color: var(--white-color-base);
+  font-size: var(--font-size-sm);
 }
 
 .skills_name,
