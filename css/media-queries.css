@@ -1,3 +1,12 @@
+@media (prefers-reduced-motion) {
+  .slide-in {
+    opacity: 1;
+  }
+  .viewed {
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+}
 
 /*==================== SMALL DEVICES ====================*/
 @media screen and (max-width: 350px) {

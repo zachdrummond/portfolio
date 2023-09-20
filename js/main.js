@@ -1,13 +1,21 @@
-/*======================= NAVIGATION =======================*/
-/*=== NAV SHOW UNDERLINE ===*/
-function scrollHeader() {
-  const nav = document.getElementById("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 80) nav.classList.add("scroll-header");
-  else nav.classList.remove("scroll-header");
-}
-window.addEventListener("scroll", scrollHeader);
+/*======================= REUSABLE FUNCTIONS =======================*/
+//initialize throttleTimer as false
+let throttleTimer = false;
+const throttle = (callback, time) => {
+  //don't run the function while throttle timer is true
+  if (throttleTimer) return;
 
+  //first set throttle timer to true so the function doesn't run
+  throttleTimer = true;
+
+  setTimeout(() => {
+    //call the callback function in the setTimeout and set the throttle timer to false after the indicated time has passed
+    callback();
+    throttleTimer = false;
+  }, time);
+};
+
+/*======================= NAVIGATION =======================*/
 /*=== ALLOWS USER TO OPEN/CLOSE MOBILE MENU ===*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
@@ -37,29 +45,74 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=== NAV HIGHLIGHT ON SCROLL ===*/
-const sections = document.querySelectorAll("section[id]");
+/*======================= SCROLL EVENTS =======================*/
+const handleScrollEvents = () => {
+  const sections = document.querySelectorAll("section[id]"),
+    nav = document.getElementById("header"),
+    scrollUp = document.getElementById("scroll-up"),
+    // Number of pixels document is currently scrolled vertically
+    scrollY = window.scrollY;
 
-function scrollActive() {
-  const scrollY = window.scrollY;
+  // Adds/Removes class based on scroll position
+  const changeClassOnScroll = (targetScroll, element, className) => {
+    if (scrollY >= targetScroll && !element.classList.contains(className))
+      element.classList.add(className);
+    else if (
+      scrollY < targetScroll &&
+      element.classList.contains(className)
+    )
+      element.classList.remove(className);
+  };
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+  // Returns true/false if element is visible
+  const elementInView = (element, percentageScroll = 100) => {
+    // distance from top of element to top of the page
+    const distanceToPageTop = element.getBoundingClientRect().top;
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+    return distanceToPageTop <= window.innerHeight * (percentageScroll / 100);
+  };
+
+  // Returns true/false if section is in full view
+  const sectionShouldHighlightNav = (section) => {
+    // Height of section, including vertical padding and borders
+    const sectionHeight = section.offsetHeight;
+    // Distance of section's outer border to the top of the page
+    const sectionTop = section.offsetTop - 100;
+
+    return scrollY > sectionTop && scrollY <= sectionTop + sectionHeight;
+  };
+
+    /*=== ADDS BOX SHADOW TO NAVBAR ON SCROLL ===*/
+  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  changeClassOnScroll(80, nav, "scroll-header");
+    /*=== SHOW SCROLL UP ===*/
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  changeClassOnScroll(550, scrollUp, "show-scroll");
+
+  sections.forEach((section) => {
+    /*=== SECTION ANIMATION ON SCROLL ===*/
+    if (elementInView(section, 100)) {
+      section.classList.add("viewed");
+    }
+
+    /*=== NAV HIGHLIGHT ON SCROLL ===*/
+    if (sectionShouldHighlightNav(section)) {
+      const element = document.querySelector(
+        ".nav_menu a[href*=" + section.getAttribute("id") + "]"
+      );
+
+      element.classList.add("active-link");
     } else {
-      document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      const element = document.querySelector(
+        ".nav_menu a[href*=" + section.getAttribute("id") + "]"
+      );
+
+      element.classList.remove("active-link");
     }
   });
-}
-window.addEventListener("scroll", scrollActive);
+};
+
+window.addEventListener("scroll", () => throttle(handleScrollEvents, 250));
 
 /*====================== EXPERIENCE =======================*/
 /*=== TABS ===*/
@@ -123,44 +176,37 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
 
-/*=== SHOW SCROLL UP ===*/
-function scrollUp() {
-  const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
-}
-window.addEventListener("scroll", scrollUp);
-
 /*========================= PORTFOLIO =========================*/
 /*=== PORTFOLIO MODAL ===*/
-const learnMoreBtns = document.querySelectorAll('.portfolio_button'),
-      allModalContainers = document.querySelectorAll('.portfolio_modal'),
-      modalCloseBtns = document.querySelectorAll('.portfolio_modal-close');
+const learnMoreBtns = document.querySelectorAll(".portfolio_button"),
+  allModalContainers = document.querySelectorAll(".portfolio_modal"),
+  modalCloseBtns = document.querySelectorAll(".portfolio_modal-close");
 
-let modal = function(modalNumber){
+let modal = function (modalNumber) {
   const openModal = allModalContainers[modalNumber];
-  openModal.classList.add('active-modal');
+  openModal.classList.add("active-modal");
 
-  openModal.addEventListener('click', event => {
-    const isClickInsideOpenModal = openModal.firstElementChild.contains(event.target);
+  openModal.addEventListener("click", (event) => {
+    const isClickInsideOpenModal = openModal.firstElementChild.contains(
+      event.target
+    );
 
-    if(!isClickInsideOpenModal){
-      openModal.classList.remove('active-modal');
+    if (!isClickInsideOpenModal) {
+      openModal.classList.remove("active-modal");
     }
-  })
-}
+  });
+};
 
 learnMoreBtns.forEach((button, modalNumber) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     modal(modalNumber);
   });
 });
 
 modalCloseBtns.forEach((button) => {
-  button.addEventListener('click', () => {
+  button.addEventListener("click", () => {
     allModalContainers.forEach((modalContainer) => {
-      modalContainer.classList.remove('active-modal');
+      modalContainer.classList.remove("active-modal");
     });
   });
 });
@@ -174,7 +220,6 @@ const sendEmail = (e) => {
   e.preventDefault();
 
   if (contactForm.checkValidity()) {
-
     // serviceID - templateID - #form - publicKey
     emailjs
       .sendForm(
@@ -192,7 +237,6 @@ const sendEmail = (e) => {
           }, 5000);
 
           contactForm.reset();
-
         },
         () => {
           contactMessage.textContent =
@@ -208,8 +252,3 @@ contactForm.addEventListener("submit", sendEmail);
 /*=== DATE ===*/
 const footerDate = document.getElementById("date");
 footerDate.innerHTML = new Date().getFullYear();
-
-/*======================== MISC ========================*/
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll', window.scrollY / (document.body.offsetHeight - window.innerHeight));
-}, false);
