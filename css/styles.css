@@ -18,13 +18,15 @@
 
 .slide-in {
   opacity: 0;
+  visibility: hidden;
   transition: opacity 500ms;
 }
 
 .slide-in.viewed {
   opacity: 1;
-  -webkit-animation: slide-in 1.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
-	animation: slide-in 1.5s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+  visibility: visible;
+  -webkit-animation: slide-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
  @-webkit-keyframes slide-in {
   0% {
@@ -159,8 +161,8 @@
   position: fixed;
   right: var(--spacing-base);
   bottom: -20%;
-  /* background-color: var(--ultramarine-color-second); */
-  background-color: var(--ultramarine-color-200);
+  background-color: var(--ultramarine-color-second);
+  /* background-color: var(--ultramarine-color-200); */
   border-radius: var(--spacing-2);
   z-index: var(--z-tooltip);
   transition: var(--time-400);
@@ -172,8 +174,8 @@
 
 .scrollup_icon {
   font-size: var(--font-size-xxl);
-  /* color: var(--white-color-base); */
-  color: var(--black-color-base);
+  color: var(--white-color-base);
+  /* color: var(--black-color-base); */
 }
 
 /* Show scroll */
@@ -342,8 +344,8 @@
 }
 
 #job_link {
-  /* color: var(--ultramarine-color-base) */
-  color: var(--crimsonSky-color-500)
+  color: var(--ultramarine-color-base);
+  /* color: var(--crimsonSky-color-500); */
 }
 
 #job_link:hover {
@@ -502,14 +504,15 @@
 /*==================== PORTFOLIO ====================*/
 
 .portfolio_container {
-  row-gap: var(--spacing-8);
-  justify-content: center;
+  flex-direction: column;
+  gap: var(--spacing-6);
 }
 
 .portfolio_card {
   position: relative;
   border-radius: var(--spacing-4);
   overflow: hidden;
+  height: var(--spacing-60);
   box-shadow: 0px 2px 3px 1px rgba(35, 40, 43, 0.20);
 }
 
@@ -596,15 +599,18 @@
 
 .portfolio_modal-content {
   position: relative;
-  background-color: var(--ultramarine-color-base);
+  background: var(--background-color);
   padding: var(--spacing-6);
   border-radius: var(--spacing-2);
   gap: var(--spacing-4);
 }
 
 .modal-body {
-  row-gap: var(--spacing-2);
+  flex-direction: column;
+  align-items: initial;
   text-align: center;
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
 }
 
 .portfolio_modal-title {
@@ -621,6 +627,10 @@
 
 .portfolio_modal-text {
   color: var(--text-color);
+}
+
+.banana {
+  color: red;
 }
 
 .portfolio_modal-tech {
@@ -660,6 +670,7 @@
 
 .contact_group {
   position: relative;
+  flex-direction: column;
 }
 
 .contact_box {
@@ -711,7 +722,6 @@
   color: var(--text-color);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
-  background-color: var(--background-color);
   padding: var(--spacing-2);
   pointer-events: none;
   transition: top var(--time-400), opacity var(--time-400), background-color var(--time-400);

@@ -66,8 +66,8 @@
     --ultramarine-color-second: var(--ultramarine-color-600);
     --crimsonSky-color-base: var(--crimsonSky-color-500);
     --indigo-color-base: var(--indigo-color-500);
-    --lightBlue-color-base: var(var(--lightBlue-color-500));
-    --gray-color-base: var(var(--gray-color-500));
+    --lightBlue-color-base: var(--lightBlue-color-500);
+    --gray-color-base: var(--gray-color-500);
     
     --nav-color: var(--ultramarine-color-100);
     --title-color: var(--ultramarine-color-900); /* 8%, 15% */
@@ -199,6 +199,8 @@
     --spacing-125: calc(var(--spacing-base) * 125); /* 31.25rem | 500px */
     --spacing-138: calc(var(--spacing-base) * 138); /* 34.5rem  | 552px */
     --spacing-142: calc(var(--spacing-base) * 142); /* 35.5rem  | 568px */
+    --spacing-142: calc(var(--spacing-base) * 142); /* 35.5rem  | 568px */
+    --spacing-160: calc(var(--spacing-base) * 160); /* 40.0rem  | 640px */
     --spacing-192: calc(var(--spacing-base) * 192); /* 48.0rem  | 768px */
     --spacing-242: calc(var(--spacing-base) * 242); /* 60.5rem  | 968px */
 

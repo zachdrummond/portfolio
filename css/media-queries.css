@@ -133,9 +133,10 @@
     .skills_info {
       grid-template-columns: repeat(6, 1fr);
     }
-  
-    .portfolio_content {
-      padding: var(--spacing-24) 0 var(--spacing-8) var(--spacing-10);
+
+    .portfolio_card {
+      width: var(--spacing-125);
+      height: var(--spacing-90);
     }
 
     .portfolio_modal-content {
@@ -213,11 +214,11 @@
     } */
 
     .portfolio_container {
-      grid-template-columns: repeat(2, 40vw);
+      flex-direction: row;
     }
 
     .portfolio_modal-content {
-      width: var(--spacing-192);
+      width: var(--spacing-160);
     }
 
     .social_links_container {

@@ -85,13 +85,14 @@ const handleScrollEvents = () => {
     /*=== ADDS BOX SHADOW TO NAVBAR ON SCROLL ===*/
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
   changeClassOnScroll(80, nav, "scroll-header");
+
     /*=== SHOW SCROLL UP ===*/
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
   changeClassOnScroll(550, scrollUp, "show-scroll");
 
   sections.forEach((section) => {
     /*=== SECTION ANIMATION ON SCROLL ===*/
-    if (elementInView(section, 100)) {
+    if (elementInView(section, 75)) {
       section.classList.add("viewed");
     }
 
