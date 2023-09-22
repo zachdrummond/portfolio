@@ -57,7 +57,7 @@
       grid-template-columns: repeat(4, 1fr);
     }
 
-    .portfolio_modal-content {
+    .portfolio_modal_content {
       width: var(--spacing-100);
     }
 
@@ -139,11 +139,11 @@
       height: var(--spacing-90);
     }
 
-    .portfolio_modal-content {
+    .portfolio_modal_content {
       width: var(--spacing-142);
     }
 
-    .portfolio_modal-close {
+    .portfolio_modal_close {
       top: var(--spacing-base);
       right: var(--spacing-base);
       bottom: initial;
@@ -217,7 +217,7 @@
       flex-direction: row;
     }
 
-    .portfolio_modal-content {
+    .portfolio_modal_content {
       width: var(--spacing-160);
     }
 

@@ -49,7 +49,7 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 const handleScrollEvents = () => {
   const sections = document.querySelectorAll("section[id]"),
     nav = document.getElementById("header"),
-    scrollUp = document.getElementById("scroll-up"),
+    scrollToTop = document.getElementById("scroll-to-top"),
     // Number of pixels document is currently scrolled vertically
     scrollY = window.scrollY;
 
@@ -88,7 +88,7 @@ const handleScrollEvents = () => {
 
     /*=== SHOW SCROLL UP ===*/
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  changeClassOnScroll(550, scrollUp, "show-scroll");
+  changeClassOnScroll(550, scrollToTop, "show-scroll");
 
   sections.forEach((section) => {
     /*=== SECTION ANIMATION ON SCROLL ===*/
@@ -181,7 +181,7 @@ themeButton.addEventListener("click", () => {
 /*=== PORTFOLIO MODAL ===*/
 const learnMoreBtns = document.querySelectorAll(".portfolio_button"),
   allModalContainers = document.querySelectorAll(".portfolio_modal"),
-  modalCloseBtns = document.querySelectorAll(".portfolio_modal-close");
+  modalCloseBtns = document.querySelectorAll(".portfolio_modal_close");
 
 let modal = function (modalNumber) {
   const openModal = allModalContainers[modalNumber];

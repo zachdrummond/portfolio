@@ -70,15 +70,23 @@
     --gray-color-base: var(--gray-color-500);
     
     --nav-color: var(--ultramarine-color-100);
-    --title-color: var(--ultramarine-color-900); /* 8%, 15% */
-    --text-color: var(--gray-color-600); /* 8%, 45% */
-    --text-color-light: var(--gray-color-500); /* 8%, 65% */
+    --title-color: var(--ultramarine-color-900);
+    --text-color: var(--gray-color-600);
+    --text-color-light: var(--gray-color-500);
+    --text-shadow-color: var(--ultramarine-color-500);
+    --button-bg-color: var(--ultramarine-color-base);
+    --button-icon-color: var(--white-color-base);
     --hover-color-ultramarine: var(--ultramarine-color-500);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --job-link-color: var(--ultramarine-color-base);
     --skills-blob-bg-color: var(--ultramarine-color-200);
     --skills-blob-border-color: var(--ultramarine-color-800);
-    --input-color: var(--ultramarine-color-100);
+    --portfolio-modal-bg-color: var(--ultramarine-color-100);
+    --portfolio-modal-close-color: var(--crimsonSky-color-base);
+    --contact-input-color: var(--ultramarine-color-100);
     --social_links_color: var(--ultramarine-color-900);
+    --scroll-to-top-bg-color: var(--ultramarine-color-base);
+    --scroll-to-top-icon-color: var(--white-color-base);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 80%);
 
@@ -250,20 +258,23 @@ body.dark-theme {
     --ultramarine-color-base: var(--ultramarine-color-700);
     --ultramarine-color-second: var(--ultramarine-color-900);
     --crimsonSky-color-base: var(--crimsonSky-color-600);
+
     --nav-color: var(--ultramarine-color-900);
-    --title-color: hsl(var(--ultramarine-hue-color), 8%, 95%); /* 8%, 95% */
-    --text-color: hsl(var(--ultramarine-hue-color), 8%, 75%); /* 8%, 75% */
-
-    /* --title-color: var(--ultramarine-color-900);
-    --text-color: var(--gray-color-600);
-    --text-color-light: var(--gray-color-500); */
-
-    --hover-color-ultramarine: var(--ultramarine-color-600);
+    --title-color: var(--white-color-base);
+    --text-color: var(--gray-color-300); /* gray-300? indigo-300? lightBlue-300 */
+    --text-color-light: var(--gray-color-400);
+    --button-bg-color: var(--ultramarine-color-100);
+    --button-icon-color: var(--ultramarine-color-second);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --job-link-color: var(--ultramarine-color-500);
     --skills-blob-bg-color: var(--ultramarine-color-800);
     --skills-blob-border-color: var(--ultramarine-color-200);
-    --input-color: var(--ultramarine-color-200);
-    --social_links_color: var(--ultramarine-color-200);
+    --portfolio-modal-bg-color: var(--ultramarine-color-700);
+    --portfolio-modal-close-color: var(--ultramarine-color-200);
+    --contact-input-color: var(--ultramarine-color-900);
+    --social_links_color: var(--ultramarine-color-100);
+    --scroll-to-top-bg-color: var(--ultramarine-color-100);
+    --scroll-to-top-icon-color: var(--black-color-base);
     --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 36%);
 }

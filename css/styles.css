@@ -11,9 +11,7 @@
   }
 
 .section_title_text:hover {
-  text-shadow: var(--crimsonSky-color-base) 2px 2px;
-  /* WHITE BACKGROUND */
-  /* text-shadow: var(--ultramarine-color-500) 2px 2px; */
+  text-shadow: var(--hover-color-crimsonSky) 2px 2px;
 }
 
 .slide-in {
@@ -157,25 +155,27 @@
 }
 
 /* SCROLL UP */
-.scrollup {
+.scroll_to_top {
   position: fixed;
   right: var(--spacing-base);
   bottom: -20%;
-  background-color: var(--ultramarine-color-second);
-  /* background-color: var(--ultramarine-color-200); */
+  background-color: var(--button-bg-color);
   border-radius: var(--spacing-2);
   z-index: var(--z-tooltip);
   transition: var(--time-400);
 }
 
-.scrollup:hover {
+.scroll_to_top:hover {
   background-color: var(--hover-color-crimsonSky);
 }
 
-.scrollup_icon {
+.scroll_to_top_icon {
   font-size: var(--font-size-xxl);
+  color: var(--button-icon-color);
+}
+
+.scroll_to_top:hover .scroll_to_top_icon {
   color: var(--white-color-base);
-  /* color: var(--black-color-base); */
 }
 
 /* Show scroll */
@@ -344,8 +344,7 @@
 }
 
 #job_link {
-  color: var(--ultramarine-color-base);
-  /* color: var(--crimsonSky-color-500); */
+  color: var(--job-link-color);
 }
 
 #job_link:hover {
@@ -512,7 +511,7 @@
   position: relative;
   border-radius: var(--spacing-4);
   overflow: hidden;
-  height: var(--spacing-60);
+  height: var(--spacing-65);
   box-shadow: 0px 2px 3px 1px rgba(35, 40, 43, 0.20);
 }
 
@@ -546,26 +545,26 @@
   transition: bottom var(--time-600) ease-in-out;
 }
 
+.portfolio_title,
 .portfolio_subtitle,
 .portfolio_button {
   color: var(--white-color-base);
-  font-size: var(--font-size-md);
-}
-
-.portfolio_subtitle {
-  display: block;
-  font-size: var(--font-size-md);
-  margin-bottom: var(--spacing-4);
 }
 
 .portfolio_title {
-  color: var(--white-color-base);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   margin-bottom: var(--spacing-2);
+}
+
+.portfolio_subtitle {
+  font-size: var(--font-size-lg);
+  text-align: center;
+  margin-bottom: var(--spacing-4);
 }
 
 .portfolio_button {
   cursor: pointer;
+  font-size: var(--font-size-md);
   column-gap: var(--spacing-2);
   padding: var(--spacing-3);
 }
@@ -597,15 +596,15 @@
   transition: .3s;
 }
 
-.portfolio_modal-content {
+.portfolio_modal_content {
   position: relative;
-  background: var(--background-color);
+  background: var(--portfolio-modal-bg-color);
   padding: var(--spacing-6);
   border-radius: var(--spacing-2);
   gap: var(--spacing-4);
 }
 
-.modal-body {
+.modal_body {
   flex-direction: column;
   align-items: initial;
   text-align: center;
@@ -613,44 +612,45 @@
   margin-bottom: var(--spacing-2);
 }
 
-.portfolio_modal-title {
+.portfolio_modal_title {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--title-color);
   text-align: center;
 }
-.portfolio_modal-text,
-.portfolio_modal-tech {
+.portfolio_modal_text,
+.portfolio_modal_tech {
   font-size: var(--font-size-md);
   font-weight: var(--font-weight-regular);
 }
 
-.portfolio_modal-text {
+.portfolio_modal_text {
   color: var(--text-color);
 }
 
-.banana {
-  color: red;
-}
-
-.portfolio_modal-tech {
+.portfolio_modal_tech {
   color: var(--text-color-light);
 }
 
-.modal-links {
+.modal_links {
   text-align: center;
 }
 
-.portfolio_modal-close {
+.modal_links .button {
+  background-color: var(--button-bg-color);
+  color: var(--button-icon-color);
+}
+
+.portfolio_modal_close {
   position: absolute;
   bottom: var(--spacing-4);
   right: var(--spacing-4);
   font-size: var(--font-size-xxl);
-  color: var(--hover-color-crimsonSky);
+  color: var(--portfolio-modal-close-color);
   cursor: pointer;
 }
 
-.portfolio_modal-close:hover {
+.portfolio_modal_close:hover {
   color: var(--white-color-base);
   background-color: var(--hover-color-crimsonSky);
   border-radius: var(--spacing-2);
@@ -671,6 +671,7 @@
 .contact_group {
   position: relative;
   flex-direction: column;
+  gap: var(--spacing-6);
 }
 
 .contact_box {
@@ -691,7 +692,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--input-color);
+  background-color: var(--contact-input-color);
   border: var(--spacing-base) solid var(--ultramarine-color-base);
   border-radius: var(--spacing-2);
   color: var(--text-color);
