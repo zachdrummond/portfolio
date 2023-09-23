@@ -47,20 +47,20 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*======================= SCROLL EVENTS =======================*/
 const handleScrollEvents = () => {
-  const sections = document.querySelectorAll("section[id]"),
-    nav = document.getElementById("header"),
-    scrollToTop = document.getElementById("scroll-to-top"),
+  const nav = document.getElementById("header"),
+    sections = document.querySelectorAll("section[id]"),
+    sectionTitles = document.querySelectorAll(".section_title_text");
+  (scrollToTop = document.getElementById("scroll-to-top")),
     // Number of pixels document is currently scrolled vertically
-    scrollY = window.scrollY;
+    (scrollY = window.scrollY);
+
+  console.log(sectionTitles);
 
   // Adds/Removes class based on scroll position
   const changeClassOnScroll = (targetScroll, element, className) => {
     if (scrollY >= targetScroll && !element.classList.contains(className))
       element.classList.add(className);
-    else if (
-      scrollY < targetScroll &&
-      element.classList.contains(className)
-    )
+    else if (scrollY < targetScroll && element.classList.contains(className))
       element.classList.remove(className);
   };
 
@@ -82,19 +82,19 @@ const handleScrollEvents = () => {
     return scrollY > sectionTop && scrollY <= sectionTop + sectionHeight;
   };
 
-    /*=== ADDS BOX SHADOW TO NAVBAR ON SCROLL ===*/
+  /*=== ADDS BOX SHADOW TO NAVBAR ON SCROLL ===*/
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
   changeClassOnScroll(80, nav, "scroll-header");
 
-    /*=== SHOW SCROLL UP ===*/
+  /*=== SHOW SCROLL UP ===*/
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
   changeClassOnScroll(550, scrollToTop, "show-scroll");
 
   sections.forEach((section) => {
     /*=== SECTION ANIMATION ON SCROLL ===*/
-    if (elementInView(section, 75)) {
-      section.classList.add("viewed");
-    }
+    // if (elementInView(section, 75)) {
+    //   section.classList.add("viewed");
+    // }
 
     /*=== NAV HIGHLIGHT ON SCROLL ===*/
     if (sectionShouldHighlightNav(section)) {
@@ -109,6 +109,13 @@ const handleScrollEvents = () => {
       );
 
       element.classList.remove("active-link");
+    }
+  });
+
+  sectionTitles.forEach((title) => {
+    /*=== SECTION ANIMATION ON SCROLL ===*/
+    if (elementInView(title, 75)) {
+      title.classList.add("viewed");
     }
   });
 };
