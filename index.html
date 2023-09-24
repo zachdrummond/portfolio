@@ -169,7 +169,7 @@
       <!--==================== EXPERIENCE ====================-->
       <section class="experience section" id="experience">
         <h1 class="section_title">
-          <span class="section_title_text slide-in">Experience</span>
+          <span class="section_title_text hide-for-animation">Experience</span>
         </h1>
 
         <!--==================== EXPERIENCE TABS ====================-->
@@ -177,7 +177,7 @@
           <div class="experience_tabs_container">
             <!--==================== SKILLS TAB ====================-->
             <div
-              class="experience_tab button--flex experience_active"
+              class="experience_tab button--flex hide-for-animation experience_active"
               data-target="#skills"
             >
               <i class="uil uil-wrench experience_icon"></i>
@@ -186,7 +186,7 @@
 
             <!--==================== EDUCATION/WORK TAB ====================-->
             <div
-              class="experience_tab button--flex"
+              class="experience_tab button--flex hide-for-animation"
               data-target="#educationWork"
             >
               <i class="uil uil-briefcase-alt experience_icon"></i>
@@ -196,90 +196,13 @@
 
           <!--==================== EXPERIENCE SECTIONS ====================-->
           <div class="experience_sections">
-            <!--==================== EDUCATION/WORK ====================-->
-            <div data-content id="educationWork">
-              <!--==================== EDUCATION 1 ====================-->
-              <div class="experience_data grid">
-                <div>
-                  <div class="experience_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2009 - 2014
-                  </div>
-                  <h3 class="experience_title">
-                    B.S. in English and English Education
-                  </h3>
-                  <span class="experience_subtitle"
-                    >The University of Georgia</span
-                  >
-                </div>
-
-                <div>
-                  <span class="experience_rounder"></span>
-                  <span class="experience_line"></span>
-                </div>
-              </div>
-
-              <!--==================== EDUCATION 2 ====================-->
-              <div class="experience_data grid">
-                <div></div>
-
-                <div>
-                  <span class="experience_rounder"></span>
-                  <span class="experience_line"></span>
-                </div>
-                <div>
-                  <div class="experience_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2020
-                  </div>
-                  <h3 class="experience_title">Full Stack Web Development</h3>
-                  <span class="experience_subtitle"
-                    >The Georgia Institute of Technology</span
-                  >
-                </div>
-              </div>
-
-              <!--==================== WORK 1 ====================-->
-              <div class="experience_data grid">
-                <div>
-                  <div class="experience_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2021 - 2022
-                  </div>
-                  <h3 class="experience_title">Application Developer</h3>
-                  <span class="experience_subtitle"
-                    >Operation Mobilization</span
-                  >
-                </div>
-
-                <div>
-                  <span class="experience_rounder"></span>
-                  <span class="experience_line"></span>
-                </div>
-              </div>
-
-              <!--==================== WORK 2 ====================-->
-              <div class="experience_data grid">
-                <div></div>
-
-                <div>
-                  <span class="experience_rounder"></span>
-                  <!-- <span class="experience_line"></span> -->
-                </div>
-                <div>
-                  <div class="experience_calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - Present
-                  </div>
-                  <h3 class="experience_title">Full Stack Developer</h3>
-                  <span class="experience_subtitle">NBC Sports Next</span>
-                </div>
-              </div>
-            </div>
-
             <!--==================== SKILLS ====================-->
-            <div class="experience_active" data-content id="skills">
-              <div class="skills_container">
+            <div id="skills" class="experience_active" data-content>
+              <div
+                class="skills_container hide-for-animation"
+                data-animation="slide-in-fwd"
+                data-scroll="70"
+              >
                 <!-- Row 1 -->
                 <div class="skills_info grid">
                   <!-- Skill 1 -->
@@ -475,6 +398,87 @@
                 </div>
               </div>
             </div>
+
+            <!--==================== EDUCATION/WORK ====================-->
+            <div data-content id="educationWork">
+              <!--==================== EDUCATION 1 ====================-->
+              <div class="experience_data grid">
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2009 - 2014
+                  </div>
+                  <h3 class="experience_title">
+                    B.S. in English and English Education
+                  </h3>
+                  <span class="experience_subtitle"
+                    >The University of Georgia</span
+                  >
+                </div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+              </div>
+
+              <!--==================== EDUCATION 2 ====================-->
+              <div class="experience_data grid">
+                <div></div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020
+                  </div>
+                  <h3 class="experience_title">Full Stack Web Development</h3>
+                  <span class="experience_subtitle"
+                    >The Georgia Institute of Technology</span
+                  >
+                </div>
+              </div>
+
+              <!--==================== WORK 1 ====================-->
+              <div class="experience_data grid">
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
+                  <h3 class="experience_title">Application Developer</h3>
+                  <span class="experience_subtitle"
+                    >Operation Mobilization</span
+                  >
+                </div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <span class="experience_line"></span>
+                </div>
+              </div>
+
+              <!--==================== WORK 2 ====================-->
+              <div class="experience_data grid">
+                <div></div>
+
+                <div>
+                  <span class="experience_rounder"></span>
+                  <!-- <span class="experience_line"></span> -->
+                </div>
+                <div>
+                  <div class="experience_calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - Present
+                  </div>
+                  <h3 class="experience_title">Full Stack Developer</h3>
+                  <span class="experience_subtitle">NBC Sports Next</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -482,12 +486,16 @@
       <!--==================== PORTFOLIO ====================-->
       <section class="portfolio section" id="portfolio">
         <h1 class="section_title">
-          <span class="section_title_text slide-in">Portfolio</span>
+          <span class="section_title_text hide-for-animation">Portfolio</span>
         </h1>
 
         <div class="portfolio_container container flex_center">
           <!-- Project #1 -->
-          <article class="portfolio_card">
+          <article
+            class="portfolio_card hide-for-animation"
+            data-animation="slide-in-bottom"
+            data-scroll="70"
+          >
             <img
               src="assets/img/projects/SportsEngine/background.png"
               alt="portfolio image"
@@ -539,7 +547,12 @@
           </div>
 
           <!-- Project #2 -->
-          <article class="portfolio_card">
+          <article
+            class="portfolio_card hide-for-animation"
+            data-animation="slide-in-bottom"
+            data-scroll="70"
+            data-delay="0.2s"
+          >
             <img
               src="assets/img/projects/Ciphr/Ciphr.png"
               alt="portfolio image"
@@ -548,7 +561,9 @@
 
             <div class="portfolio_cover">
               <h2 class="portfolio_title">Ciphr</h2>
-              <span class="portfolio_subtitle">A platform to share and solve coding algorithms.</span>
+              <span class="portfolio_subtitle"
+                >A platform to share and solve coding algorithms.</span
+              >
 
               <span href="" class="portfolio_button button button--flex"
                 >Learn More <i class="uil uil-external-link-alt button_icon"></i
@@ -601,7 +616,7 @@
       <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
         <h1 class="section_title">
-          <span class="section_title_text slide-in">Contact Me</span>
+          <span class="section_title_text hide-for-animation">Contact Me</span>
         </h1>
 
         <div class="container">
@@ -614,7 +629,7 @@
                   id="name"
                   type="text"
                   name="user_name"
-                  class="contact_input"
+                  class="contact_input hide-for-animation"
                   placeholder="Name"
                   required
                 />
@@ -626,7 +641,7 @@
                   id="email"
                   type="email"
                   name="user_email"
-                  class="contact_input"
+                  class="contact_input hide-for-animation"
                   placeholder="Email Address"
                   required
                 />
@@ -637,7 +652,8 @@
                 <textarea
                   name="user_message"
                   id="message"
-                  class="contact_input"
+                  class="contact_input hide-for-animation"
+                  data-delay="0.2s"
                   placeholder="Message"
                   required
                 ></textarea>
@@ -649,7 +665,8 @@
               <div id="submitBtn">
                 <button
                   type="submit"
-                  class="contact_button button button--flex"
+                  class="contact_button button button--flex hide-for-animation"
+                  data-scroll="90"
                 >
                   <i class="uil uil-message button_icon"></i> Send Message
                 </button>

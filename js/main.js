@@ -49,12 +49,10 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 const handleScrollEvents = () => {
   const nav = document.getElementById("header"),
     sections = document.querySelectorAll("section[id]"),
-    sectionTitles = document.querySelectorAll(".section_title_text");
-  (scrollToTop = document.getElementById("scroll-to-top")),
+    elementsToAnimate = document.querySelectorAll(".hide-for-animation"),
+    scrollToTop = document.getElementById("scroll-to-top"),
     // Number of pixels document is currently scrolled vertically
-    (scrollY = window.scrollY);
-
-  console.log(sectionTitles);
+    scrollY = window.scrollY;
 
   // Adds/Removes class based on scroll position
   const changeClassOnScroll = (targetScroll, element, className) => {
@@ -91,11 +89,6 @@ const handleScrollEvents = () => {
   changeClassOnScroll(550, scrollToTop, "show-scroll");
 
   sections.forEach((section) => {
-    /*=== SECTION ANIMATION ON SCROLL ===*/
-    // if (elementInView(section, 75)) {
-    //   section.classList.add("viewed");
-    // }
-
     /*=== NAV HIGHLIGHT ON SCROLL ===*/
     if (sectionShouldHighlightNav(section)) {
       const element = document.querySelector(
@@ -112,10 +105,17 @@ const handleScrollEvents = () => {
     }
   });
 
-  sectionTitles.forEach((title) => {
-    /*=== SECTION ANIMATION ON SCROLL ===*/
-    if (elementInView(title, 75)) {
-      title.classList.add("viewed");
+  elementsToAnimate.forEach((element) => {
+    /*=== ELEMENT ANIMATION ON SCROLL ===*/
+    const percentageScroll = element.getAttribute('data-scroll') ?? 75,
+      animation = element.getAttribute('data-animation') ?? "slide-in-left",
+      duration = element.getAttribute('data-duration') ?? "1s",
+      delay = element.getAttribute('data-delay') ?? "0s";
+
+    if (elementInView(element, percentageScroll)) {
+      element.style.visibility = "visible";
+      element.style.animation =
+        `${animation} ${duration} cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay} both`;
     }
   });
 };

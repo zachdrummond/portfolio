@@ -320,6 +320,10 @@
   text-align: center;
 }
 
+#skills {
+  perspective: var(--spacing-250);
+}
+
 .experience_tabs_container {
   display: flex;
   justify-content: space-evenly;
@@ -384,6 +388,7 @@
 
 .experience_active[data-content] {
   display: block;
+
 }
 
 .experience_tab.experience_active {

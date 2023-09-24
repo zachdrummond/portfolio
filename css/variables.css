@@ -211,6 +211,7 @@
     --spacing-160: calc(var(--spacing-base) * 160); /* 40.0rem  | 640px */
     --spacing-192: calc(var(--spacing-base) * 192); /* 48.0rem  | 768px */
     --spacing-242: calc(var(--spacing-base) * 242); /* 60.5rem  | 968px */
+    --spacing-250: calc(var(--spacing-base) * 250); /* 62.5rem  | 1000px */
 
     /* =========================== TYPOGRAPHY ========================== */
     --body-font: "Lato", sans-serif;
