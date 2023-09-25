@@ -73,13 +73,13 @@
     --title-color: var(--ultramarine-color-900);
     --text-color: var(--gray-color-600);
     --text-color-light: var(--gray-color-500);
-    --text-shadow-color: var(--ultramarine-color-500);
     --button-bg-color: var(--ultramarine-color-base);
     --button-icon-color: var(--white-color-base);
     --button-dark-bg-color: var(--ultramarine-color-base);
     --button-dark-icon-color: var(--white-color-base);
     --hover-color-ultramarine: var(--ultramarine-color-500);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --img-brightness: brightness(1);
     --job-link-color: var(--ultramarine-color-base);
     --skills-blob-bg-color: var(--ultramarine-color-200);
     --skills-blob-border-color: var(--ultramarine-color-800);
@@ -251,11 +251,10 @@ body.dark-theme {
     --title-color: var(--white-color-base);
     --text-color: var(--gray-color-300); /* gray-300? indigo-300? lightBlue-300 */
     --text-color-light: var(--gray-color-400);
-    --button-bg-color: var(--ultramarine-color-base);
-    --button-icon-color: var(--white-color-base);
     --button-dark-bg-color: var(--ultramarine-color-100);
     --button-dark-icon-color: var(--ultramarine-color-second);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --img-brightness: brightness(80%);
     --job-link-color: var(--ultramarine-color-500);
     --skills-blob-bg-color: var(--ultramarine-color-800);
     --skills-blob-border-color: var(--ultramarine-color-200);

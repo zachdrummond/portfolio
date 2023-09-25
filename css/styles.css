@@ -14,6 +14,10 @@
   text-shadow: var(--hover-color-crimsonSky) 2px 2px;
 }
 
+.img_bright {
+  filter: var(--img-brightness);
+}
+
 /*==================== LAYOUT ====================*/
 .container {
     margin-left: 8vw;
@@ -282,17 +286,6 @@
   display: inline-block;
 }
 
-@keyframes wave-animation {
-  0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(18.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
- 50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-100% { transform: rotate( 0.0deg) }
-}
-
 .home_description {
   font-size: var(--font-size-lg);
   color: var(--text-color);
@@ -435,7 +428,7 @@
   width: var(--spacing-10);
 }
 
-/* Animation SKills */
+/* Animation Skills */
 .skills_blob:hover img {
   animation: bounce-skills var(--time-600);
 }
