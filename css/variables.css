@@ -87,10 +87,8 @@
     --portfolio-modal-close-color: var(--crimsonSky-color-base);
     --contact-input-color: var(--ultramarine-color-100);
     --social_links_color: var(--ultramarine-color-900);
-    --scroll-to-top-bg-color: var(--ultramarine-color-base);
-    --scroll-to-top-icon-color: var(--white-color-base);
-    --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 80%);
+    --scroll-bar-color: var(--gray-color-200);
+    --scroll-thumb-color: var(--gray-color-300);
 
     /* ========================= MISCELLANEOUS ========================= */
     --header-height: var(--spacing-12);
@@ -240,19 +238,6 @@
     --z-footer: 11;
     --z-fixed: 100;
     --z-modal: 1000;
-
-    /* Font size for Large Devices */
-    @media screen and (min-width: 968px) {
-        :root {
-            --big-font-size: 3rem;        /* 48px */
-            --h1-font-size: 2.25rem;      /* 36px */
-            --h2-font-size: 1.5rem;       /* 24px */
-            --h3-font-size: 1.25rem;      /* 20px */
-            --normal-font-size: 1rem;     /* 16px */
-            --small-font-size: .875rem;   /* 14px */
-            --smaller-font-size: .813rem; /* 13.008px */
-        }
-    }
 }
 
 /* =========================== DARK THEME ========================== */
@@ -278,8 +263,6 @@ body.dark-theme {
     --portfolio-modal-close-color: var(--ultramarine-color-200);
     --contact-input-color: var(--ultramarine-color-900);
     --social_links_color: var(--ultramarine-color-100);
-    --scroll-to-top-bg-color: var(--ultramarine-color-100);
-    --scroll-to-top-icon-color: var(--black-color-base);
-    --scroll-bar-color: hsl(var(--ultramarine-hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--ultramarine-hue-color), 12%, 36%);
+    --scroll-bar-color: var(--gray-color-700);
+    --scroll-thumb-color: var(--gray-color-800);
 }
