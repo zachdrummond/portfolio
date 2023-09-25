@@ -76,6 +76,8 @@
     --text-shadow-color: var(--ultramarine-color-500);
     --button-bg-color: var(--ultramarine-color-base);
     --button-icon-color: var(--white-color-base);
+    --button-dark-bg-color: var(--ultramarine-color-base);
+    --button-dark-icon-color: var(--white-color-base);
     --hover-color-ultramarine: var(--ultramarine-color-500);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
     --job-link-color: var(--ultramarine-color-base);
@@ -264,8 +266,10 @@ body.dark-theme {
     --title-color: var(--white-color-base);
     --text-color: var(--gray-color-300); /* gray-300? indigo-300? lightBlue-300 */
     --text-color-light: var(--gray-color-400);
-    --button-bg-color: var(--ultramarine-color-100);
-    --button-icon-color: var(--ultramarine-color-second);
+    --button-bg-color: var(--ultramarine-color-base);
+    --button-icon-color: var(--white-color-base);
+    --button-dark-bg-color: var(--ultramarine-color-100);
+    --button-dark-icon-color: var(--ultramarine-color-second);
     --hover-color-crimsonSky: var(--crimsonSky-color-base);
     --job-link-color: var(--ultramarine-color-500);
     --skills-blob-bg-color: var(--ultramarine-color-800);
