@@ -354,14 +354,14 @@
 .experience_calendar {
   font-size: var(--font-size-sm);
   color: var(--text-color-light);
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
 }
 
 .experience_rounder {
   display: inline-block;
   width: var(--spacing-3);
   height: var(--spacing-3);
-  background-color: var(--ultramarine-color-base);
+  background-color: var(--ultramarine-color-600);
   border-radius: 50%;
 }
 
@@ -369,7 +369,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--ultramarine-color-base);
+  background-color: var(--ultramarine-color-600);
   transform: translate(6px, -7px);
 }
 
