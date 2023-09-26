@@ -10,228 +10,224 @@
 
 /*==================== SMALL DEVICES ====================*/
 @media screen and (max-width: 350px) {
-    
-    .nav_menu {
-      padding: var(--spacing-8) var(--spacing-base) var(--spacing-16);
-    }
-  
-    .nav_list {
-      column-gap: 0;
-    }
-  
-    .home_blob {
-      width: var(--spacing-45);
-    }
-  
-    .experience_data {
-      gap: var(--spacing-2);
-    }
-  
-    .portfolio_modal {
-      padding: 0 var(--spacing-2);
-    }
-
+  .nav_menu {
+    padding: var(--spacing-8) var(--spacing-base) var(--spacing-16);
   }
-  
+
+  .nav_list {
+    column-gap: 0;
+  }
+
+  .home_blob {
+    width: var(--spacing-45);
+  }
+
+  .experience_data {
+    gap: var(--spacing-2);
+  }
+
+  .portfolio_modal {
+    padding: 0 var(--spacing-2);
+  }
+}
+
 /*==================== MEDIUM DEVICES 1 ====================*/
-  @media screen and (min-width: 568px) {
-
-    .experience_sections {
-      display: grid;
-      justify-content: center;
-    }
-
-    .experience_title {
-      font-size: var(--font-size-lg);
-    }
-    
-    .experience_subtitle {
-      font-size: var(--font-size-md);
-    }
-    
-    .experience_calendar {
-      font-size: var(--font-size-md);
-    }
-
-    .skills_info {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .portfolio_modal_content {
-      width: var(--spacing-100);
-    }
-
-    .contact_group {
-      max-width: var(--spacing-125);
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media screen and (min-width: 568px) {
+  .experience_sections {
+    display: grid;
+    justify-content: center;
   }
-  
-  /*==================== MEDIUM DEVICES 2 ====================*/
 
-  @media screen and (min-width: 768px) {
-  
-    body {
-      margin: 0;
-    }
-
-    .section {
-      padding: var(--spacing-16) 0 var(--spacing-16);
-    }
-  
-    .section_title {
-      margin-bottom: var(--spacing-10);
-    }
-  
-    .header,
-    .main,
-    .footer_container {
-      padding: 0 var(--spacing-4);
-    }
-
-    .button {
-      font-size: var(--font-size-md);
-    }
-
-    .nav_list {
-      gap: var(--spacing-12);
-    }
-
-    .nav_link {
-      font-weight: var(--font-weight-bold);
-    }
-  
-    .home_blob {
-      width: var(--spacing-67);
-    }
-
-    .home_title {
-      font-size: var(--font-size-biggest);
-    }
-
-    .home_description {
-      font-size: var(--font-size-xl);
-    }
-
-    #home_intro {
-      display: inline-block;
-    }
-  
-    .experience_tabs_container {
-      justify-content: center;
-    }
-  
-    .experience_tab {
-      margin: 0 var(--spacing-4);
-    }
-
-    .skills_container {
-      padding: var(--spacing-8);
-    }
-
-    .skills_info {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
-    .portfolio_card {
-      width: var(--spacing-125);
-      height: var(--spacing-90);
-    }
-
-    .portfolio_modal_content {
-      width: var(--spacing-142);
-    }
-
-    .portfolio_modal_close {
-      top: var(--spacing-base);
-      right: var(--spacing-base);
-      bottom: initial;
-    }
-  
-    .porfolio_img {
-      width: var(--spacing-80);
-    }
-
-    .social_links_container {
-      display: block;
-    }
-
-    .show-scroll {
-      padding: 0 var(--spacing-base);
-      bottom: var(--spacing-42);
-    }
+  .experience_title {
+    font-size: var(--font-size-lg);
   }
-  
+
+  .experience_subtitle {
+    font-size: var(--font-size-md);
+  }
+
+  .experience_calendar {
+    font-size: var(--font-size-md);
+  }
+
+  .skills_info {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .portfolio_modal_content {
+    width: var(--spacing-100);
+  }
+
+  .contact_group {
+    max-width: var(--spacing-125);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*==================== MEDIUM DEVICES 2 ====================*/
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: var(--spacing-16) 0 var(--spacing-16);
+  }
+
+  .section_title {
+    margin-bottom: var(--spacing-10);
+  }
+
+  .header,
+  .main,
+  .footer_container {
+    padding: 0 var(--spacing-4);
+  }
+
+  .button,
+  .button_dark {
+    font-size: var(--font-size-lg);
+  }
+
+  .button_icon,
+  .button_icon_with_text {
+    font-size: var(--font-size-xxl);
+  }
+
+  .nav_list {
+    gap: var(--spacing-12);
+  }
+
+  .nav_link {
+    font-weight: var(--font-weight-bold);
+  }
+
+  .home_blob {
+    width: var(--spacing-67);
+  }
+
+  .home_title {
+    font-size: var(--font-size-biggest);
+  }
+
+  .home_description {
+    font-size: var(--font-size-xl);
+  }
+
+  #home_intro {
+    display: inline-block;
+  }
+
+  .experience_tabs_container {
+    justify-content: center;
+  }
+
+  .experience_tab {
+    margin: 0 var(--spacing-4);
+  }
+
+  .skills_container {
+    padding: var(--spacing-8);
+  }
+
+  .skills_info {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .portfolio_card {
+    width: var(--spacing-125);
+    height: var(--spacing-90);
+  }
+
+  .portfolio_modal_content {
+    width: var(--spacing-142);
+  }
+
+  .portfolio_modal_close {
+    top: var(--spacing-base);
+    right: var(--spacing-base);
+    bottom: initial;
+  }
+
+  .porfolio_img {
+    width: var(--spacing-80);
+  }
+
+  .social_links_container {
+    display: block;
+  }
+}
+
 /*==================== LARGE DEVICES ====================*/
-  @media screen and (min-width: 1024px) {
-    .header {
-      top: 0;
-      bottom: initial;
-    }
+@media screen and (min-width: 1024px) {
+  .header {
+    top: 0;
+    bottom: initial;
+  }
 
-    .footer {
-      margin-bottom: 0;
-    }
+  .footer {
+    margin-bottom: 0;
+  }
 
-    .header,
-    .main,
-    .footer_container {
-      padding: 0;
-    }
+  .header,
+  .main,
+  .footer_container {
+    padding: 0;
+  }
 
-    .container {
-      margin-left: 10vw;
-      margin-right: 10vw;
-    }
+  .container {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 
-    #brandName {
-      display: inline-block;
-    }
+  #brandName {
+    display: inline-block;
+  }
 
-    #brandInitials,
-    #nav_home,
-    .nav_icon,
-    .nav_close,
-    .nav_social_link,
-    .nav_toggle {
-      display: none;
-    }
+  #brandInitials,
+  #nav_home,
+  .nav_icon,
+  .nav_close,
+  .nav_social_link,
+  .nav_toggle {
+    display: none;
+  }
 
-    .home_container {
-      flex-direction: row-reverse;
-      height: calc(100vh - var(--header-height));
-    }
-  
-    .home_blob {
-      width: var(--spacing-90);
-    }
+  .home_container {
+    flex-direction: row-reverse;
+    height: calc(100vh - var(--header-height));
+  }
 
-    /* UNCOMMENT - WHEN PROJECTS > 2
+  .home_blob {
+    width: var(--spacing-90);
+  }
+
+  /* UNCOMMENT - WHEN PROJECTS > 2
       .portfolio_container {
       grid-template-columns: repeat(3, var(--spacing-88));
       row-gap: var(--spacing-12);
     } */
 
-    .portfolio_container {
-      flex-direction: row;
-    }
-
-    .portfolio_modal_content {
-      width: var(--spacing-160);
-    }
-
-    .social_links_container {
-      left: var(--spacing-10);
-    }
-
-    .show-scroll {
-      padding: 0 var(--spacing-base);
-      bottom: var(--spacing-30);
-    }
+  .portfolio_container {
+    flex-direction: row;
   }
-  
-  /*==================== EXTRA LARGE DEVICES ====================*/
-  @media screen and (min-width: 1440px) {
-    
+
+  .portfolio_modal_content {
+    width: var(--spacing-160);
   }
+
+  .social_links_container {
+    left: var(--spacing-10);
+  }
+
+  .show-scroll {
+    padding: 0 var(--spacing-base);
+    bottom: var(--spacing-30);
+  }
+}
+
+/*==================== EXTRA LARGE DEVICES ====================*/
+@media screen and (min-width: 1440px) {
+}
