@@ -104,6 +104,10 @@
     font-weight: var(--font-weight-bold);
   }
 
+  .nav_social_link {
+    display: none;
+  }
+
   .home_blob {
     width: var(--spacing-67);
   }
