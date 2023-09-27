@@ -1,3 +1,34 @@
+@media (prefers-color-scheme: dark) {
+  /* =========================== DARK THEME ========================== */
+  body.dark-theme {
+    --background-color: radial-gradient(
+      var(--ultramarine-color-700),
+      var(--ultramarine-color-900)
+    );
+    --ultramarine-color-base: var(--ultramarine-color-700);
+    --ultramarine-color-second: var(--ultramarine-color-900);
+    --crimsonSky-color-base: var(--crimsonSky-color-600);
+
+    --nav-color: var(--ultramarine-color-900);
+    --title-color: var(--white-color-base);
+    --text-color: var(--gray-color-300);
+    --text-color-light: var(--gray-color-400);
+    --button-dark-bg-color: var(--ultramarine-color-100);
+    --button-dark-icon-color: var(--ultramarine-color-second);
+    --hover-color-crimsonSky: var(--crimsonSky-color-base);
+    --img-brightness: brightness(80%);
+    --job-link-color: var(--ultramarine-color-500);
+    --skills-blob-bg-color: var(--ultramarine-color-800);
+    --skills-blob-border-color: var(--ultramarine-color-200);
+    --portfolio-modal-bg-color: var(--ultramarine-color-700);
+    --portfolio-modal-close-color: var(--ultramarine-color-200);
+    --contact-input-color: var(--ultramarine-color-900);
+    --social_links_color: var(--ultramarine-color-100);
+    --scroll-bar-color: var(--gray-color-700);
+    --scroll-thumb-color: var(--gray-color-800);
+  }
+}
+
 @media (prefers-reduced-motion) {
   .slide-in {
     opacity: 1;
