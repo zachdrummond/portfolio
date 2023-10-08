@@ -45,6 +45,9 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*=== STOP ANIMATIONS ===*/
+const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
 /*======================= SCROLL EVENTS =======================*/
 const handleScrollEvents = () => {
   const nav = document.getElementById("header"),
@@ -105,19 +108,21 @@ const handleScrollEvents = () => {
     }
   });
 
-  elementsToAnimate.forEach((element) => {
-    /*=== ELEMENT ANIMATION ON SCROLL ===*/
-    const percentageScroll = element.getAttribute('data-scroll') ?? 75,
-      animation = element.getAttribute('data-animation') ?? "slide-in-left",
-      duration = element.getAttribute('data-duration') ?? "1s",
-      delay = element.getAttribute('data-delay') ?? "0s";
+  /*=== NO PREFERENCE ON ANIMATIONS ===*/
+  if (!mediaQuery.matches) {
+    elementsToAnimate.forEach((element) => {
+      /*=== ELEMENT ANIMATION ON SCROLL ===*/
+      const percentageScroll = element.getAttribute("data-scroll") ?? 75,
+        animation = element.getAttribute("data-animation") ?? "slide-in-left",
+        duration = element.getAttribute("data-duration") ?? "1s",
+        delay = element.getAttribute("data-delay") ?? "0s";
 
-    if (elementInView(element, percentageScroll)) {
-      element.style.visibility = "visible";
-      element.style.animation =
-        `${animation} ${duration} cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay} both`;
-    }
-  });
+      if (elementInView(element, percentageScroll)) {
+        element.style.visibility = "visible";
+        element.style.animation = `${animation} ${duration} cubic-bezier(0.25, 0.46, 0.45, 0.94) ${delay} both`;
+      }
+    });
+  }
 };
 
 window.addEventListener("scroll", () => throttle(handleScrollEvents, 250));

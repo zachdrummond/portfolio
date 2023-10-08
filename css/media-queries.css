@@ -30,12 +30,9 @@
 }
 
 @media (prefers-reduced-motion) {
-  .slide-in {
-    opacity: 1;
-  }
-  .viewed {
-    -webkit-animation: none !important;
-    animation: none !important;
+  .hide-for-animation {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 

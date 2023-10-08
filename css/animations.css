@@ -1,5 +1,4 @@
 .hide-for-animation {
-  /* display: inline-block; */
   opacity: 0;
   visibility: hidden;
   transition: opacity 500ms;
