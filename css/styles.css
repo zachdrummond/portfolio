@@ -172,7 +172,7 @@
   padding-bottom: var(--spacing-base);
 }
 
-.nav_brand {
+.nav_brand_container {
   display: flex;
   flex: 1;
   justify-content: flex-start;
@@ -415,7 +415,6 @@
 }
 
 .skills_data {
-  justify-content: center;
   text-align: center;
 }
 

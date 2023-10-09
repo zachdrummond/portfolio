@@ -37,7 +37,11 @@
 }
 
 /*==================== SMALL DEVICES ====================*/
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 376px) {
+  .show-scroll {
+    padding: 0;
+  }
+
   .nav_menu {
     padding: var(--spacing-8) var(--spacing-base) var(--spacing-16);
   }
@@ -46,12 +50,37 @@
     column-gap: 0;
   }
 
+  .nav_brand,
+  .nav_social_link,
+  .change-theme,
+  .nav_toggle {
+    font-size: var(--font-size-lg);
+  }
+
+  .home_title,
+  .section_title {
+    font-size: var(--font-size-xxl);
+  }
+
+  .home_description {
+    font-size: var(--font-size-md);
+  }
+
   .home_blob {
     width: var(--spacing-45);
   }
 
+  .experience_tab {
+    font-size: var(--font-size-lg);
+  }
+
   .experience_data {
     gap: var(--spacing-2);
+  }
+
+  .skills_blob {
+    width: var(--spacing-16);
+    height: var(--spacing-16);
   }
 
   .portfolio_modal {
