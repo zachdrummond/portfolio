@@ -203,11 +203,6 @@
     right: var(--spacing-base);
     bottom: initial;
   }
-
-  .portfolio_img {
-    width: var(--spacing-80);
-  }
-
   .social_links_container {
     display: block;
   }
