@@ -236,10 +236,13 @@ const sendEmail = (e) => {
     // serviceID - templateID - #form - publicKey
     emailjs
       .sendForm(
-        "service_3rmf0mq",
+        "default_service",
         "template_9abixd9",
         "#contact-form",
-        "fb8CbjtLjJNU4jK9v"
+        "fb8CbjtLjJNU4jK9v",
+        {
+          "g-recaptcha-response": "6Lf6V-gqAAAAAIbLJ94L64r45qrlj1rM1cOb_MD2",
+        }
       )
       .then(
         () => {
